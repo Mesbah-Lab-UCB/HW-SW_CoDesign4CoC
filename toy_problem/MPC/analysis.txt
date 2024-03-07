@@ -1,0 +1,483 @@
+Flat profile:
+
+Each sample counts as 0.01 seconds.
+ no time accumulated
+
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls  Ts/call  Ts/call  name    
+  0.00      0.00     0.00     1644     0.00     0.00  mpc_if_else
+  0.00      0.00     0.00      548     0.00     0.00  mpc_house
+  0.00      0.00     0.00      273     0.00     0.00  mpc_copy
+  0.00      0.00     0.00      168     0.00     0.00  mpc_clear
+  0.00      0.00     0.00      150     0.00     0.00  mpc_sq
+  0.00      0.00     0.00      113     0.00     0.00  mpc_fmin
+  0.00      0.00     0.00       70     0.00     0.00  mpc_fmax
+  0.00      0.00     0.00       61     0.00     0.00  mpc_densify
+  0.00      0.00     0.00       58     0.00     0.00  mpc_axpy
+  0.00      0.00     0.00       30     0.00     0.00  mpc_f3
+  0.00      0.00     0.00       30     0.00     0.00  mpc_f4
+  0.00      0.00     0.00       30     0.00     0.00  mpc_f5
+  0.00      0.00     0.00       30     0.00     0.00  mpc_f6
+  0.00      0.00     0.00       30     0.00     0.00  mpc_f9
+  0.00      0.00     0.00       13     0.00     0.00  mpc_mv
+  0.00      0.00     0.00       11     0.00     0.00  mpc_fill
+  0.00      0.00     0.00        3     0.00     0.00  mpc_trans
+  0.00      0.00     0.00        2     0.00     0.00  mpc_bilin
+  0.00      0.00     0.00        2     0.00     0.00  mpc_dot
+  0.00      0.00     0.00        2     0.00     0.00  mpc_qp_calc_dependent
+  0.00      0.00     0.00        2     0.00     0.00  mpc_qp_calc_sens
+  0.00      0.00     0.00        2     0.00     0.00  mpc_qp_du
+  0.00      0.00     0.00        2     0.00     0.00  mpc_qp_factorize
+  0.00      0.00     0.00        2     0.00     0.00  mpc_qp_flip
+  0.00      0.00     0.00        2     0.00     0.00  mpc_qp_kkt
+  0.00      0.00     0.00        2     0.00     0.00  mpc_qp_pr
+  0.00      0.00     0.00        2     0.00     0.00  mpc_qp_prepare
+  0.00      0.00     0.00        2     0.00     0.00  mpc_qp_print_iteration
+  0.00      0.00     0.00        2     0.00     0.00  mpc_qr
+  0.00      0.00     0.00        2     0.00     0.00  mpc_qr_singular
+  0.00      0.00     0.00        1     0.00     0.00  casadi_max
+  0.00      0.00     0.00        1     0.00     0.00  main_mpc_implicit
+  0.00      0.00     0.00        1     0.00     0.00  mpc_f0
+  0.00      0.00     0.00        1     0.00     0.00  mpc_f1
+  0.00      0.00     0.00        1     0.00     0.00  mpc_f2
+  0.00      0.00     0.00        1     0.00     0.00  mpc_f7
+  0.00      0.00     0.00        1     0.00     0.00  mpc_f8
+  0.00      0.00     0.00        1     0.00     0.00  mpc_implicit
+  0.00      0.00     0.00        1     0.00     0.00  mpc_mtimes
+  0.00      0.00     0.00        1     0.00     0.00  mpc_qp_calc_step
+  0.00      0.00     0.00        1     0.00     0.00  mpc_qp_dual_blocking
+  0.00      0.00     0.00        1     0.00     0.00  mpc_qp_dual_breakpoints
+  0.00      0.00     0.00        1     0.00     0.00  mpc_qp_expand_step
+  0.00      0.00     0.00        1     0.00     0.00  mpc_qp_init
+  0.00      0.00     0.00        1     0.00     0.00  mpc_qp_iterate
+  0.00      0.00     0.00        1     0.00     0.00  mpc_qp_kkt_residual
+  0.00      0.00     0.00        1     0.00     0.00  mpc_qp_linesearch
+  0.00      0.00     0.00        1     0.00     0.00  mpc_qp_primal_blocking
+  0.00      0.00     0.00        1     0.00     0.00  mpc_qp_print_header
+  0.00      0.00     0.00        1     0.00     0.00  mpc_qp_reset
+  0.00      0.00     0.00        1     0.00     0.00  mpc_qp_setup
+  0.00      0.00     0.00        1     0.00     0.00  mpc_qp_take_step
+  0.00      0.00     0.00        1     0.00     0.00  mpc_qp_zero_blocking
+  0.00      0.00     0.00        1     0.00     0.00  mpc_qr_mv
+  0.00      0.00     0.00        1     0.00     0.00  mpc_qr_solve
+  0.00      0.00     0.00        1     0.00     0.00  mpc_qr_trs
+  0.00      0.00     0.00        1     0.00     0.00  mpc_scal
+
+ %         the percentage of the total running time of the
+time       program used by this function.
+
+cumulative a running sum of the number of seconds accounted
+ seconds   for by this function and those listed above it.
+
+ self      the number of seconds accounted for by this
+seconds    function alone.  This is the major sort for this
+           listing.
+
+calls      the number of times this function was invoked, if
+           this function is profiled, else blank.
+
+ self      the average number of milliseconds spent in this
+ms/call    function per call, if this function is profiled,
+	   else blank.
+
+ total     the average number of milliseconds spent in this
+ms/call    function and its descendents per call, if this
+	   function is profiled, else blank.
+
+name       the name of the function.  This is the minor sort
+           for this listing. The index shows the location of
+	   the function in the gprof listing. If the index is
+	   in parenthesis it shows where it would appear in
+	   the gprof listing if it were to be printed.
+
+Copyright (C) 2012-2020 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+
+		     Call graph (explanation follows)
+
+
+granularity: each sample hit covers 2 byte(s) no time propagated
+
+index % time    self  children    called     name
+                0.00    0.00    1644/1644        mpc_house [2]
+[1]      0.0    0.00    0.00    1644         mpc_if_else [1]
+-----------------------------------------------
+                0.00    0.00     548/548         mpc_qr [29]
+[2]      0.0    0.00    0.00     548         mpc_house [2]
+                0.00    0.00    1644/1644        mpc_if_else [1]
+-----------------------------------------------
+                0.00    0.00       1/273         mpc_qp_expand_step [43]
+                0.00    0.00       2/273         mpc_qp_calc_dependent [20]
+                0.00    0.00       4/273         mpc_f0 [33]
+                0.00    0.00      11/273         mpc_f7 [36]
+                0.00    0.00      11/273         mpc_f1 [34]
+                0.00    0.00     244/273         mpc_f2 [35]
+[3]      0.0    0.00    0.00     273         mpc_copy [3]
+-----------------------------------------------
+                0.00    0.00       1/168         mpc_f1 [34]
+                0.00    0.00       2/168         mpc_qp_kkt [25]
+                0.00    0.00       2/168         mpc_qp_calc_sens [21]
+                0.00    0.00       2/168         mpc_qp_calc_dependent [20]
+                0.00    0.00       3/168         mpc_qp_expand_step [43]
+                0.00    0.00       5/168         mpc_f0 [33]
+                0.00    0.00      30/168         mpc_f8 [37]
+                0.00    0.00      61/168         mpc_densify [8]
+                0.00    0.00      62/168         mpc_f2 [35]
+[4]      0.0    0.00    0.00     168         mpc_clear [4]
+-----------------------------------------------
+                0.00    0.00     150/150         mpc_f9 [14]
+[5]      0.0    0.00    0.00     150         mpc_sq [5]
+-----------------------------------------------
+                0.00    0.00      55/113         mpc_qp_dual_blocking [41]
+                0.00    0.00      58/113         mpc_qp_take_step [52]
+[6]      0.0    0.00    0.00     113         mpc_fmin [6]
+-----------------------------------------------
+                0.00    0.00       4/70          mpc_qp_calc_dependent [20]
+                0.00    0.00      66/70          mpc_qp_take_step [52]
+[7]      0.0    0.00    0.00      70         mpc_fmax [7]
+-----------------------------------------------
+                0.00    0.00      61/61          mpc_f2 [35]
+[8]      0.0    0.00    0.00      61         mpc_densify [8]
+                0.00    0.00      61/168         mpc_clear [4]
+-----------------------------------------------
+                0.00    0.00       1/58          mpc_qp_expand_step [43]
+                0.00    0.00       2/58          mpc_qp_take_step [52]
+                0.00    0.00      55/58          mpc_qp_dual_blocking [41]
+[9]      0.0    0.00    0.00      58         mpc_axpy [9]
+-----------------------------------------------
+                0.00    0.00      30/30          mpc_f2 [35]
+[10]     0.0    0.00    0.00      30         mpc_f3 [10]
+-----------------------------------------------
+                0.00    0.00      30/30          mpc_f2 [35]
+[11]     0.0    0.00    0.00      30         mpc_f4 [11]
+-----------------------------------------------
+                0.00    0.00      30/30          mpc_f2 [35]
+[12]     0.0    0.00    0.00      30         mpc_f5 [12]
+-----------------------------------------------
+                0.00    0.00      30/30          mpc_f2 [35]
+[13]     0.0    0.00    0.00      30         mpc_f6 [13]
+-----------------------------------------------
+                0.00    0.00      30/30          mpc_f8 [37]
+[14]     0.0    0.00    0.00      30         mpc_f9 [14]
+                0.00    0.00     150/150         mpc_sq [5]
+-----------------------------------------------
+                0.00    0.00       2/13          mpc_qp_calc_sens [21]
+                0.00    0.00       5/13          mpc_qp_expand_step [43]
+                0.00    0.00       6/13          mpc_qp_calc_dependent [20]
+[15]     0.0    0.00    0.00      13         mpc_mv [15]
+-----------------------------------------------
+                0.00    0.00       1/11          mpc_f7 [36]
+                0.00    0.00      10/11          mpc_f2 [35]
+[16]     0.0    0.00    0.00      11         mpc_fill [16]
+-----------------------------------------------
+                0.00    0.00       1/3           mpc_qp_reset [50]
+                0.00    0.00       2/3           mpc_f2 [35]
+[17]     0.0    0.00    0.00       3         mpc_trans [17]
+-----------------------------------------------
+                0.00    0.00       2/2           mpc_qp_calc_dependent [20]
+[18]     0.0    0.00    0.00       2         mpc_bilin [18]
+-----------------------------------------------
+                0.00    0.00       2/2           mpc_qp_calc_dependent [20]
+[19]     0.0    0.00    0.00       2         mpc_dot [19]
+-----------------------------------------------
+                0.00    0.00       2/2           mpc_qp_prepare [27]
+[20]     0.0    0.00    0.00       2         mpc_qp_calc_dependent [20]
+                0.00    0.00       6/13          mpc_mv [15]
+                0.00    0.00       4/70          mpc_fmax [7]
+                0.00    0.00       2/2           mpc_bilin [18]
+                0.00    0.00       2/2           mpc_dot [19]
+                0.00    0.00       2/168         mpc_clear [4]
+                0.00    0.00       2/273         mpc_copy [3]
+                0.00    0.00       2/2           mpc_qp_pr [26]
+                0.00    0.00       2/2           mpc_qp_du [22]
+                0.00    0.00       2/2           mpc_qp_calc_sens [21]
+-----------------------------------------------
+                0.00    0.00       2/2           mpc_qp_calc_dependent [20]
+[21]     0.0    0.00    0.00       2         mpc_qp_calc_sens [21]
+                0.00    0.00       2/168         mpc_clear [4]
+                0.00    0.00       2/13          mpc_mv [15]
+-----------------------------------------------
+                0.00    0.00       2/2           mpc_qp_calc_dependent [20]
+[22]     0.0    0.00    0.00       2         mpc_qp_du [22]
+-----------------------------------------------
+                0.00    0.00       2/2           mpc_qp_prepare [27]
+[23]     0.0    0.00    0.00       2         mpc_qp_factorize [23]
+                0.00    0.00       2/2           mpc_qp_kkt [25]
+                0.00    0.00       2/2           mpc_qr [29]
+                0.00    0.00       2/2           mpc_qr_singular [30]
+-----------------------------------------------
+                0.00    0.00       2/2           mpc_qp_prepare [27]
+[24]     0.0    0.00    0.00       2         mpc_qp_flip [24]
+-----------------------------------------------
+                0.00    0.00       2/2           mpc_qp_factorize [23]
+[25]     0.0    0.00    0.00       2         mpc_qp_kkt [25]
+                0.00    0.00       2/168         mpc_clear [4]
+-----------------------------------------------
+                0.00    0.00       2/2           mpc_qp_calc_dependent [20]
+[26]     0.0    0.00    0.00       2         mpc_qp_pr [26]
+-----------------------------------------------
+                0.00    0.00       2/2           mpc_f7 [36]
+[27]     0.0    0.00    0.00       2         mpc_qp_prepare [27]
+                0.00    0.00       2/2           mpc_qp_calc_dependent [20]
+                0.00    0.00       2/2           mpc_qp_factorize [23]
+                0.00    0.00       2/2           mpc_qp_flip [24]
+-----------------------------------------------
+                0.00    0.00       2/2           mpc_f7 [36]
+[28]     0.0    0.00    0.00       2         mpc_qp_print_iteration [28]
+-----------------------------------------------
+                0.00    0.00       2/2           mpc_qp_factorize [23]
+[29]     0.0    0.00    0.00       2         mpc_qr [29]
+                0.00    0.00     548/548         mpc_house [2]
+-----------------------------------------------
+                0.00    0.00       2/2           mpc_qp_factorize [23]
+[30]     0.0    0.00    0.00       2         mpc_qr_singular [30]
+-----------------------------------------------
+                0.00    0.00       1/1           mpc_qp_init [44]
+[31]     0.0    0.00    0.00       1         casadi_max [31]
+-----------------------------------------------
+                0.00    0.00       1/1           main [65]
+[32]     0.0    0.00    0.00       1         main_mpc_implicit [32]
+                0.00    0.00       1/1           mpc_implicit [38]
+-----------------------------------------------
+                0.00    0.00       1/1           mpc_implicit [38]
+[33]     0.0    0.00    0.00       1         mpc_f0 [33]
+                0.00    0.00       5/168         mpc_clear [4]
+                0.00    0.00       4/273         mpc_copy [3]
+                0.00    0.00       1/1           mpc_f1 [34]
+-----------------------------------------------
+                0.00    0.00       1/1           mpc_f0 [33]
+[34]     0.0    0.00    0.00       1         mpc_f1 [34]
+                0.00    0.00      11/273         mpc_copy [3]
+                0.00    0.00       1/1           mpc_f2 [35]
+                0.00    0.00       1/1           mpc_f7 [36]
+                0.00    0.00       1/1           mpc_f8 [37]
+                0.00    0.00       1/168         mpc_clear [4]
+                0.00    0.00       1/1           mpc_mtimes [39]
+-----------------------------------------------
+                0.00    0.00       1/1           mpc_f1 [34]
+[35]     0.0    0.00    0.00       1         mpc_f2 [35]
+                0.00    0.00     244/273         mpc_copy [3]
+                0.00    0.00      62/168         mpc_clear [4]
+                0.00    0.00      61/61          mpc_densify [8]
+                0.00    0.00      30/30          mpc_f3 [10]
+                0.00    0.00      30/30          mpc_f4 [11]
+                0.00    0.00      30/30          mpc_f5 [12]
+                0.00    0.00      30/30          mpc_f6 [13]
+                0.00    0.00      10/11          mpc_fill [16]
+                0.00    0.00       2/3           mpc_trans [17]
+-----------------------------------------------
+                0.00    0.00       1/1           mpc_f1 [34]
+[36]     0.0    0.00    0.00       1         mpc_f7 [36]
+                0.00    0.00      11/273         mpc_copy [3]
+                0.00    0.00       2/2           mpc_qp_prepare [27]
+                0.00    0.00       2/2           mpc_qp_print_iteration [28]
+                0.00    0.00       1/1           mpc_qp_setup [51]
+                0.00    0.00       1/1           mpc_qp_init [44]
+                0.00    0.00       1/11          mpc_fill [16]
+                0.00    0.00       1/1           mpc_qp_reset [50]
+                0.00    0.00       1/1           mpc_qp_print_header [49]
+                0.00    0.00       1/1           mpc_qp_iterate [45]
+-----------------------------------------------
+                0.00    0.00       1/1           mpc_f1 [34]
+[37]     0.0    0.00    0.00       1         mpc_f8 [37]
+                0.00    0.00      30/168         mpc_clear [4]
+                0.00    0.00      30/30          mpc_f9 [14]
+-----------------------------------------------
+                0.00    0.00       1/1           main_mpc_implicit [32]
+[38]     0.0    0.00    0.00       1         mpc_implicit [38]
+                0.00    0.00       1/1           mpc_f0 [33]
+-----------------------------------------------
+                0.00    0.00       1/1           mpc_f1 [34]
+[39]     0.0    0.00    0.00       1         mpc_mtimes [39]
+-----------------------------------------------
+                0.00    0.00       1/1           mpc_qp_iterate [45]
+[40]     0.0    0.00    0.00       1         mpc_qp_calc_step [40]
+                0.00    0.00       1/1           mpc_qp_kkt_residual [46]
+                0.00    0.00       1/1           mpc_qr_solve [55]
+                0.00    0.00       1/1           mpc_qp_expand_step [43]
+-----------------------------------------------
+                0.00    0.00       1/1           mpc_qp_linesearch [47]
+[41]     0.0    0.00    0.00       1         mpc_qp_dual_blocking [41]
+                0.00    0.00      55/113         mpc_fmin [6]
+                0.00    0.00      55/58          mpc_axpy [9]
+                0.00    0.00       1/1           mpc_qp_dual_breakpoints [42]
+-----------------------------------------------
+                0.00    0.00       1/1           mpc_qp_dual_blocking [41]
+[42]     0.0    0.00    0.00       1         mpc_qp_dual_breakpoints [42]
+-----------------------------------------------
+                0.00    0.00       1/1           mpc_qp_calc_step [40]
+[43]     0.0    0.00    0.00       1         mpc_qp_expand_step [43]
+                0.00    0.00       5/13          mpc_mv [15]
+                0.00    0.00       3/168         mpc_clear [4]
+                0.00    0.00       1/1           mpc_scal [57]
+                0.00    0.00       1/273         mpc_copy [3]
+                0.00    0.00       1/58          mpc_axpy [9]
+-----------------------------------------------
+                0.00    0.00       1/1           mpc_f7 [36]
+[44]     0.0    0.00    0.00       1         mpc_qp_init [44]
+                0.00    0.00       1/1           casadi_max [31]
+-----------------------------------------------
+                0.00    0.00       1/1           mpc_f7 [36]
+[45]     0.0    0.00    0.00       1         mpc_qp_iterate [45]
+                0.00    0.00       1/1           mpc_qp_calc_step [40]
+                0.00    0.00       1/1           mpc_qp_linesearch [47]
+-----------------------------------------------
+                0.00    0.00       1/1           mpc_qp_calc_step [40]
+[46]     0.0    0.00    0.00       1         mpc_qp_kkt_residual [46]
+-----------------------------------------------
+                0.00    0.00       1/1           mpc_qp_iterate [45]
+[47]     0.0    0.00    0.00       1         mpc_qp_linesearch [47]
+                0.00    0.00       1/1           mpc_qp_primal_blocking [48]
+                0.00    0.00       1/1           mpc_qp_dual_blocking [41]
+                0.00    0.00       1/1           mpc_qp_take_step [52]
+-----------------------------------------------
+                0.00    0.00       1/1           mpc_qp_linesearch [47]
+[48]     0.0    0.00    0.00       1         mpc_qp_primal_blocking [48]
+                0.00    0.00       1/1           mpc_qp_zero_blocking [53]
+-----------------------------------------------
+                0.00    0.00       1/1           mpc_f7 [36]
+[49]     0.0    0.00    0.00       1         mpc_qp_print_header [49]
+-----------------------------------------------
+                0.00    0.00       1/1           mpc_f7 [36]
+[50]     0.0    0.00    0.00       1         mpc_qp_reset [50]
+                0.00    0.00       1/3           mpc_trans [17]
+-----------------------------------------------
+                0.00    0.00       1/1           mpc_f7 [36]
+[51]     0.0    0.00    0.00       1         mpc_qp_setup [51]
+-----------------------------------------------
+                0.00    0.00       1/1           mpc_qp_linesearch [47]
+[52]     0.0    0.00    0.00       1         mpc_qp_take_step [52]
+                0.00    0.00      66/70          mpc_fmax [7]
+                0.00    0.00      58/113         mpc_fmin [6]
+                0.00    0.00       2/58          mpc_axpy [9]
+-----------------------------------------------
+                0.00    0.00       1/1           mpc_qp_primal_blocking [48]
+[53]     0.0    0.00    0.00       1         mpc_qp_zero_blocking [53]
+-----------------------------------------------
+                0.00    0.00       1/1           mpc_qr_solve [55]
+[54]     0.0    0.00    0.00       1         mpc_qr_mv [54]
+-----------------------------------------------
+                0.00    0.00       1/1           mpc_qp_calc_step [40]
+[55]     0.0    0.00    0.00       1         mpc_qr_solve [55]
+                0.00    0.00       1/1           mpc_qr_trs [56]
+                0.00    0.00       1/1           mpc_qr_mv [54]
+-----------------------------------------------
+                0.00    0.00       1/1           mpc_qr_solve [55]
+[56]     0.0    0.00    0.00       1         mpc_qr_trs [56]
+-----------------------------------------------
+                0.00    0.00       1/1           mpc_qp_expand_step [43]
+[57]     0.0    0.00    0.00       1         mpc_scal [57]
+-----------------------------------------------
+
+ This table describes the call tree of the program, and was sorted by
+ the total amount of time spent in each function and its children.
+
+ Each entry in this table consists of several lines.  The line with the
+ index number at the left hand margin lists the current function.
+ The lines above it list the functions that called this function,
+ and the lines below it list the functions this one called.
+ This line lists:
+     index	A unique number given to each element of the table.
+		Index numbers are sorted numerically.
+		The index number is printed next to every function name so
+		it is easier to look up where the function is in the table.
+
+     % time	This is the percentage of the `total' time that was spent
+		in this function and its children.  Note that due to
+		different viewpoints, functions excluded by options, etc,
+		these numbers will NOT add up to 100%.
+
+     self	This is the total amount of time spent in this function.
+
+     children	This is the total amount of time propagated into this
+		function by its children.
+
+     called	This is the number of times the function was called.
+		If the function called itself recursively, the number
+		only includes non-recursive calls, and is followed by
+		a `+' and the number of recursive calls.
+
+     name	The name of the current function.  The index number is
+		printed after it.  If the function is a member of a
+		cycle, the cycle number is printed between the
+		function's name and the index number.
+
+
+ For the function's parents, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the function into this parent.
+
+     children	This is the amount of time that was propagated from
+		the function's children into this parent.
+
+     called	This is the number of times this parent called the
+		function `/' the total number of times the function
+		was called.  Recursive calls to the function are not
+		included in the number after the `/'.
+
+     name	This is the name of the parent.  The parent's index
+		number is printed after it.  If the parent is a
+		member of a cycle, the cycle number is printed between
+		the name and the index number.
+
+ If the parents of the function cannot be determined, the word
+ `<spontaneous>' is printed in the `name' field, and all the other
+ fields are blank.
+
+ For the function's children, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the child into the function.
+
+     children	This is the amount of time that was propagated from the
+		child's children to the function.
+
+     called	This is the number of times the function called
+		this child `/' the total number of times the child
+		was called.  Recursive calls by the child are not
+		listed in the number after the `/'.
+
+     name	This is the name of the child.  The child's index
+		number is printed after it.  If the child is a
+		member of a cycle, the cycle number is printed
+		between the name and the index number.
+
+ If there are any cycles (circles) in the call graph, there is an
+ entry for the cycle-as-a-whole.  This entry shows who called the
+ cycle (as parents) and the members of the cycle (as children.)
+ The `+' recursive calls entry shows the number of function calls that
+ were internal to the cycle, and the calls entry for each member shows,
+ for that member, how many times it was called from other members of
+ the cycle.
+
+Copyright (C) 2012-2020 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+
+Index by function name
+
+  [31] casadi_max              [7] mpc_fmax               [46] mpc_qp_kkt_residual
+  [32] main_mpc_implicit       [6] mpc_fmin               [47] mpc_qp_linesearch
+   [9] mpc_axpy                [2] mpc_house              [26] mpc_qp_pr
+  [18] mpc_bilin               [1] mpc_if_else            [27] mpc_qp_prepare
+   [4] mpc_clear              [38] mpc_implicit           [48] mpc_qp_primal_blocking
+   [3] mpc_copy               [39] mpc_mtimes             [49] mpc_qp_print_header
+   [8] mpc_densify            [15] mpc_mv                 [28] mpc_qp_print_iteration
+  [19] mpc_dot                [20] mpc_qp_calc_dependent  [50] mpc_qp_reset
+  [33] mpc_f0                 [21] mpc_qp_calc_sens       [51] mpc_qp_setup
+  [34] mpc_f1                 [40] mpc_qp_calc_step       [52] mpc_qp_take_step
+  [35] mpc_f2                 [22] mpc_qp_du              [53] mpc_qp_zero_blocking
+  [10] mpc_f3                 [41] mpc_qp_dual_blocking   [29] mpc_qr
+  [11] mpc_f4                 [42] mpc_qp_dual_breakpoints [54] mpc_qr_mv
+  [12] mpc_f5                 [43] mpc_qp_expand_step     [30] mpc_qr_singular
+  [13] mpc_f6                 [23] mpc_qp_factorize       [55] mpc_qr_solve
+  [36] mpc_f7                 [24] mpc_qp_flip            [56] mpc_qr_trs
+  [37] mpc_f8                 [44] mpc_qp_init            [57] mpc_scal
+  [14] mpc_f9                 [45] mpc_qp_iterate          [5] mpc_sq
+  [16] mpc_fill               [25] mpc_qp_kkt             [17] mpc_trans

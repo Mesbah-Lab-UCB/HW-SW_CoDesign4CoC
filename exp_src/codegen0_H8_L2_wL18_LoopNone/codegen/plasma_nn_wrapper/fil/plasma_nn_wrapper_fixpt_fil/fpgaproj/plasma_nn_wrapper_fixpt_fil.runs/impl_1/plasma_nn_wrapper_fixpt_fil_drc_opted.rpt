@@ -1,0 +1,774 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (lin64) Build 2902540 Wed May 27 19:54:35 MDT 2020
+| Date         : Fri Jul 22 12:47:47 2022
+| Host         : kimberlychan-hpomen running 64-bit Ubuntu 20.04.4 LTS
+| Command      : report_drc -file plasma_nn_wrapper_fixpt_fil_drc_opted.rpt -pb plasma_nn_wrapper_fixpt_fil_drc_opted.pb -rpx plasma_nn_wrapper_fixpt_fil_drc_opted.rpx
+| Design       : plasma_nn_wrapper_fixpt_fil
+| Device       : xc7z020clg400-1
+| Speed File   : -1
+| Design State : Synthesized
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 147
++--------+----------+------------------------+------------+
+| Rule   | Severity | Description            | Violations |
++--------+----------+------------------------+------------+
+| DPIP-1 | Warning  | Input pipelining       | 106        |
+| DPOP-1 | Warning  | PREG Output pipelining | 20         |
+| DPOP-2 | Warning  | MREG Output pipelining | 20         |
+| ZPS7-1 | Warning  | PS7 block required     | 1          |
++--------+----------+------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+DPIP-1#1 Warning
+Input pipelining  
+DSP u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp3 input u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp3/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#2 Warning
+Input pipelining  
+DSP u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp3__0 input u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp3__0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#3 Warning
+Input pipelining  
+DSP u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp3__1 input u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp3__1/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#4 Warning
+Input pipelining  
+DSP u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp3__10 input u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp3__10/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#5 Warning
+Input pipelining  
+DSP u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp3__11 input u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp3__11/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#6 Warning
+Input pipelining  
+DSP u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp3__12 input u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp3__12/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#7 Warning
+Input pipelining  
+DSP u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp3__13 input u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp3__13/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#8 Warning
+Input pipelining  
+DSP u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp3__14 input u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp3__14/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#9 Warning
+Input pipelining  
+DSP u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp3__2 input u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp3__2/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#10 Warning
+Input pipelining  
+DSP u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp3__3 input u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp3__3/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#11 Warning
+Input pipelining  
+DSP u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp3__4 input u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp3__4/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#12 Warning
+Input pipelining  
+DSP u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp3__5 input u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp3__5/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#13 Warning
+Input pipelining  
+DSP u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp3__6 input u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp3__6/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#14 Warning
+Input pipelining  
+DSP u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp3__7 input u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp3__7/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#15 Warning
+Input pipelining  
+DSP u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp3__8 input u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp3__8/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#16 Warning
+Input pipelining  
+DSP u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp3__9 input u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp3__9/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#17 Warning
+Input pipelining  
+DSP u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp4 input u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp4/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#18 Warning
+Input pipelining  
+DSP u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp4__0 input u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp4__0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#19 Warning
+Input pipelining  
+DSP u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp4__1 input u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp4__1/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#20 Warning
+Input pipelining  
+DSP u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp4__2 input u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp4__2/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#21 Warning
+Input pipelining  
+DSP u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp4__3 input u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp4__3/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#22 Warning
+Input pipelining  
+DSP u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp4__4 input u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp4__4/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#23 Warning
+Input pipelining  
+DSP u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp4__5 input u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp4__5/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#24 Warning
+Input pipelining  
+DSP u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp4__6 input u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp4__6/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#25 Warning
+Input pipelining  
+DSP u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_03 input u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_03/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#26 Warning
+Input pipelining  
+DSP u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_03__0 input u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_03__0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#27 Warning
+Input pipelining  
+DSP u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_03__1 input u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_03__1/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#28 Warning
+Input pipelining  
+DSP u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_03__10 input u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_03__10/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#29 Warning
+Input pipelining  
+DSP u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_03__11 input u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_03__11/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#30 Warning
+Input pipelining  
+DSP u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_03__12 input u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_03__12/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#31 Warning
+Input pipelining  
+DSP u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_03__13 input u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_03__13/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#32 Warning
+Input pipelining  
+DSP u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_03__14 input u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_03__14/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#33 Warning
+Input pipelining  
+DSP u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_03__15 input u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_03__15/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#34 Warning
+Input pipelining  
+DSP u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_03__16 input u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_03__16/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#35 Warning
+Input pipelining  
+DSP u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_03__17 input u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_03__17/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#36 Warning
+Input pipelining  
+DSP u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_03__18 input u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_03__18/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#37 Warning
+Input pipelining  
+DSP u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_03__19 input u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_03__19/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#38 Warning
+Input pipelining  
+DSP u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_03__2 input u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_03__2/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#39 Warning
+Input pipelining  
+DSP u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_03__20 input u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_03__20/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#40 Warning
+Input pipelining  
+DSP u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_03__21 input u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_03__21/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#41 Warning
+Input pipelining  
+DSP u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_03__22 input u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_03__22/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#42 Warning
+Input pipelining  
+DSP u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_03__23 input u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_03__23/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#43 Warning
+Input pipelining  
+DSP u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_03__24 input u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_03__24/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#44 Warning
+Input pipelining  
+DSP u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_03__25 input u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_03__25/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#45 Warning
+Input pipelining  
+DSP u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_03__26 input u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_03__26/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#46 Warning
+Input pipelining  
+DSP u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_03__27 input u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_03__27/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#47 Warning
+Input pipelining  
+DSP u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_03__28 input u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_03__28/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#48 Warning
+Input pipelining  
+DSP u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_03__29 input u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_03__29/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#49 Warning
+Input pipelining  
+DSP u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_03__3 input u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_03__3/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#50 Warning
+Input pipelining  
+DSP u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_03__30 input u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_03__30/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#51 Warning
+Input pipelining  
+DSP u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_03__31 input u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_03__31/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#52 Warning
+Input pipelining  
+DSP u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_03__32 input u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_03__32/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#53 Warning
+Input pipelining  
+DSP u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_03__33 input u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_03__33/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#54 Warning
+Input pipelining  
+DSP u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_03__34 input u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_03__34/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#55 Warning
+Input pipelining  
+DSP u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_03__35 input u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_03__35/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#56 Warning
+Input pipelining  
+DSP u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_03__36 input u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_03__36/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#57 Warning
+Input pipelining  
+DSP u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_03__37 input u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_03__37/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#58 Warning
+Input pipelining  
+DSP u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_03__38 input u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_03__38/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#59 Warning
+Input pipelining  
+DSP u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_03__39 input u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_03__39/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#60 Warning
+Input pipelining  
+DSP u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_03__4 input u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_03__4/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#61 Warning
+Input pipelining  
+DSP u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_03__40 input u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_03__40/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#62 Warning
+Input pipelining  
+DSP u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_03__41 input u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_03__41/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#63 Warning
+Input pipelining  
+DSP u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_03__42 input u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_03__42/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#64 Warning
+Input pipelining  
+DSP u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_03__43 input u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_03__43/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#65 Warning
+Input pipelining  
+DSP u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_03__44 input u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_03__44/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#66 Warning
+Input pipelining  
+DSP u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_03__45 input u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_03__45/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#67 Warning
+Input pipelining  
+DSP u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_03__46 input u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_03__46/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#68 Warning
+Input pipelining  
+DSP u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_03__47 input u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_03__47/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#69 Warning
+Input pipelining  
+DSP u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_03__48 input u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_03__48/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#70 Warning
+Input pipelining  
+DSP u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_03__49 input u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_03__49/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#71 Warning
+Input pipelining  
+DSP u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_03__5 input u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_03__5/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#72 Warning
+Input pipelining  
+DSP u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_03__50 input u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_03__50/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#73 Warning
+Input pipelining  
+DSP u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_03__51 input u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_03__51/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#74 Warning
+Input pipelining  
+DSP u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_03__52 input u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_03__52/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#75 Warning
+Input pipelining  
+DSP u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_03__53 input u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_03__53/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#76 Warning
+Input pipelining  
+DSP u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_03__54 input u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_03__54/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#77 Warning
+Input pipelining  
+DSP u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_03__6 input u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_03__6/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#78 Warning
+Input pipelining  
+DSP u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_03__7 input u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_03__7/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#79 Warning
+Input pipelining  
+DSP u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_03__8 input u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_03__8/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#80 Warning
+Input pipelining  
+DSP u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_03__9 input u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_03__9/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#81 Warning
+Input pipelining  
+DSP u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_04 input u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_04/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#82 Warning
+Input pipelining  
+DSP u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_04__0 input u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_04__0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#83 Warning
+Input pipelining  
+DSP u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_04__1 input u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_04__1/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#84 Warning
+Input pipelining  
+DSP u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_04__2 input u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_04__2/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#85 Warning
+Input pipelining  
+DSP u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_04__3 input u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_04__3/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#86 Warning
+Input pipelining  
+DSP u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_04__4 input u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_04__4/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#87 Warning
+Input pipelining  
+DSP u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_04__5 input u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_04__5/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#88 Warning
+Input pipelining  
+DSP u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_04__6 input u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_04__6/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#89 Warning
+Input pipelining  
+DSP u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/y1_12 input u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/y1_12/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#90 Warning
+Input pipelining  
+DSP u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/y1_12 input u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/y1_12/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#91 Warning
+Input pipelining  
+DSP u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/y1_12__0 input u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/y1_12__0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#92 Warning
+Input pipelining  
+DSP u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/y1_12__1 input u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/y1_12__1/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#93 Warning
+Input pipelining  
+DSP u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/y1_12__2 input u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/y1_12__2/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#94 Warning
+Input pipelining  
+DSP u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/y1_12__3 input u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/y1_12__3/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#95 Warning
+Input pipelining  
+DSP u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/y1_12__4 input u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/y1_12__4/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#96 Warning
+Input pipelining  
+DSP u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/y1_12__5 input u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/y1_12__5/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#97 Warning
+Input pipelining  
+DSP u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/y1_14 input u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/y1_14/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#98 Warning
+Input pipelining  
+DSP u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/y1_22 input u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/y1_22/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#99 Warning
+Input pipelining  
+DSP u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/y1_22 input u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/y1_22/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#100 Warning
+Input pipelining  
+DSP u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/y1_22__0 input u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/y1_22__0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#101 Warning
+Input pipelining  
+DSP u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/y1_22__1 input u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/y1_22__1/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#102 Warning
+Input pipelining  
+DSP u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/y1_22__2 input u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/y1_22__2/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#103 Warning
+Input pipelining  
+DSP u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/y1_22__3 input u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/y1_22__3/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#104 Warning
+Input pipelining  
+DSP u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/y1_22__4 input u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/y1_22__4/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#105 Warning
+Input pipelining  
+DSP u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/y1_22__5 input u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/y1_22__5/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#106 Warning
+Input pipelining  
+DSP u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/y1_24 input u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/y1_24/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPOP-1#1 Warning
+PREG Output pipelining  
+DSP u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp3__0 output u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp3__0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#2 Warning
+PREG Output pipelining  
+DSP u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp3__10 output u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp3__10/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#3 Warning
+PREG Output pipelining  
+DSP u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp3__12 output u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp3__12/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#4 Warning
+PREG Output pipelining  
+DSP u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp3__14 output u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp3__14/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#5 Warning
+PREG Output pipelining  
+DSP u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp3__2 output u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp3__2/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#6 Warning
+PREG Output pipelining  
+DSP u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp3__4 output u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp3__4/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#7 Warning
+PREG Output pipelining  
+DSP u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp3__6 output u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp3__6/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#8 Warning
+PREG Output pipelining  
+DSP u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp3__8 output u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp3__8/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#9 Warning
+PREG Output pipelining  
+DSP u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_03__12 output u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_03__12/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#10 Warning
+PREG Output pipelining  
+DSP u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_03__19 output u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_03__19/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#11 Warning
+PREG Output pipelining  
+DSP u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_03__26 output u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_03__26/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#12 Warning
+PREG Output pipelining  
+DSP u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_03__33 output u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_03__33/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#13 Warning
+PREG Output pipelining  
+DSP u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_03__40 output u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_03__40/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#14 Warning
+PREG Output pipelining  
+DSP u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_03__47 output u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_03__47/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#15 Warning
+PREG Output pipelining  
+DSP u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_03__5 output u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_03__5/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#16 Warning
+PREG Output pipelining  
+DSP u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_03__54 output u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_03__54/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#17 Warning
+PREG Output pipelining  
+DSP u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/y1_12__5 output u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/y1_12__5/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#18 Warning
+PREG Output pipelining  
+DSP u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/y1_14 output u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/y1_14/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#19 Warning
+PREG Output pipelining  
+DSP u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/y1_22__5 output u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/y1_22__5/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#20 Warning
+PREG Output pipelining  
+DSP u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/y1_24 output u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/y1_24/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-2#1 Warning
+MREG Output pipelining  
+DSP u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp3__0 multiplier stage u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp3__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#2 Warning
+MREG Output pipelining  
+DSP u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp3__10 multiplier stage u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp3__10/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#3 Warning
+MREG Output pipelining  
+DSP u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp3__12 multiplier stage u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp3__12/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#4 Warning
+MREG Output pipelining  
+DSP u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp3__14 multiplier stage u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp3__14/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#5 Warning
+MREG Output pipelining  
+DSP u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp3__2 multiplier stage u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp3__2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#6 Warning
+MREG Output pipelining  
+DSP u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp3__4 multiplier stage u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp3__4/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#7 Warning
+MREG Output pipelining  
+DSP u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp3__6 multiplier stage u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp3__6/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#8 Warning
+MREG Output pipelining  
+DSP u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp3__8 multiplier stage u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp3__8/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#9 Warning
+MREG Output pipelining  
+DSP u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_03__12 multiplier stage u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_03__12/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#10 Warning
+MREG Output pipelining  
+DSP u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_03__19 multiplier stage u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_03__19/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#11 Warning
+MREG Output pipelining  
+DSP u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_03__26 multiplier stage u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_03__26/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#12 Warning
+MREG Output pipelining  
+DSP u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_03__33 multiplier stage u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_03__33/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#13 Warning
+MREG Output pipelining  
+DSP u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_03__40 multiplier stage u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_03__40/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#14 Warning
+MREG Output pipelining  
+DSP u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_03__47 multiplier stage u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_03__47/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#15 Warning
+MREG Output pipelining  
+DSP u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_03__5 multiplier stage u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_03__5/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#16 Warning
+MREG Output pipelining  
+DSP u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_03__54 multiplier stage u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_03__54/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#17 Warning
+MREG Output pipelining  
+DSP u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/y1_12__5 multiplier stage u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/y1_12__5/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#18 Warning
+MREG Output pipelining  
+DSP u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/y1_14 multiplier stage u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/y1_14/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#19 Warning
+MREG Output pipelining  
+DSP u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/y1_22__5 multiplier stage u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/y1_22__5/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#20 Warning
+MREG Output pipelining  
+DSP u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/y1_24 multiplier stage u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/y1_24/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+ZPS7-1#1 Warning
+PS7 block required  
+The PS7 cell must be used in this Zynq design in order to enable correct default configuration.
+Related violations: <none>
+
+

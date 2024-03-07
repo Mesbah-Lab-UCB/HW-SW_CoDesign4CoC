@@ -1,0 +1,56 @@
+[
+  {
+    "directory": "/home/kimberlychan/Desktop/DNN_Generality/matlab_v3/codegen/mex/plasma_nn_wrapper_wrapper_fixpt_fil",
+    "command": "/usr/bin/gcc -fexceptions -fPIC -fno-omit-frame-pointer -pthread -D_GNU_SOURCE -DMATLAB_MEX_FILE  -O2 -fwrapv -DNDEBUG -std=c99 -I \".\" -I \"/home/kimberlychan/Desktop/DNN_Generality/matlab_v3/hdlcoder_fullDNN/codegen/plasma_nn_wrapper/fil\" -I \"./interface\" -I \"/usr/local/MATLAB/R2021a/extern/include\" -I \".\" -DMODEL=plasma_nn_wrapper_wrapper_fixpt_fil_mex -c  plasma_nn_wrapper_wrapper_fixpt_fil_data.c -o build/glnxa64/plasma_nn_wrapper_wrapper_fixpt_fil_data.o",
+    "file": "plasma_nn_wrapper_wrapper_fixpt_fil_data.c",
+    "output": "build/glnxa64/plasma_nn_wrapper_wrapper_fixpt_fil_data.o"
+  },
+  {
+    "directory": "/home/kimberlychan/Desktop/DNN_Generality/matlab_v3/codegen/mex/plasma_nn_wrapper_wrapper_fixpt_fil",
+    "command": "/usr/bin/gcc -fexceptions -fPIC -fno-omit-frame-pointer -pthread -D_GNU_SOURCE -DMATLAB_MEX_FILE  -O2 -fwrapv -DNDEBUG -std=c99 -I \".\" -I \"/home/kimberlychan/Desktop/DNN_Generality/matlab_v3/hdlcoder_fullDNN/codegen/plasma_nn_wrapper/fil\" -I \"./interface\" -I \"/usr/local/MATLAB/R2021a/extern/include\" -I \".\" -DMODEL=plasma_nn_wrapper_wrapper_fixpt_fil_mex -c  rt_nonfinite.c -o build/glnxa64/rt_nonfinite.o",
+    "file": "rt_nonfinite.c",
+    "output": "build/glnxa64/rt_nonfinite.o"
+  },
+  {
+    "directory": "/home/kimberlychan/Desktop/DNN_Generality/matlab_v3/codegen/mex/plasma_nn_wrapper_wrapper_fixpt_fil",
+    "command": "/usr/bin/gcc -fexceptions -fPIC -fno-omit-frame-pointer -pthread -D_GNU_SOURCE -DMATLAB_MEX_FILE  -O2 -fwrapv -DNDEBUG -std=c99 -I \".\" -I \"/home/kimberlychan/Desktop/DNN_Generality/matlab_v3/hdlcoder_fullDNN/codegen/plasma_nn_wrapper/fil\" -I \"./interface\" -I \"/usr/local/MATLAB/R2021a/extern/include\" -I \".\" -DMODEL=plasma_nn_wrapper_wrapper_fixpt_fil_mex -c  plasma_nn_wrapper_wrapper_fixpt_fil_initialize.c -o build/glnxa64/plasma_nn_wrapper_wrapper_fixpt_fil_initialize.o",
+    "file": "plasma_nn_wrapper_wrapper_fixpt_fil_initialize.c",
+    "output": "build/glnxa64/plasma_nn_wrapper_wrapper_fixpt_fil_initialize.o"
+  },
+  {
+    "directory": "/home/kimberlychan/Desktop/DNN_Generality/matlab_v3/codegen/mex/plasma_nn_wrapper_wrapper_fixpt_fil",
+    "command": "/usr/bin/gcc -fexceptions -fPIC -fno-omit-frame-pointer -pthread -D_GNU_SOURCE -DMATLAB_MEX_FILE  -O2 -fwrapv -DNDEBUG -std=c99 -I \".\" -I \"/home/kimberlychan/Desktop/DNN_Generality/matlab_v3/hdlcoder_fullDNN/codegen/plasma_nn_wrapper/fil\" -I \"./interface\" -I \"/usr/local/MATLAB/R2021a/extern/include\" -I \".\" -DMODEL=plasma_nn_wrapper_wrapper_fixpt_fil_mex -c  plasma_nn_wrapper_wrapper_fixpt_fil_terminate.c -o build/glnxa64/plasma_nn_wrapper_wrapper_fixpt_fil_terminate.o",
+    "file": "plasma_nn_wrapper_wrapper_fixpt_fil_terminate.c",
+    "output": "build/glnxa64/plasma_nn_wrapper_wrapper_fixpt_fil_terminate.o"
+  },
+  {
+    "directory": "/home/kimberlychan/Desktop/DNN_Generality/matlab_v3/codegen/mex/plasma_nn_wrapper_wrapper_fixpt_fil",
+    "command": "/usr/bin/gcc -fexceptions -fPIC -fno-omit-frame-pointer -pthread -D_GNU_SOURCE -DMATLAB_MEX_FILE  -O2 -fwrapv -DNDEBUG -std=c99 -I \".\" -I \"/home/kimberlychan/Desktop/DNN_Generality/matlab_v3/hdlcoder_fullDNN/codegen/plasma_nn_wrapper/fil\" -I \"./interface\" -I \"/usr/local/MATLAB/R2021a/extern/include\" -I \".\" -DMODEL=plasma_nn_wrapper_wrapper_fixpt_fil_mex -c  plasma_nn_wrapper_wrapper_fixpt_fil.c -o build/glnxa64/plasma_nn_wrapper_wrapper_fixpt_fil.o",
+    "file": "plasma_nn_wrapper_wrapper_fixpt_fil.c",
+    "output": "build/glnxa64/plasma_nn_wrapper_wrapper_fixpt_fil.o"
+  },
+  {
+    "directory": "/home/kimberlychan/Desktop/DNN_Generality/matlab_v3/codegen/mex/plasma_nn_wrapper_wrapper_fixpt_fil",
+    "command": "/usr/bin/gcc -fexceptions -fPIC -fno-omit-frame-pointer -pthread -D_GNU_SOURCE -DMATLAB_MEX_FILE  -O2 -fwrapv -DNDEBUG -std=c99 -I \".\" -I \"/home/kimberlychan/Desktop/DNN_Generality/matlab_v3/hdlcoder_fullDNN/codegen/plasma_nn_wrapper/fil\" -I \"./interface\" -I \"/usr/local/MATLAB/R2021a/extern/include\" -I \".\" -DMODEL=plasma_nn_wrapper_wrapper_fixpt_fil_mex -c  interface/_coder_plasma_nn_wrapper_wrapper_fixpt_fil_api.c -o build/glnxa64/_coder_plasma_nn_wrapper_wrapper_fixpt_fil_api.o",
+    "file": "interface/_coder_plasma_nn_wrapper_wrapper_fixpt_fil_api.c",
+    "output": "build/glnxa64/_coder_plasma_nn_wrapper_wrapper_fixpt_fil_api.o"
+  },
+  {
+    "directory": "/home/kimberlychan/Desktop/DNN_Generality/matlab_v3/codegen/mex/plasma_nn_wrapper_wrapper_fixpt_fil",
+    "command": "/usr/bin/gcc -fexceptions -fPIC -fno-omit-frame-pointer -pthread -D_GNU_SOURCE -DMATLAB_MEX_FILE  -O2 -fwrapv -DNDEBUG -std=c99 -I \".\" -I \"/home/kimberlychan/Desktop/DNN_Generality/matlab_v3/hdlcoder_fullDNN/codegen/plasma_nn_wrapper/fil\" -I \"./interface\" -I \"/usr/local/MATLAB/R2021a/extern/include\" -I \".\" -DMODEL=plasma_nn_wrapper_wrapper_fixpt_fil_mex -c  interface/_coder_plasma_nn_wrapper_wrapper_fixpt_fil_mex.c -o build/glnxa64/_coder_plasma_nn_wrapper_wrapper_fixpt_fil_mex.o",
+    "file": "interface/_coder_plasma_nn_wrapper_wrapper_fixpt_fil_mex.c",
+    "output": "build/glnxa64/_coder_plasma_nn_wrapper_wrapper_fixpt_fil_mex.o"
+  },
+  {
+    "directory": "/home/kimberlychan/Desktop/DNN_Generality/matlab_v3/codegen/mex/plasma_nn_wrapper_wrapper_fixpt_fil",
+    "command": "/usr/bin/gcc -fexceptions -fPIC -fno-omit-frame-pointer -pthread -D_GNU_SOURCE -DMATLAB_MEX_FILE  -O2 -fwrapv -DNDEBUG -std=c99 -I \".\" -I \"/home/kimberlychan/Desktop/DNN_Generality/matlab_v3/hdlcoder_fullDNN/codegen/plasma_nn_wrapper/fil\" -I \"./interface\" -I \"/usr/local/MATLAB/R2021a/extern/include\" -I \".\" -DMODEL=plasma_nn_wrapper_wrapper_fixpt_fil_mex -c  interface/_coder_plasma_nn_wrapper_wrapper_fixpt_fil_info.c -o build/glnxa64/_coder_plasma_nn_wrapper_wrapper_fixpt_fil_info.o",
+    "file": "interface/_coder_plasma_nn_wrapper_wrapper_fixpt_fil_info.c",
+    "output": "build/glnxa64/_coder_plasma_nn_wrapper_wrapper_fixpt_fil_info.o"
+  },
+  {
+    "directory": "/home/kimberlychan/Desktop/DNN_Generality/matlab_v3/codegen/mex/plasma_nn_wrapper_wrapper_fixpt_fil",
+    "command": "/usr/bin/gcc -fexceptions -fPIC -fno-omit-frame-pointer -pthread -D_GNU_SOURCE -DMATLAB_MEX_FILE  -O2 -fwrapv -DNDEBUG -std=c99 -I \".\" -I \"/home/kimberlychan/Desktop/DNN_Generality/matlab_v3/hdlcoder_fullDNN/codegen/plasma_nn_wrapper/fil\" -I \"./interface\" -I \"/usr/local/MATLAB/R2021a/extern/include\" -I \".\" -DMODEL=plasma_nn_wrapper_wrapper_fixpt_fil_mex -c  /usr/local/MATLAB/R2021a/extern/version/c_mexapi_version.c -o build/glnxa64/c_mexapi_version.o",
+    "file": "/usr/local/MATLAB/R2021a/extern/version/c_mexapi_version.c",
+    "output": "build/glnxa64/c_mexapi_version.o"
+  }
+]

@@ -1,0 +1,64 @@
+desc: (none)
+cmd: ./dnn
+time_unit: i
+#-----------
+snapshot=0
+#-----------
+time=0
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=1
+#-----------
+time=165991
+mem_heap_B=4096
+mem_heap_extra_B=8
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=2
+#-----------
+time=172416
+mem_heap_B=5120
+mem_heap_extra_B=16
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=3
+#-----------
+time=176823
+mem_heap_B=5120
+mem_heap_extra_B=16
+mem_stacks_B=0
+heap_tree=peak
+n1: 5120 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 5120 0x4A2BD03: _IO_file_doallocate (filedoalloc.c:101)
+  n2: 5120 0x4A3BECF: _IO_doallocbuf (genops.c:347)
+   n1: 4096 0x4A3ACA3: _IO_file_underflow@@GLIBC_2.2.5 (fileops.c:486)
+    n1: 4096 0x4A3BF85: _IO_default_uflow (genops.c:362)
+     n1: 4096 0x4A0E27F: __vfscanf_internal (vfscanf-internal.c:627)
+      n1: 4096 0x4A0D161: __isoc99_scanf (isoc99_scanf.c:30)
+       n0: 4096 0x10914E: main (in /home/kimberlychan/Desktop/DNN_Generality/toy_problem/DNN/dnn)
+   n1: 1024 0x4A3AF2F: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:745)
+    n1: 1024 0x4A07C2F: __printf_fp_l (printf_fp.c:1246)
+     n1: 1024 0x4A214B9: __vfprintf_internal (vfprintf-internal.c:1687)
+      n1: 1024 0x4AD805A: __printf_chk (printf_chk.c:33)
+       n0: 1024 0x10917C: main (in /home/kimberlychan/Desktop/DNN_Generality/toy_problem/DNN/dnn)
+#-----------
+snapshot=4
+#-----------
+time=176823
+mem_heap_B=1024
+mem_heap_extra_B=8
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=5
+#-----------
+time=176857
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty

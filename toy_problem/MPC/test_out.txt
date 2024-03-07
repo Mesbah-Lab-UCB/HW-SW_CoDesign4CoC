@@ -1,0 +1,4 @@
+ Iter  Sing        fk      |pr|   con      |du|   var     min_R   con  last_tau  Note
+    0     0         0       0.1     1  2.2e-308   150    0.0076   154         0  
+    1     0      0.35   3.2e-15   158   4.9e-15    22    0.0076   154         1  Converged
+0.0139435 

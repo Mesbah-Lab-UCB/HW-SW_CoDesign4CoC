@@ -1,0 +1,56 @@
+# CompilerName=gcc
+# Mode=optim
+ninja_required_version = 1.3
+
+# Basic folders
+root = .
+builddir = $root/build/glnxa64
+matlabdir = /usr/local/MATLAB/R2021a
+startdir = /home/kimberlychan/Desktop/DNN_Generality/matlab/hdlcoder_fullDNN/codegen/plasma_nn_wrapper/fixpt
+
+# Toolchain information
+cc = /usr/bin/gcc
+cxx = g++
+linker = /usr/bin/gcc
+linkerxx = g++
+
+cflags =  -fexceptions -fPIC -fno-omit-frame-pointer -pthread -D_GNU_SOURCE -DMATLAB_MEX_FILE  -O2 -fwrapv -DNDEBUG -std=c99 -I "$root" -I "$startdir" -I "$root/interface" -I "$matlabdir/extern/include" -I "." -DMODEL=plasma_nn_wrapper_float_mex -c 
+
+cxxflags =  -fexceptions -fPIC -fno-omit-frame-pointer -pthread -std=c++11 -D_GNU_SOURCE -DMATLAB_MEX_FILE  -O2 -fwrapv -DNDEBUG -std=c++11 -I "$root" -I "$startdir" -I "$root/interface" -I "$matlabdir/extern/include" -I "." -DMODEL=plasma_nn_wrapper_float_mex -c 
+
+ldflags =  -pthread -Wl,--no-undefined -Wl,-rpath-link,$matlabdir/bin/glnxa64 -shared  -L"$matlabdir/bin/glnxa64" -lmx -lmex -lmat -lm -lstdc++  -o plasma_nn_wrapper_float_mex.mexa64 -lemlrt -lcovrt -lut -lmwmathutil  -Wl,--version-script,plasma_nn_wrapper_float_mex.map
+
+# Build Rules
+rule cc
+    command = $cc $cflags $in -o $out
+
+rule cxx
+    command = $cxx $cxxflags $in -o $out
+
+rule link
+    command = $linker $in $ldflags
+
+rule linkxx
+    command = $linkerxx $in $ldflags
+
+# Build
+build $builddir/plasma_nn_wrapper_float_mex_data.o : cc $root/plasma_nn_wrapper_float_mex_data.c
+build $builddir/rt_nonfinite.o : cc $root/rt_nonfinite.c
+build $builddir/plasma_nn_wrapper_float_mex_initialize.o : cc $root/plasma_nn_wrapper_float_mex_initialize.c
+build $builddir/plasma_nn_wrapper_float_mex_terminate.o : cc $root/plasma_nn_wrapper_float_mex_terminate.c
+build $builddir/plasma_nn_wrapper.o : cc $root/plasma_nn_wrapper.c
+build $builddir/plasma_nn.o : cc $root/plasma_nn.c
+build $builddir/logStmts.o : cc $root/logStmts.c
+build $builddir/custom_mex_logger.o : cc $root/custom_mex_logger.c
+build $builddir/repmat.o : cc $root/repmat.c
+build $builddir/customFetchLoggedData.o : cc $root/customFetchLoggedData.c
+build $builddir/forcePushIntoCloud.o : cc $root/forcePushIntoCloud.c
+build $builddir/_coder_plasma_nn_wrapper_float_mex_api.o : cc $root/interface/_coder_plasma_nn_wrapper_float_mex_api.c
+build $builddir/_coder_plasma_nn_wrapper_float_mex_mex.o : cc $root/interface/_coder_plasma_nn_wrapper_float_mex_mex.c
+build $builddir/plasma_nn_wrapper_float_mex_emxutil.o : cc $root/plasma_nn_wrapper_float_mex_emxutil.c
+build $builddir/plasma_nn_wrapper_float_mex_mexutil.o : cc $root/plasma_nn_wrapper_float_mex_mexutil.c
+build $builddir/_coder_plasma_nn_wrapper_float_mex_info.o : cc $root/interface/_coder_plasma_nn_wrapper_float_mex_info.c
+build $builddir/c_mexapi_version.o : cc $matlabdir/extern/version/c_mexapi_version.c
+
+# Link
+build $root/plasma_nn_wrapper_float_mex.mexa64 : link $builddir/plasma_nn_wrapper_float_mex_data.o $builddir/rt_nonfinite.o $builddir/plasma_nn_wrapper_float_mex_initialize.o $builddir/plasma_nn_wrapper_float_mex_terminate.o $builddir/plasma_nn_wrapper.o $builddir/plasma_nn.o $builddir/logStmts.o $builddir/custom_mex_logger.o $builddir/repmat.o $builddir/customFetchLoggedData.o $builddir/forcePushIntoCloud.o $builddir/_coder_plasma_nn_wrapper_float_mex_api.o $builddir/_coder_plasma_nn_wrapper_float_mex_mex.o $builddir/plasma_nn_wrapper_float_mex_emxutil.o $builddir/plasma_nn_wrapper_float_mex_mexutil.o $builddir/_coder_plasma_nn_wrapper_float_mex_info.o $builddir/c_mexapi_version.o 

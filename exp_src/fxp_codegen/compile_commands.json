@@ -1,0 +1,56 @@
+[
+  {
+    "directory": "/Users/kimberlychan/Library/CloudStorage/GoogleDrive-kchan45@berkeley.edu/My Drive/Research/dnn_generality/DNN_Generality/matlab/fxp_codegen",
+    "command": "/usr/bin/xcrun -sdk macosx12.3 clang -fno-common -arch x86_64 -mmacosx-version-min=10.14 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \".\" -I \"/Users/kimberlychan/Library/CloudStorage/GoogleDrive-kchan45@berkeley.edu/My Drive/Research/dnn_generality/DNN_Generality/matlab\" -I \"./interface\" -I \"/Applications/MATLAB_R2021a.app/extern/include\" -I \".\" -DMODEL=plasma_nn_wrapper_fixpt_mex -c  plasma_nn_wrapper_fixpt_data.c -o build/maci64/plasma_nn_wrapper_fixpt_data.o",
+    "file": "plasma_nn_wrapper_fixpt_data.c",
+    "output": "build/maci64/plasma_nn_wrapper_fixpt_data.o"
+  },
+  {
+    "directory": "/Users/kimberlychan/Library/CloudStorage/GoogleDrive-kchan45@berkeley.edu/My Drive/Research/dnn_generality/DNN_Generality/matlab/fxp_codegen",
+    "command": "/usr/bin/xcrun -sdk macosx12.3 clang -fno-common -arch x86_64 -mmacosx-version-min=10.14 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \".\" -I \"/Users/kimberlychan/Library/CloudStorage/GoogleDrive-kchan45@berkeley.edu/My Drive/Research/dnn_generality/DNN_Generality/matlab\" -I \"./interface\" -I \"/Applications/MATLAB_R2021a.app/extern/include\" -I \".\" -DMODEL=plasma_nn_wrapper_fixpt_mex -c  rt_nonfinite.c -o build/maci64/rt_nonfinite.o",
+    "file": "rt_nonfinite.c",
+    "output": "build/maci64/rt_nonfinite.o"
+  },
+  {
+    "directory": "/Users/kimberlychan/Library/CloudStorage/GoogleDrive-kchan45@berkeley.edu/My Drive/Research/dnn_generality/DNN_Generality/matlab/fxp_codegen",
+    "command": "/usr/bin/xcrun -sdk macosx12.3 clang -fno-common -arch x86_64 -mmacosx-version-min=10.14 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \".\" -I \"/Users/kimberlychan/Library/CloudStorage/GoogleDrive-kchan45@berkeley.edu/My Drive/Research/dnn_generality/DNN_Generality/matlab\" -I \"./interface\" -I \"/Applications/MATLAB_R2021a.app/extern/include\" -I \".\" -DMODEL=plasma_nn_wrapper_fixpt_mex -c  plasma_nn_wrapper_fixpt_initialize.c -o build/maci64/plasma_nn_wrapper_fixpt_initialize.o",
+    "file": "plasma_nn_wrapper_fixpt_initialize.c",
+    "output": "build/maci64/plasma_nn_wrapper_fixpt_initialize.o"
+  },
+  {
+    "directory": "/Users/kimberlychan/Library/CloudStorage/GoogleDrive-kchan45@berkeley.edu/My Drive/Research/dnn_generality/DNN_Generality/matlab/fxp_codegen",
+    "command": "/usr/bin/xcrun -sdk macosx12.3 clang -fno-common -arch x86_64 -mmacosx-version-min=10.14 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \".\" -I \"/Users/kimberlychan/Library/CloudStorage/GoogleDrive-kchan45@berkeley.edu/My Drive/Research/dnn_generality/DNN_Generality/matlab\" -I \"./interface\" -I \"/Applications/MATLAB_R2021a.app/extern/include\" -I \".\" -DMODEL=plasma_nn_wrapper_fixpt_mex -c  plasma_nn_wrapper_fixpt_terminate.c -o build/maci64/plasma_nn_wrapper_fixpt_terminate.o",
+    "file": "plasma_nn_wrapper_fixpt_terminate.c",
+    "output": "build/maci64/plasma_nn_wrapper_fixpt_terminate.o"
+  },
+  {
+    "directory": "/Users/kimberlychan/Library/CloudStorage/GoogleDrive-kchan45@berkeley.edu/My Drive/Research/dnn_generality/DNN_Generality/matlab/fxp_codegen",
+    "command": "/usr/bin/xcrun -sdk macosx12.3 clang -fno-common -arch x86_64 -mmacosx-version-min=10.14 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \".\" -I \"/Users/kimberlychan/Library/CloudStorage/GoogleDrive-kchan45@berkeley.edu/My Drive/Research/dnn_generality/DNN_Generality/matlab\" -I \"./interface\" -I \"/Applications/MATLAB_R2021a.app/extern/include\" -I \".\" -DMODEL=plasma_nn_wrapper_fixpt_mex -c  plasma_nn_wrapper_fixpt.c -o build/maci64/plasma_nn_wrapper_fixpt.o",
+    "file": "plasma_nn_wrapper_fixpt.c",
+    "output": "build/maci64/plasma_nn_wrapper_fixpt.o"
+  },
+  {
+    "directory": "/Users/kimberlychan/Library/CloudStorage/GoogleDrive-kchan45@berkeley.edu/My Drive/Research/dnn_generality/DNN_Generality/matlab/fxp_codegen",
+    "command": "/usr/bin/xcrun -sdk macosx12.3 clang -fno-common -arch x86_64 -mmacosx-version-min=10.14 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \".\" -I \"/Users/kimberlychan/Library/CloudStorage/GoogleDrive-kchan45@berkeley.edu/My Drive/Research/dnn_generality/DNN_Generality/matlab\" -I \"./interface\" -I \"/Applications/MATLAB_R2021a.app/extern/include\" -I \".\" -DMODEL=plasma_nn_wrapper_fixpt_mex -c  interface/_coder_plasma_nn_wrapper_fixpt_api.c -o build/maci64/_coder_plasma_nn_wrapper_fixpt_api.o",
+    "file": "interface/_coder_plasma_nn_wrapper_fixpt_api.c",
+    "output": "build/maci64/_coder_plasma_nn_wrapper_fixpt_api.o"
+  },
+  {
+    "directory": "/Users/kimberlychan/Library/CloudStorage/GoogleDrive-kchan45@berkeley.edu/My Drive/Research/dnn_generality/DNN_Generality/matlab/fxp_codegen",
+    "command": "/usr/bin/xcrun -sdk macosx12.3 clang -fno-common -arch x86_64 -mmacosx-version-min=10.14 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \".\" -I \"/Users/kimberlychan/Library/CloudStorage/GoogleDrive-kchan45@berkeley.edu/My Drive/Research/dnn_generality/DNN_Generality/matlab\" -I \"./interface\" -I \"/Applications/MATLAB_R2021a.app/extern/include\" -I \".\" -DMODEL=plasma_nn_wrapper_fixpt_mex -c  interface/_coder_plasma_nn_wrapper_fixpt_mex.c -o build/maci64/_coder_plasma_nn_wrapper_fixpt_mex.o",
+    "file": "interface/_coder_plasma_nn_wrapper_fixpt_mex.c",
+    "output": "build/maci64/_coder_plasma_nn_wrapper_fixpt_mex.o"
+  },
+  {
+    "directory": "/Users/kimberlychan/Library/CloudStorage/GoogleDrive-kchan45@berkeley.edu/My Drive/Research/dnn_generality/DNN_Generality/matlab/fxp_codegen",
+    "command": "/usr/bin/xcrun -sdk macosx12.3 clang -fno-common -arch x86_64 -mmacosx-version-min=10.14 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \".\" -I \"/Users/kimberlychan/Library/CloudStorage/GoogleDrive-kchan45@berkeley.edu/My Drive/Research/dnn_generality/DNN_Generality/matlab\" -I \"./interface\" -I \"/Applications/MATLAB_R2021a.app/extern/include\" -I \".\" -DMODEL=plasma_nn_wrapper_fixpt_mex -c  interface/_coder_plasma_nn_wrapper_fixpt_info.c -o build/maci64/_coder_plasma_nn_wrapper_fixpt_info.o",
+    "file": "interface/_coder_plasma_nn_wrapper_fixpt_info.c",
+    "output": "build/maci64/_coder_plasma_nn_wrapper_fixpt_info.o"
+  },
+  {
+    "directory": "/Users/kimberlychan/Library/CloudStorage/GoogleDrive-kchan45@berkeley.edu/My Drive/Research/dnn_generality/DNN_Generality/matlab/fxp_codegen",
+    "command": "/usr/bin/xcrun -sdk macosx12.3 clang -fno-common -arch x86_64 -mmacosx-version-min=10.14 -fexceptions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \".\" -I \"/Users/kimberlychan/Library/CloudStorage/GoogleDrive-kchan45@berkeley.edu/My Drive/Research/dnn_generality/DNN_Generality/matlab\" -I \"./interface\" -I \"/Applications/MATLAB_R2021a.app/extern/include\" -I \".\" -DMODEL=plasma_nn_wrapper_fixpt_mex -c  /Applications/MATLAB_R2021a.app/extern/version/c_mexapi_version.c -o build/maci64/c_mexapi_version.o",
+    "file": "/Applications/MATLAB_R2021a.app/extern/version/c_mexapi_version.c",
+    "output": "build/maci64/c_mexapi_version.o"
+  }
+]

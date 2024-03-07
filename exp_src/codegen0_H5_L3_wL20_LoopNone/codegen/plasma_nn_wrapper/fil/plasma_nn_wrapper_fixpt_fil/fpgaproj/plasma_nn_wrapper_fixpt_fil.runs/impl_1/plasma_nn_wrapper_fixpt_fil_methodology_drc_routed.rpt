@@ -1,0 +1,731 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (lin64) Build 2902540 Wed May 27 19:54:35 MDT 2020
+| Date         : Fri Jul 22 13:25:45 2022
+| Host         : kimberlychan-hpomen running 64-bit Ubuntu 20.04.4 LTS
+| Command      : report_methodology -file plasma_nn_wrapper_fixpt_fil_methodology_drc_routed.rpt -pb plasma_nn_wrapper_fixpt_fil_methodology_drc_routed.pb -rpx plasma_nn_wrapper_fixpt_fil_methodology_drc_routed.rpx
+| Design       : plasma_nn_wrapper_fixpt_fil
+| Device       : xc7z020clg400-1
+| Speed File   : -1
+| Design State : Fully Routed
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 137
++-----------+----------+--------------------------------------------------------+------------+
+| Rule      | Severity | Description                                            | Violations |
++-----------+----------+--------------------------------------------------------+------------+
+| PDRC-190  | Warning  | Suboptimally placed synchronized register chain        | 2          |
+| SYNTH-13  | Warning  | combinational multiplier                               | 84         |
+| TIMING-9  | Warning  | Unknown CDC Logic                                      | 1          |
+| TIMING-16 | Warning  | Large setup violation                                  | 40         |
+| TIMING-24 | Warning  | Overridden Max delay datapath only                     | 6          |
+| TIMING-28 | Warning  | Auto-derived clock referenced by a timing constraint   | 2          |
+| XDCC-1    | Warning  | Scoped Clock constraint overwritten with the same name | 1          |
+| XDCC-7    | Warning  | Scoped Clock constraint overwritten on the same source | 1          |
++-----------+----------+--------------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+PDRC-190#1 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell u_jtag_mac/u_post_chif_fifo/u_jtag_mac_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d2_reg in site SLICE_X61Y78 is part of a synchronized register chain that is suboptimally placed as the load FDSE cell u_jtag_mac/u_post_chif_fifo/u_jtag_mac_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d3_reg is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#2 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell u_jtag_mac/u_pre_chif_fifo/u_jtag_mac_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d2_reg in site SLICE_X45Y64 is part of a synchronized register chain that is suboptimally placed as the load FDSE cell u_jtag_mac/u_pre_chif_fifo/u_jtag_mac_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d3_reg is not placed in the same (SLICE) site.
+Related violations: <none>
+
+SYNTH-13#1 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp3.
+Related violations: <none>
+
+SYNTH-13#2 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp3__0.
+Related violations: <none>
+
+SYNTH-13#3 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp3__1.
+Related violations: <none>
+
+SYNTH-13#4 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp3__2.
+Related violations: <none>
+
+SYNTH-13#5 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp3__3.
+Related violations: <none>
+
+SYNTH-13#6 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp4.
+Related violations: <none>
+
+SYNTH-13#7 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp4__0.
+Related violations: <none>
+
+SYNTH-13#8 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp4__1.
+Related violations: <none>
+
+SYNTH-13#9 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp4__2.
+Related violations: <none>
+
+SYNTH-13#10 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp5.
+Related violations: <none>
+
+SYNTH-13#11 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp5__0.
+Related violations: <none>
+
+SYNTH-13#12 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp5__1.
+Related violations: <none>
+
+SYNTH-13#13 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp5__2.
+Related violations: <none>
+
+SYNTH-13#14 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp5__3.
+Related violations: <none>
+
+SYNTH-13#15 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp5__4.
+Related violations: <none>
+
+SYNTH-13#16 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp5__5.
+Related violations: <none>
+
+SYNTH-13#17 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_04.
+Related violations: <none>
+
+SYNTH-13#18 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_04__0.
+Related violations: <none>
+
+SYNTH-13#19 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_04__1.
+Related violations: <none>
+
+SYNTH-13#20 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_04__2.
+Related violations: <none>
+
+SYNTH-13#21 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_04__3.
+Related violations: <none>
+
+SYNTH-13#22 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_05.
+Related violations: <none>
+
+SYNTH-13#23 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_05__0.
+Related violations: <none>
+
+SYNTH-13#24 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_05__1.
+Related violations: <none>
+
+SYNTH-13#25 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_05__2.
+Related violations: <none>
+
+SYNTH-13#26 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_05__3.
+Related violations: <none>
+
+SYNTH-13#27 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_06.
+Related violations: <none>
+
+SYNTH-13#28 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_06__0.
+Related violations: <none>
+
+SYNTH-13#29 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_06__1.
+Related violations: <none>
+
+SYNTH-13#30 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_06__2.
+Related violations: <none>
+
+SYNTH-13#31 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_06__3.
+Related violations: <none>
+
+SYNTH-13#32 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_07.
+Related violations: <none>
+
+SYNTH-13#33 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_07__0.
+Related violations: <none>
+
+SYNTH-13#34 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_07__1.
+Related violations: <none>
+
+SYNTH-13#35 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_07__2.
+Related violations: <none>
+
+SYNTH-13#36 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_07__3.
+Related violations: <none>
+
+SYNTH-13#37 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_07__4.
+Related violations: <none>
+
+SYNTH-13#38 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_07__5.
+Related violations: <none>
+
+SYNTH-13#39 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_07__6.
+Related violations: <none>
+
+SYNTH-13#40 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_07__7.
+Related violations: <none>
+
+SYNTH-13#41 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_07__8.
+Related violations: <none>
+
+SYNTH-13#42 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_13.
+Related violations: <none>
+
+SYNTH-13#43 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_13__0.
+Related violations: <none>
+
+SYNTH-13#44 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_13__1.
+Related violations: <none>
+
+SYNTH-13#45 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_13__10.
+Related violations: <none>
+
+SYNTH-13#46 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_13__2.
+Related violations: <none>
+
+SYNTH-13#47 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_13__3.
+Related violations: <none>
+
+SYNTH-13#48 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_13__4.
+Related violations: <none>
+
+SYNTH-13#49 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_13__5.
+Related violations: <none>
+
+SYNTH-13#50 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_13__6.
+Related violations: <none>
+
+SYNTH-13#51 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_13__7.
+Related violations: <none>
+
+SYNTH-13#52 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_13__8.
+Related violations: <none>
+
+SYNTH-13#53 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_13__9.
+Related violations: <none>
+
+SYNTH-13#54 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_14.
+Related violations: <none>
+
+SYNTH-13#55 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_14__0.
+Related violations: <none>
+
+SYNTH-13#56 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_14__1.
+Related violations: <none>
+
+SYNTH-13#57 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_14__2.
+Related violations: <none>
+
+SYNTH-13#58 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_15.
+Related violations: <none>
+
+SYNTH-13#59 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_15__0.
+Related violations: <none>
+
+SYNTH-13#60 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_15__1.
+Related violations: <none>
+
+SYNTH-13#61 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_15__2.
+Related violations: <none>
+
+SYNTH-13#62 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_16.
+Related violations: <none>
+
+SYNTH-13#63 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_16__0.
+Related violations: <none>
+
+SYNTH-13#64 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_16__1.
+Related violations: <none>
+
+SYNTH-13#65 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_16__2.
+Related violations: <none>
+
+SYNTH-13#66 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_16__3.
+Related violations: <none>
+
+SYNTH-13#67 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_17.
+Related violations: <none>
+
+SYNTH-13#68 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_17__0.
+Related violations: <none>
+
+SYNTH-13#69 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_17__1.
+Related violations: <none>
+
+SYNTH-13#70 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_17__2.
+Related violations: <none>
+
+SYNTH-13#71 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_17__3.
+Related violations: <none>
+
+SYNTH-13#72 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/plasma_nn_wrapper_fixpt_tmp_17__4.
+Related violations: <none>
+
+SYNTH-13#73 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/y1_14.
+Related violations: <none>
+
+SYNTH-13#74 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/y1_15.
+Related violations: <none>
+
+SYNTH-13#75 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/y1_16.
+Related violations: <none>
+
+SYNTH-13#76 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/y1_17.
+Related violations: <none>
+
+SYNTH-13#77 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/y1_17__0.
+Related violations: <none>
+
+SYNTH-13#78 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/y1_22.
+Related violations: <none>
+
+SYNTH-13#79 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/y1_22__0.
+Related violations: <none>
+
+SYNTH-13#80 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/y1_22__1.
+Related violations: <none>
+
+SYNTH-13#81 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/y1_24.
+Related violations: <none>
+
+SYNTH-13#82 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/y1_26.
+Related violations: <none>
+
+SYNTH-13#83 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/y1_27.
+Related violations: <none>
+
+SYNTH-13#84 Warning
+combinational multiplier  
+Detected combinational multiplier in DSP instance u_mwfil_chiftop/u_dut/u_plasma_nn_wrapper_fixpt/y1_27__0.
+Related violations: <none>
+
+TIMING-9#1 Warning
+Unknown CDC Logic  
+One or more asynchronous Clock Domain Crossing has been detected between 2 clock domains through a set_false_path or a set_clock_groups or set_max_delay -datapath_only constraint but no double-registers logic synchronizer has been found on the side of the capture clock. It is recommended to run report_cdc for a complete and detailed CDC coverage. Please consider using XPM_CDC to avoid Critical severities
+Related violations: <none>
+
+TIMING-16#1 Warning
+Large setup violation  
+There is a large setup violation of -20.798 ns between u_mwfil_chiftop/u_mwfil_chifcore/NormalBlock.u_b2dfifo/empty_tmp_d1_reg_replica_1/C (clocked by clk_out1_clk_wiz_0) and u_mwfil_chiftop/u_mwfil_chifcore/u_d2bfifo/u_dpscram/mem_reg_0_15_0_5/RAMA/I (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#2 Warning
+Large setup violation  
+There is a large setup violation of -20.985 ns between u_mwfil_chiftop/u_mwfil_chifcore/NormalBlock.u_b2dfifo/empty_tmp_d1_reg_replica_1/C (clocked by clk_out1_clk_wiz_0) and u_mwfil_chiftop/u_mwfil_chifcore/u_d2bfifo/u_dpscram/mem_reg_0_15_0_5/RAMB_D1/I (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#3 Warning
+Large setup violation  
+There is a large setup violation of -21.002 ns between u_mwfil_chiftop/u_mwfil_chifcore/NormalBlock.u_b2dfifo/empty_tmp_d1_reg_replica_1/C (clocked by clk_out1_clk_wiz_0) and u_mwfil_chiftop/u_mwfil_chifcore/u_d2bfifo/u_dpscram/mem_reg_0_15_6_11/RAMA/I (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#4 Warning
+Large setup violation  
+There is a large setup violation of -21.012 ns between u_mwfil_chiftop/u_mwfil_chifcore/NormalBlock.u_b2dfifo/empty_tmp_d1_reg_replica_1/C (clocked by clk_out1_clk_wiz_0) and u_mwfil_chiftop/u_mwfil_chifcore/u_d2bfifo/u_dpscram/mem_reg_0_15_0_5/RAMA_D1/I (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#5 Warning
+Large setup violation  
+There is a large setup violation of -21.049 ns between u_mwfil_chiftop/u_mwfil_chifcore/NormalBlock.u_b2dfifo/empty_tmp_d1_reg_replica_1/C (clocked by clk_out1_clk_wiz_0) and u_mwfil_chiftop/u_mwfil_chifcore/u_d2bfifo/u_dpscram/mem_reg_0_15_0_5/RAMB/I (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#6 Warning
+Large setup violation  
+There is a large setup violation of -21.135 ns between u_mwfil_chiftop/u_mwfil_chifcore/NormalBlock.u_b2dfifo/empty_tmp_d1_reg_replica_1/C (clocked by clk_out1_clk_wiz_0) and u_mwfil_chiftop/u_mwfil_chifcore/u_d2bfifo/u_dpscram/mem_reg_0_15_0_5/RAMC/I (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#7 Warning
+Large setup violation  
+There is a large setup violation of -21.144 ns between u_mwfil_chiftop/u_mwfil_chifcore/NormalBlock.u_b2dfifo/empty_tmp_d1_reg_replica_1/C (clocked by clk_out1_clk_wiz_0) and u_mwfil_chiftop/u_mwfil_chifcore/u_d2bfifo/u_dpscram/mem_reg_0_15_6_11/RAMB/I (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#8 Warning
+Large setup violation  
+There is a large setup violation of -21.181 ns between u_mwfil_chiftop/u_mwfil_chifcore/NormalBlock.u_b2dfifo/empty_tmp_d1_reg_replica_1/C (clocked by clk_out1_clk_wiz_0) and u_mwfil_chiftop/u_mwfil_chifcore/u_d2bfifo/u_dpscram/mem_reg_0_15_6_11/RAMA_D1/I (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#9 Warning
+Large setup violation  
+There is a large setup violation of -21.314 ns between u_mwfil_chiftop/u_mwfil_chifcore/NormalBlock.u_b2dfifo/empty_tmp_d1_reg_replica_1/C (clocked by clk_out1_clk_wiz_0) and u_mwfil_chiftop/u_mwfil_chifcore/u_d2bfifo/u_dpscram/mem_reg_0_15_6_11/RAMC_D1/I (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#10 Warning
+Large setup violation  
+There is a large setup violation of -21.357 ns between u_mwfil_chiftop/u_mwfil_chifcore/NormalBlock.u_b2dfifo/empty_tmp_d1_reg_replica_1/C (clocked by clk_out1_clk_wiz_0) and u_mwfil_chiftop/u_mwfil_chifcore/u_d2bfifo/u_dpscram/mem_reg_0_15_0_5/RAMC_D1/I (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#11 Warning
+Large setup violation  
+There is a large setup violation of -21.427 ns between u_mwfil_chiftop/u_mwfil_chifcore/NormalBlock.u_b2dfifo/empty_tmp_d1_reg_replica_1/C (clocked by clk_out1_clk_wiz_0) and u_mwfil_chiftop/u_mwfil_chifcore/u_d2bfifo/u_dpscram/mem_reg_0_15_12_17/RAMA/I (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#12 Warning
+Large setup violation  
+There is a large setup violation of -21.444 ns between u_mwfil_chiftop/u_mwfil_chifcore/NormalBlock.u_b2dfifo/empty_tmp_d1_reg_replica_1/C (clocked by clk_out1_clk_wiz_0) and u_mwfil_chiftop/u_mwfil_chifcore/u_d2bfifo/u_dpscram/mem_reg_0_15_6_11/RAMB_D1/I (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#13 Warning
+Large setup violation  
+There is a large setup violation of -21.486 ns between u_mwfil_chiftop/u_mwfil_chifcore/NormalBlock.u_b2dfifo/empty_tmp_d1_reg_replica_1/C (clocked by clk_out1_clk_wiz_0) and u_mwfil_chiftop/u_mwfil_chifcore/u_d2bfifo/u_dpscram/mem_reg_0_15_6_11/RAMC/I (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#14 Warning
+Large setup violation  
+There is a large setup violation of -21.588 ns between u_mwfil_chiftop/u_mwfil_chifcore/NormalBlock.u_b2dfifo/empty_tmp_d1_reg_replica_1/C (clocked by clk_out1_clk_wiz_0) and u_mwfil_chiftop/u_mwfil_chifcore/u_d2bfifo/u_dpscram/mem_reg_0_15_30_35/RAMB/I (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#15 Warning
+Large setup violation  
+There is a large setup violation of -21.591 ns between u_mwfil_chiftop/u_mwfil_chifcore/NormalBlock.u_b2dfifo/empty_tmp_d1_reg_replica_1/C (clocked by clk_out1_clk_wiz_0) and u_mwfil_chiftop/u_mwfil_chifcore/u_d2bfifo/u_dpscram/mem_reg_0_15_12_17/RAMA_D1/I (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#16 Warning
+Large setup violation  
+There is a large setup violation of -21.628 ns between u_mwfil_chiftop/u_mwfil_chifcore/NormalBlock.u_b2dfifo/empty_tmp_d1_reg_replica_1/C (clocked by clk_out1_clk_wiz_0) and u_mwfil_chiftop/u_mwfil_chifcore/u_d2bfifo/u_dpscram/mem_reg_0_15_12_17/RAMB/I (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#17 Warning
+Large setup violation  
+There is a large setup violation of -21.636 ns between u_mwfil_chiftop/u_mwfil_chifcore/NormalBlock.u_b2dfifo/empty_tmp_d1_reg_replica_1/C (clocked by clk_out1_clk_wiz_0) and u_mwfil_chiftop/u_mwfil_chifcore/u_d2bfifo/u_dpscram/mem_reg_0_15_12_17/RAMC/I (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#18 Warning
+Large setup violation  
+There is a large setup violation of -21.648 ns between u_mwfil_chiftop/u_mwfil_chifcore/NormalBlock.u_b2dfifo/empty_tmp_d1_reg_replica_1/C (clocked by clk_out1_clk_wiz_0) and u_mwfil_chiftop/u_mwfil_chifcore/u_d2bfifo/u_dpscram/mem_reg_0_15_24_29/RAMC_D1/I (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#19 Warning
+Large setup violation  
+There is a large setup violation of -21.701 ns between u_mwfil_chiftop/u_mwfil_chifcore/NormalBlock.u_b2dfifo/empty_tmp_d1_reg_replica_1/C (clocked by clk_out1_clk_wiz_0) and u_mwfil_chiftop/u_mwfil_chifcore/u_d2bfifo/u_dpscram/mem_reg_0_15_24_29/RAMA/I (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#20 Warning
+Large setup violation  
+There is a large setup violation of -21.701 ns between u_mwfil_chiftop/u_mwfil_chifcore/NormalBlock.u_b2dfifo/empty_tmp_d1_reg_replica_1/C (clocked by clk_out1_clk_wiz_0) and u_mwfil_chiftop/u_mwfil_chifcore/u_d2bfifo/u_dpscram/mem_reg_0_15_42_47/RAMA/I (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#21 Warning
+Large setup violation  
+There is a large setup violation of -21.702 ns between u_mwfil_chiftop/u_mwfil_chifcore/NormalBlock.u_b2dfifo/empty_tmp_d1_reg_replica_1/C (clocked by clk_out1_clk_wiz_0) and u_mwfil_chiftop/u_mwfil_chifcore/u_d2bfifo/u_dpscram/mem_reg_0_15_36_41/RAMC/I (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#22 Warning
+Large setup violation  
+There is a large setup violation of -21.703 ns between u_mwfil_chiftop/u_mwfil_chifcore/NormalBlock.u_b2dfifo/empty_tmp_d1_reg_replica_1/C (clocked by clk_out1_clk_wiz_0) and u_mwfil_chiftop/u_mwfil_chifcore/u_d2bfifo/u_dpscram/mem_reg_0_15_30_35/RAMC/I (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#23 Warning
+Large setup violation  
+There is a large setup violation of -21.706 ns between u_mwfil_chiftop/u_mwfil_chifcore/NormalBlock.u_b2dfifo/empty_tmp_d1_reg_replica_1/C (clocked by clk_out1_clk_wiz_0) and u_mwfil_chiftop/u_mwfil_chifcore/u_d2bfifo/u_dpscram/mem_reg_0_15_30_35/RAMA/I (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#24 Warning
+Large setup violation  
+There is a large setup violation of -21.726 ns between u_mwfil_chiftop/u_mwfil_chifcore/NormalBlock.u_b2dfifo/empty_tmp_d1_reg_replica_1/C (clocked by clk_out1_clk_wiz_0) and u_mwfil_chiftop/u_mwfil_chifcore/u_d2bfifo/u_dpscram/mem_reg_0_15_24_29/RAMB/I (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#25 Warning
+Large setup violation  
+There is a large setup violation of -21.734 ns between u_mwfil_chiftop/u_mwfil_chifcore/NormalBlock.u_b2dfifo/empty_tmp_d1_reg_replica_1/C (clocked by clk_out1_clk_wiz_0) and u_mwfil_chiftop/u_mwfil_chifcore/u_d2bfifo/u_dpscram/mem_reg_0_15_12_17/RAMB_D1/I (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#26 Warning
+Large setup violation  
+There is a large setup violation of -21.753 ns between u_mwfil_chiftop/u_mwfil_chifcore/NormalBlock.u_b2dfifo/empty_tmp_d1_reg_replica_1/C (clocked by clk_out1_clk_wiz_0) and u_mwfil_chiftop/u_mwfil_chifcore/u_d2bfifo/u_dpscram/mem_reg_0_15_36_41/RAMA/I (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#27 Warning
+Large setup violation  
+There is a large setup violation of -21.757 ns between u_mwfil_chiftop/u_mwfil_chifcore/NormalBlock.u_b2dfifo/empty_tmp_d1_reg_replica_1/C (clocked by clk_out1_clk_wiz_0) and u_mwfil_chiftop/u_mwfil_chifcore/u_d2bfifo/u_dpscram/mem_reg_0_15_24_29/RAMB_D1/I (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#28 Warning
+Large setup violation  
+There is a large setup violation of -21.768 ns between u_mwfil_chiftop/u_mwfil_chifcore/NormalBlock.u_b2dfifo/empty_tmp_d1_reg_replica_1/C (clocked by clk_out1_clk_wiz_0) and u_mwfil_chiftop/u_mwfil_chifcore/u_d2bfifo/u_dpscram/mem_reg_0_15_24_29/RAMC/I (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#29 Warning
+Large setup violation  
+There is a large setup violation of -21.777 ns between u_mwfil_chiftop/u_mwfil_chifcore/NormalBlock.u_b2dfifo/empty_tmp_d1_reg_replica_1/C (clocked by clk_out1_clk_wiz_0) and u_mwfil_chiftop/u_mwfil_chifcore/u_d2bfifo/u_dpscram/mem_reg_0_15_36_41/RAMB/I (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#30 Warning
+Large setup violation  
+There is a large setup violation of -21.786 ns between u_mwfil_chiftop/u_mwfil_chifcore/NormalBlock.u_b2dfifo/empty_tmp_d1_reg_replica_1/C (clocked by clk_out1_clk_wiz_0) and u_mwfil_chiftop/u_mwfil_chifcore/u_d2bfifo/u_dpscram/mem_reg_0_15_30_35/RAMA_D1/I (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#31 Warning
+Large setup violation  
+There is a large setup violation of -21.787 ns between u_mwfil_chiftop/u_mwfil_chifcore/NormalBlock.u_b2dfifo/empty_tmp_d1_reg_replica_1/C (clocked by clk_out1_clk_wiz_0) and u_mwfil_chiftop/u_mwfil_chifcore/u_d2bfifo/u_dpscram/mem_reg_0_15_24_29/RAMA_D1/I (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#32 Warning
+Large setup violation  
+There is a large setup violation of -21.791 ns between u_mwfil_chiftop/u_mwfil_chifcore/NormalBlock.u_b2dfifo/empty_tmp_d1_reg_replica_1/C (clocked by clk_out1_clk_wiz_0) and u_mwfil_chiftop/u_mwfil_chifcore/u_d2bfifo/u_dpscram/mem_reg_0_15_30_35/RAMC_D1/I (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#33 Warning
+Large setup violation  
+There is a large setup violation of -21.809 ns between u_mwfil_chiftop/u_mwfil_chifcore/NormalBlock.u_b2dfifo/empty_tmp_d1_reg_replica_1/C (clocked by clk_out1_clk_wiz_0) and u_mwfil_chiftop/u_mwfil_chifcore/u_d2bfifo/u_dpscram/mem_reg_0_15_36_41/RAMC_D1/I (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#34 Warning
+Large setup violation  
+There is a large setup violation of -21.867 ns between u_mwfil_chiftop/u_mwfil_chifcore/NormalBlock.u_b2dfifo/empty_tmp_d1_reg_replica_1/C (clocked by clk_out1_clk_wiz_0) and u_mwfil_chiftop/u_mwfil_chifcore/u_d2bfifo/u_dpscram/mem_reg_0_15_42_47/RAMA_D1/I (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#35 Warning
+Large setup violation  
+There is a large setup violation of -21.897 ns between u_mwfil_chiftop/u_mwfil_chifcore/NormalBlock.u_b2dfifo/empty_tmp_d1_reg_replica_1/C (clocked by clk_out1_clk_wiz_0) and u_mwfil_chiftop/u_mwfil_chifcore/u_d2bfifo/u_dpscram/mem_reg_0_15_18_23/RAMA/I (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#36 Warning
+Large setup violation  
+There is a large setup violation of -21.897 ns between u_mwfil_chiftop/u_mwfil_chifcore/NormalBlock.u_b2dfifo/empty_tmp_d1_reg_replica_1/C (clocked by clk_out1_clk_wiz_0) and u_mwfil_chiftop/u_mwfil_chifcore/u_d2bfifo/u_dpscram/mem_reg_0_15_36_41/RAMB_D1/I (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#37 Warning
+Large setup violation  
+There is a large setup violation of -21.908 ns between u_mwfil_chiftop/u_mwfil_chifcore/NormalBlock.u_b2dfifo/empty_tmp_d1_reg_replica_1/C (clocked by clk_out1_clk_wiz_0) and u_mwfil_chiftop/u_mwfil_chifcore/u_d2bfifo/u_dpscram/mem_reg_0_15_30_35/RAMB_D1/I (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#38 Warning
+Large setup violation  
+There is a large setup violation of -21.927 ns between u_mwfil_chiftop/u_mwfil_chifcore/NormalBlock.u_b2dfifo/empty_tmp_d1_reg_replica_1/C (clocked by clk_out1_clk_wiz_0) and u_mwfil_chiftop/u_mwfil_chifcore/u_d2bfifo/u_dpscram/mem_reg_0_15_36_41/RAMA_D1/I (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#39 Warning
+Large setup violation  
+There is a large setup violation of -21.983 ns between u_mwfil_chiftop/u_mwfil_chifcore/NormalBlock.u_b2dfifo/empty_tmp_d1_reg_replica_1/C (clocked by clk_out1_clk_wiz_0) and u_mwfil_chiftop/u_mwfil_chifcore/u_d2bfifo/u_dpscram/mem_reg_0_15_12_17/RAMC_D1/I (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#40 Warning
+Large setup violation  
+There is a large setup violation of -21.994 ns between u_mwfil_chiftop/u_mwfil_chifcore/NormalBlock.u_b2dfifo/empty_tmp_d1_reg_replica_1/C (clocked by clk_out1_clk_wiz_0) and u_mwfil_chiftop/u_mwfil_chifcore/u_d2bfifo/u_dpscram/mem_reg_0_15_18_23/RAMA_D1/I (clocked by clk_out1_clk_wiz_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-24#1 Warning
+Overridden Max delay datapath only  
+An asynchronous set_clock_groups or a set_false path (see constraint position 5 in the Timing Constraints window in Vivado IDE) between clocks clk_out1_clk_wiz_0 and TCK overrides a set_max_delay -datapath_only (position 11). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#2 Warning
+Overridden Max delay datapath only  
+An asynchronous set_clock_groups or a set_false path (see constraint position 5 in the Timing Constraints window in Vivado IDE) between clocks clk_out1_clk_wiz_0 and TCK overrides a set_max_delay -datapath_only (position 15). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#3 Warning
+Overridden Max delay datapath only  
+An asynchronous set_clock_groups or a set_false path (see constraint position 5 in the Timing Constraints window in Vivado IDE) between clocks clk_out1_clk_wiz_0 and TCK overrides a set_max_delay -datapath_only (position 9). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#4 Warning
+Overridden Max delay datapath only  
+An asynchronous set_clock_groups or a set_false path (see constraint position 6 in the Timing Constraints window in Vivado IDE) between clocks TCK and clk_out1_clk_wiz_0 overrides a set_max_delay -datapath_only (position 13). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#5 Warning
+Overridden Max delay datapath only  
+An asynchronous set_clock_groups or a set_false path (see constraint position 6 in the Timing Constraints window in Vivado IDE) between clocks TCK and clk_out1_clk_wiz_0 overrides a set_max_delay -datapath_only (position 17). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#6 Warning
+Overridden Max delay datapath only  
+An asynchronous set_clock_groups or a set_false path (see constraint position 6 in the Timing Constraints window in Vivado IDE) between clocks TCK and clk_out1_clk_wiz_0 overrides a set_max_delay -datapath_only (position 7). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-28#1 Warning
+Auto-derived clock referenced by a timing constraint  
+The auto-derived clock clk_out1_clk_wiz_0 is referenced by name inside timing constraint (see constraint position 5 in the Timing Constraint window in Vivado IDE). It is recommended to reference an auto-derived clock by the pin name attached to the clock: get_clocks -of_objects [get_pins u_clk_wiz_0/inst/mmcm_adv_inst/CLKOUT0]
+Related violations: <none>
+
+TIMING-28#2 Warning
+Auto-derived clock referenced by a timing constraint  
+The auto-derived clock clk_out1_clk_wiz_0 is referenced by name inside timing constraint (see constraint position 6 in the Timing Constraint window in Vivado IDE). It is recommended to reference an auto-derived clock by the pin name attached to the clock: get_clocks -of_objects [get_pins u_clk_wiz_0/inst/mmcm_adv_inst/CLKOUT0]
+Related violations: <none>
+
+XDCC-1#1 Warning
+Scoped Clock constraint overwritten with the same name  
+A new clock constraint create_clock overrides a previous scoped clock constraint with the same name. It is not recommended to override a scoped (typically an IP) clock constraint and could result in unexpected behaviors.
+New: create_clock -period 8.000 -name sysclk -waveform {0.000 4.000} [get_ports sysclk] (Source: /home/kimberlychan/Desktop/DNN_Generality/matlab/codegen0_H5_L3_wL20_LoopNone/codegen/plasma_nn_wrapper/fil/plasma_nn_wrapper_fixpt_fil/filsrc/plasma_nn_wrapper_fixpt_fil.xdc (Line: 1))
+Previous: create_clock -period 8.000 [get_ports sysclk] (Source: /home/kimberlychan/Desktop/DNN_Generality/matlab/codegen0_H5_L3_wL20_LoopNone/codegen/plasma_nn_wrapper/fil/plasma_nn_wrapper_fixpt_fil/fpgaproj/plasma_nn_wrapper_fixpt_fil.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc (Line: 56))
+Related violations: <none>
+
+XDCC-7#1 Warning
+Scoped Clock constraint overwritten on the same source  
+A new clock constraint create_clock overrides a previous scoped clock constraint defined on the same source. It is not recommended to override a scoped (typically an IP) clock constraint and could result in unexpected behaviors.
+New: create_clock -period 8.000 -name sysclk -waveform {0.000 4.000} [get_ports sysclk] (Source: /home/kimberlychan/Desktop/DNN_Generality/matlab/codegen0_H5_L3_wL20_LoopNone/codegen/plasma_nn_wrapper/fil/plasma_nn_wrapper_fixpt_fil/filsrc/plasma_nn_wrapper_fixpt_fil.xdc (Line: 1))
+Previous: create_clock -period 8.000 [get_ports sysclk] (Source: /home/kimberlychan/Desktop/DNN_Generality/matlab/codegen0_H5_L3_wL20_LoopNone/codegen/plasma_nn_wrapper/fil/plasma_nn_wrapper_fixpt_fil/fpgaproj/plasma_nn_wrapper_fixpt_fil.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc (Line: 56))
+Related violations: <none>
+
+

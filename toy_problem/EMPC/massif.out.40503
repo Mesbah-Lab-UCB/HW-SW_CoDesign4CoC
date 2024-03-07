@@ -1,0 +1,451 @@
+desc: (none)
+cmd: ./empc
+time_unit: i
+#-----------
+snapshot=0
+#-----------
+time=0
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=1
+#-----------
+time=145991
+mem_heap_B=32
+mem_heap_extra_B=8
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=2
+#-----------
+time=146029
+mem_heap_B=36
+mem_heap_extra_B=28
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=3
+#-----------
+time=146451
+mem_heap_B=4132
+mem_heap_extra_B=36
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=4
+#-----------
+time=150615
+mem_heap_B=4164
+mem_heap_extra_B=44
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=5
+#-----------
+time=150653
+mem_heap_B=4172
+mem_heap_extra_B=60
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=6
+#-----------
+time=150739
+mem_heap_B=4204
+mem_heap_extra_B=68
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=7
+#-----------
+time=150777
+mem_heap_B=4208
+mem_heap_extra_B=88
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=8
+#-----------
+time=150853
+mem_heap_B=4240
+mem_heap_extra_B=96
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=9
+#-----------
+time=150891
+mem_heap_B=4244
+mem_heap_extra_B=116
+mem_stacks_B=0
+heap_tree=detailed
+n3: 4244 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 4096 0x48DCD03: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 4096 0x48ECECF: _IO_doallocbuf (genops.c:347)
+   n1: 4096 0x48EBCA3: _IO_file_underflow@@GLIBC_2.2.5 (fileops.c:486)
+    n1: 4096 0x48ECF85: _IO_default_uflow (genops.c:362)
+     n1: 4096 0x48BF27F: __vfscanf_internal (vfscanf-internal.c:627)
+      n1: 4096 0x48BE161: __isoc99_scanf (isoc99_scanf.c:30)
+       n0: 4096 0x1091DF: main (in /home/kimberlychan/Desktop/DNN_Generality/toy_problem/EMPC/empc)
+ n1: 96 0x10A566: emxInit_real_T (in /home/kimberlychan/Desktop/DNN_Generality/toy_problem/EMPC/empc)
+  n0: 96 in 3 places, all below massif's threshold (1.00%)
+ n0: 52 in 3 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=10
+#-----------
+time=150967
+mem_heap_B=4276
+mem_heap_extra_B=124
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=11
+#-----------
+time=151005
+mem_heap_B=4284
+mem_heap_extra_B=140
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=12
+#-----------
+time=151079
+mem_heap_B=4316
+mem_heap_extra_B=148
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=13
+#-----------
+time=151117
+mem_heap_B=4324
+mem_heap_extra_B=164
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=14
+#-----------
+time=151280
+mem_heap_B=6372
+mem_heap_extra_B=172
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=15
+#-----------
+time=165144
+mem_heap_B=6628
+mem_heap_extra_B=180
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=16
+#-----------
+time=169601
+mem_heap_B=6756
+mem_heap_extra_B=188
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=17
+#-----------
+time=169956
+mem_heap_B=6884
+mem_heap_extra_B=196
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=18
+#-----------
+time=170126
+mem_heap_B=7012
+mem_heap_extra_B=204
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=19
+#-----------
+time=7345949
+mem_heap_B=7012
+mem_heap_extra_B=204
+mem_stacks_B=0
+heap_tree=peak
+n5: 7012 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 4096 0x48DCD03: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 4096 0x48ECECF: _IO_doallocbuf (genops.c:347)
+   n1: 4096 0x48EBCA3: _IO_file_underflow@@GLIBC_2.2.5 (fileops.c:486)
+    n1: 4096 0x48ECF85: _IO_default_uflow (genops.c:362)
+     n1: 4096 0x48BF27F: __vfscanf_internal (vfscanf-internal.c:627)
+      n1: 4096 0x48BE161: __isoc99_scanf (isoc99_scanf.c:30)
+       n0: 4096 0x1091DF: main (in /home/kimberlychan/Desktop/DNN_Generality/toy_problem/EMPC/empc)
+ n4: 2432 0x10A377: emxEnsureCapacity_real_T (in /home/kimberlychan/Desktop/DNN_Generality/toy_problem/EMPC/empc)
+  n1: 2048 0x1097D0: empc (in /home/kimberlychan/Desktop/DNN_Generality/toy_problem/EMPC/empc)
+   n0: 2048 0x1091FB: main (in /home/kimberlychan/Desktop/DNN_Generality/toy_problem/EMPC/empc)
+  n1: 128 0x109ABC: empc (in /home/kimberlychan/Desktop/DNN_Generality/toy_problem/EMPC/empc)
+   n0: 128 0x1091FB: main (in /home/kimberlychan/Desktop/DNN_Generality/toy_problem/EMPC/empc)
+  n1: 128 0x109BFB: empc (in /home/kimberlychan/Desktop/DNN_Generality/toy_problem/EMPC/empc)
+   n0: 128 0x1091FB: main (in /home/kimberlychan/Desktop/DNN_Generality/toy_problem/EMPC/empc)
+  n1: 128 0x109CCA: empc (in /home/kimberlychan/Desktop/DNN_Generality/toy_problem/EMPC/empc)
+   n0: 128 0x1091FB: main (in /home/kimberlychan/Desktop/DNN_Generality/toy_problem/EMPC/empc)
+ n1: 256 0x10A1C7: emxEnsureCapacity_boolean_T (in /home/kimberlychan/Desktop/DNN_Generality/toy_problem/EMPC/empc)
+  n1: 256 0x109606: empc (in /home/kimberlychan/Desktop/DNN_Generality/toy_problem/EMPC/empc)
+   n0: 256 0x1091FB: main (in /home/kimberlychan/Desktop/DNN_Generality/toy_problem/EMPC/empc)
+ n1: 160 0x10A566: emxInit_real_T (in /home/kimberlychan/Desktop/DNN_Generality/toy_problem/EMPC/empc)
+  n0: 160 in 5 places, all below massif's threshold (1.00%)
+ n0: 68 in 3 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=20
+#-----------
+time=7345949
+mem_heap_B=6884
+mem_heap_extra_B=196
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=21
+#-----------
+time=7345981
+mem_heap_B=6876
+mem_heap_extra_B=180
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=22
+#-----------
+time=7346011
+mem_heap_B=6844
+mem_heap_extra_B=172
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=23
+#-----------
+time=7346056
+mem_heap_B=6716
+mem_heap_extra_B=164
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=24
+#-----------
+time=7346088
+mem_heap_B=6708
+mem_heap_extra_B=148
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=25
+#-----------
+time=7346118
+mem_heap_B=6676
+mem_heap_extra_B=140
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=26
+#-----------
+time=7346163
+mem_heap_B=6420
+mem_heap_extra_B=132
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=27
+#-----------
+time=7346195
+mem_heap_B=6416
+mem_heap_extra_B=112
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=28
+#-----------
+time=7346225
+mem_heap_B=6384
+mem_heap_extra_B=104
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=29
+#-----------
+time=7346270
+mem_heap_B=4336
+mem_heap_extra_B=96
+mem_stacks_B=0
+heap_tree=detailed
+n4: 4336 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 4096 0x48DCD03: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 4096 0x48ECECF: _IO_doallocbuf (genops.c:347)
+   n1: 4096 0x48EBCA3: _IO_file_underflow@@GLIBC_2.2.5 (fileops.c:486)
+    n1: 4096 0x48ECF85: _IO_default_uflow (genops.c:362)
+     n1: 4096 0x48BF27F: __vfscanf_internal (vfscanf-internal.c:627)
+      n1: 4096 0x48BE161: __isoc99_scanf (isoc99_scanf.c:30)
+       n0: 4096 0x1091DF: main (in /home/kimberlychan/Desktop/DNN_Generality/toy_problem/EMPC/empc)
+ n2: 128 0x10A377: emxEnsureCapacity_real_T (in /home/kimberlychan/Desktop/DNN_Generality/toy_problem/EMPC/empc)
+  n1: 128 0x109BFB: empc (in /home/kimberlychan/Desktop/DNN_Generality/toy_problem/EMPC/empc)
+   n0: 128 0x1091FB: main (in /home/kimberlychan/Desktop/DNN_Generality/toy_problem/EMPC/empc)
+  n0: 0 in 3 places, all below massif's threshold (1.00%)
+ n1: 96 0x10A566: emxInit_real_T (in /home/kimberlychan/Desktop/DNN_Generality/toy_problem/EMPC/empc)
+  n0: 96 in 5 places, all below massif's threshold (1.00%)
+ n0: 16 in 4 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=30
+#-----------
+time=7346302
+mem_heap_B=4332
+mem_heap_extra_B=76
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=31
+#-----------
+time=7346332
+mem_heap_B=4300
+mem_heap_extra_B=68
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=32
+#-----------
+time=7346397
+mem_heap_B=4332
+mem_heap_extra_B=76
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=33
+#-----------
+time=7346435
+mem_heap_B=4340
+mem_heap_extra_B=92
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=34
+#-----------
+time=7346562
+mem_heap_B=4468
+mem_heap_extra_B=100
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=35
+#-----------
+time=7346734
+mem_heap_B=4596
+mem_heap_extra_B=108
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=36
+#-----------
+time=7346827
+mem_heap_B=4468
+mem_heap_extra_B=100
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=37
+#-----------
+time=7346859
+mem_heap_B=4460
+mem_heap_extra_B=84
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=38
+#-----------
+time=7346889
+mem_heap_B=4428
+mem_heap_extra_B=76
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=39
+#-----------
+time=7346952
+mem_heap_B=4300
+mem_heap_extra_B=68
+mem_stacks_B=0
+heap_tree=detailed
+n4: 4300 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 4096 0x48DCD03: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 4096 0x48ECECF: _IO_doallocbuf (genops.c:347)
+   n1: 4096 0x48EBCA3: _IO_file_underflow@@GLIBC_2.2.5 (fileops.c:486)
+    n1: 4096 0x48ECF85: _IO_default_uflow (genops.c:362)
+     n1: 4096 0x48BF27F: __vfscanf_internal (vfscanf-internal.c:627)
+      n1: 4096 0x48BE161: __isoc99_scanf (isoc99_scanf.c:30)
+       n0: 4096 0x1091DF: main (in /home/kimberlychan/Desktop/DNN_Generality/toy_problem/EMPC/empc)
+ n2: 128 0x10A377: emxEnsureCapacity_real_T (in /home/kimberlychan/Desktop/DNN_Generality/toy_problem/EMPC/empc)
+  n1: 128 0x109E85: empc (in /home/kimberlychan/Desktop/DNN_Generality/toy_problem/EMPC/empc)
+   n0: 128 0x1091FB: main (in /home/kimberlychan/Desktop/DNN_Generality/toy_problem/EMPC/empc)
+  n0: 0 in 5 places, all below massif's threshold (1.00%)
+ n1: 64 0x10A566: emxInit_real_T (in /home/kimberlychan/Desktop/DNN_Generality/toy_problem/EMPC/empc)
+  n0: 64 in 6 places, all below massif's threshold (1.00%)
+ n0: 12 in 4 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=40
+#-----------
+time=7346984
+mem_heap_B=4292
+mem_heap_extra_B=52
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=41
+#-----------
+time=7347014
+mem_heap_B=4260
+mem_heap_extra_B=44
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=42
+#-----------
+time=7348854
+mem_heap_B=5284
+mem_heap_extra_B=52
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=43
+#-----------
+time=7349900
+mem_heap_B=5156
+mem_heap_extra_B=44
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=44
+#-----------
+time=7349932
+mem_heap_B=5152
+mem_heap_extra_B=24
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=45
+#-----------
+time=7349962
+mem_heap_B=5120
+mem_heap_extra_B=16
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=46
+#-----------
+time=7353083
+mem_heap_B=1024
+mem_heap_extra_B=8
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=47
+#-----------
+time=7353117
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty

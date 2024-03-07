@@ -1,0 +1,235 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Fixed-Point Report for plasma_nn_wrapper_fixpt</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style>
+	body { font-family: monospace; }
+	h2 { font-family: Arial, Helvetica, sans-serif; color: #990000; margin-top: 50px; }
+	table,th,td { border: 1px solid black; }
+	table { margin-top: 30px; }
+	th { align: center; font-weight: bold; }
+	tr.h { background-color: #99CCFF; }
+	tr.a { background-color: #EEEEFF; }
+	tr.b { background-color: #FFFFFF; }
+	tr.c { background-color: #FFA500; }
+	tr.a td, tr.b td { border-style: none; }
+	td.left { text-align: left; }
+	td.right { text-align: right; }
+	td.center { text-align: center; }
+	td.bold { font-weight: bold; }
+	pre { padding: 0px; margin: 0px; }
+	span { font-style: italic; }
+</style>
+</head>
+<body>
+<h3>Generated on  2022-07-22 13:19:03</h3>
+<p>The following table shows fixed point instrumentation results</p>
+<h2>Fixed-Point Report <span>mapminmax_apply<span></h2>
+<pre>function y = mapminmax_apply(x,settings)
+  fm = get_fimath();
+
+  y = fi(bsxfun(@minus,x,settings.xoffset), 1, 20, 18, fm);
+  y(:) = bsxfun(@times,y,settings.gain);
+  y(:) = bsxfun(@plus,y,settings.ymin);
+end</pre><TABLE><TR class="h"><th>Variable Name</th><th>Type</th><th>Sim Min</th><th>Sim Max</th></TR><TR class="a">
+<TD class="left">settings</TD><TD class="left">struct</TD><TD class="right"></TD><TD class="right"></TD></TR>
+<TR class="a">
+<TD class="left">settings.xoffset</TD><TD class="left">numerictype(1, 2, 0) 3 x 1 </TD><TD class="right">-1</TD><TD class="right">-1</TD></TR>
+<TR class="a">
+<TD class="left">settings.gain</TD><TD class="left">numerictype(0, 1, 0) 3 x 1 </TD><TD class="right">1</TD><TD class="right">1</TD></TR>
+<TR class="a">
+<TD class="left">settings.ymin</TD><TD class="left">numerictype(1, 2, 0)</TD><TD class="right">-1</TD><TD class="right">-1</TD></TR>
+<TR class="b">
+<TD class="left">x</TD><TD class="left">numerictype(1, 20, 18) 3 x 1 </TD><TD class="right">-1</TD><TD class="right">-0.187164306640625</TD></TR>
+<TR class="a">
+<TD class="left">y</TD><TD class="left">numerictype(1, 20, 18) 3 x 1 </TD><TD class="right">-1</TD><TD class="right">0.812835693359375</TD></TR>
+</TABLE>
+
+<h2>Fixed-Point Report <span>poslin_apply>1<span></h2>
+<pre>function a = poslin_apply(n,~)
+  fm = get_fimath();
+
+  a = fi(max(fi(0, 0, 1, 0, fm),n), 0, 20, 19, fm);
+  a(isnan(n)) = nan;
+end</pre><TABLE><TR class="h"><th>Variable Name</th><th>Type</th><th>Sim Min</th><th>Sim Max</th></TR><TR class="a">
+<TD class="left">a</TD><TD class="left">numerictype(0, 20, 19) 5 x 1 </TD><TD class="right">0</TD><TD class="right">1.6355819702148438</TD></TR>
+<TR class="b">
+<TD class="left">n</TD><TD class="left">numerictype(1, 43, 36) 5 x 1 </TD><TD class="right">-1.0642053674673662</TD><TD class="right">1.6355822436744347</TD></TR>
+</TABLE>
+
+<h2>Fixed-Point Report <span>poslin_apply>2<span></h2>
+<pre>function a = poslin_apply(n,~)
+  fm = get_fimath();
+
+  a = fi(max(fi(0, 0, 1, 0, fm),n), 0, 20, 19, fm);
+  a(isnan(n)) = nan;
+end</pre><TABLE><TR class="h"><th>Variable Name</th><th>Type</th><th>Sim Min</th><th>Sim Max</th></TR><TR class="a">
+<TD class="left">a</TD><TD class="left">numerictype(0, 20, 19) 5 x 1 </TD><TD class="right">0</TD><TD class="right">0.47190284729003906</TD></TR>
+<TR class="b">
+<TD class="left">n</TD><TD class="left">numerictype(1, 44, 38) 5 x 1 </TD><TD class="right">-1.8151695281558204</TD><TD class="right">0.4719029243569821</TD></TR>
+</TABLE>
+
+<h2>Fixed-Point Report <span>mapminmax_reverse<span></h2>
+<pre>function x = mapminmax_reverse(y,settings)
+  fm = get_fimath();
+
+  x = fi(bsxfun(@minus,y,settings.ymin), 1, 20, 18, fm);
+  x(:) = bsxfun(@rdivide,x,settings.gain);
+  x(:) = bsxfun(@plus,x,settings.xoffset);
+end</pre><TABLE><TR class="h"><th>Variable Name</th><th>Type</th><th>Sim Min</th><th>Sim Max</th></TR><TR class="a">
+<TD class="left">settings</TD><TD class="left">struct</TD><TD class="right"></TD><TD class="right"></TD></TR>
+<TR class="a">
+<TD class="left">settings.ymin</TD><TD class="left">numerictype(1, 2, 0)</TD><TD class="right">-1</TD><TD class="right">-1</TD></TR>
+<TR class="a">
+<TD class="left">settings.gain</TD><TD class="left">numerictype(0, 1, 0) 2 x 1 </TD><TD class="right">1</TD><TD class="right">1</TD></TR>
+<TR class="a">
+<TD class="left">settings.xoffset</TD><TD class="left">numerictype(1, 2, 0) 2 x 1 </TD><TD class="right">-1</TD><TD class="right">-1</TD></TR>
+<TR class="b">
+<TD class="left">x</TD><TD class="left">numerictype(1, 20, 18) 2 x 1 </TD><TD class="right">-0.09406661987304688</TD><TD class="right">1.3843154907226562</TD></TR>
+<TR class="a">
+<TD class="left">y</TD><TD class="left">numerictype(1, 20, 20) 2 x 1 </TD><TD class="right">-0.09406375885009766</TD><TD class="right">0.38431739807128906</TD></TR>
+</TABLE>
+
+<h2>Fixed-Point Report <span>plasma_nn<span></h2>
+<pre>function [y1] = plasma_nn(x1)
+%PLASMA_NN neural network simulation function.
+%
+% Auto-generated by MATLAB, 22-Jul-2022 13:18:24.
+% 
+% [y1] = plasma_nn(x1) takes these arguments:
+%   x = 3xQ matrix, input #1
+% and returns:
+%   y = 2xQ matrix, output #1
+% where Q is the number of samples.
+
+%#ok&lt;*RPMT0&gt;
+
+% ===== NEURAL NETWORK CONSTANTS =====
+
+% Input 1
+fm = get_fimath();
+
+x1_step1.xoffset = fi([-1;-1;-1], 1, 2, 0, fm);
+x1_step1.gain = fi([1;1;1], 0, 1, 0, fm);
+x1_step1.ymin = fi(-1, 1, 2, 0, fm);
+
+% Layer 1
+b1 = fi([0.39393848012732307629;0.1649137533972008518;-0.72275111434264172061;-0.70141198888188505123;-0.48498349175252708498], 1, 20, 19, fm);
+IW1_1 = fi([-0.10089451284149542065 0.2046510353128837556 -1.3318899707534908039;0.77845023941596558359 1.1173269617514998142 0.39093432531657418272;0.31019600794768131813 -0.31922854666773359256 0.011914103330284753213;-0.67477652961073886217 0.17053550195955469171 0.39815344531337193423;-0.76200463688324671097 -0.55237612101772604056 0.78180650507159699103], 1, 20, 18, fm);
+
+% Layer 2
+b2 = fi([-0.85899846845137095563;0.13764732174438543133;-0.90337699595987042134;-0.97619586099751720631;-0.1927375201586165876], 1, 20, 18, fm);
+LW2_1 = fi([0.42342632114568806712 -0.029918699505203288913 -0.29668098587400648647 -0.42832196235925290573 -0.84829142087387277016;-0.4914356420569379047 -0.60680949913758364112 0.66165725579258172218 0.51440045822144253584 -0.89209976266678570056;0.84085140862897644887 -0.66495797614160478961 0.17052818230544852796 0.50745818855699065253 0.061595106017945377985;-0.51295006255002140172 0.23208935229327831706 0.099447216582279063246 -0.23910830604928667853 0.55833446020402233145;0.20884932489082030926 0.029672796172358753553 0.83438732765962009275 0.1356432814504422435 0.86802136845836597168], 1, 20, 19, fm);
+
+% Layer 3
+b3 = fi([1.092444712879802049;-0.83112830897817935316;-0.20043470180220701593;-0.71001395610980155837;0.35715257553868984264], 1, 20, 18, fm);
+LW3_2 = fi([-0.52367907721706652424 0.20396388280327304443 -1.3023337187270795923 0.65163395497909482046 -0.95131833073774585419;0.58856908136781393992 -0.47405743091971142 -0.83235724400613486651 0.076684870520114190029 0.92379616171010736636;-0.37756991591039024136 0.30815819695356450048 -0.54204606256636234107 0.99226943325377092719 -0.99073155173186511213;-0.013817838019140937789 0.37842900628001552299 0.61471473647067442769 -0.84364894249363264755 0.39502130211619151945;-0.58908833610506283751 0.49630318564741893184 -0.72119503775562654457 -0.11464346044910733724 -0.12804388865696134103], 1, 20, 18, fm);
+
+% Layer 4
+b4 = fi([0.72151517999534897641;-0.52250681781897734268], 1, 20, 19, fm);
+LW4_3 = fi([-1.00278166177606054 -0.63630594339429502604 -0.70892203923056595904 0.56471696643855617825 -1.1156682672489450781;1.2741522138837628741 -0.47239416695601987861 -0.72786288258267251017 0.031473201734996777978 -0.97652627859134022437], 1, 20, 18, fm);
+
+% Output 1
+y1_step1.ymin = fi(-1, 1, 2, 0, fm);
+y1_step1.gain = fi([1;1], 0, 1, 0, fm);
+y1_step1.xoffset = fi([-1;-1], 1, 2, 0, fm);
+
+% ===== SIMULATION ========
+
+% Dimensions
+Q = fi(size(x1,fi(2, 0, 2, 0, fm)), 0, 1, 0, fm); % samples
+
+% Input 1
+xp1 = fi(mapminmax_apply(x1,x1_step1), 1, 20, 18, fm);
+
+% Layer 1
+a1 = fi(poslin_apply(repmat(b1,1,fi_toint(Q)) + IW1_1*xp1), 0, 20, 19, fm);
+
+% Layer 2
+a2 = fi(poslin_apply(repmat(b2,1,fi_toint(Q)) + LW2_1*a1), 0, 20, 20, fm);
+
+% Layer 3
+a3 = fi(poslin_apply(repmat(b3,1,fi_toint(Q)) + LW3_2*a2), 0, 20, 21, fm);
+
+% Layer 4
+a4 = fi(repmat(b4,1,fi_toint(Q)) + LW4_3*a3, 1, 20, 20, fm);
+
+% Output 1
+y1 = fi(mapminmax_reverse(a4,y1_step1), 1, 20, 20, fm);
+end</pre><TABLE><TR class="h"><th>Variable Name</th><th>Type</th><th>Sim Min</th><th>Sim Max</th></TR><TR class="a">
+<TD class="left">IW1_1</TD><TD class="left">numerictype(1, 20, 18) 5 x 3 </TD><TD class="right">-1.3318901062011719</TD><TD class="right">1.1173248291015625</TD></TR>
+<TR class="b">
+<TD class="left">LW2_1</TD><TD class="left">numerictype(1, 20, 19) 5 x 5 </TD><TD class="right">-0.8921012878417969</TD><TD class="right">0.8680210113525391</TD></TR>
+<TR class="a">
+<TD class="left">LW3_2</TD><TD class="left">numerictype(1, 20, 18) 5 x 5 </TD><TD class="right">-1.3023338317871094</TD><TD class="right">0.9922676086425781</TD></TR>
+<TR class="b">
+<TD class="left">LW4_3</TD><TD class="left">numerictype(1, 20, 18) 2 x 5 </TD><TD class="right">-1.1156692504882812</TD><TD class="right">1.2741508483886719</TD></TR>
+<TR class="a">
+<TD class="left">Q</TD><TD class="left">numerictype(0, 1, 0)</TD><TD class="right">1</TD><TD class="right">1</TD></TR>
+<TR class="b">
+<TD class="left">a1</TD><TD class="left">numerictype(0, 20, 19) 5 x 1 </TD><TD class="right">0</TD><TD class="right">1.6355819702148438</TD></TR>
+<TR class="a">
+<TD class="left">a2</TD><TD class="left">numerictype(0, 20, 20) 5 x 1 </TD><TD class="right">0</TD><TD class="right">0.47190284729003906</TD></TR>
+<TR class="b">
+<TD class="left">a3</TD><TD class="left">numerictype(0, 20, 21) 5 x 1 </TD><TD class="right">0</TD><TD class="right">0.3362598419189453</TD></TR>
+<TR class="a">
+<TD class="left">a4</TD><TD class="left">numerictype(1, 20, 20) 2 x 1 </TD><TD class="right">-0.09406375885009766</TD><TD class="right">0.38431739807128906</TD></TR>
+<TR class="b">
+<TD class="left">b1</TD><TD class="left">numerictype(1, 20, 19) 5 x 1 </TD><TD class="right">-0.7227516174316406</TD><TD class="right">0.3939380645751953</TD></TR>
+<TR class="a">
+<TD class="left">b2</TD><TD class="left">numerictype(1, 20, 18) 5 x 1 </TD><TD class="right">-0.9761962890625</TD><TD class="right">0.13764572143554688</TD></TR>
+<TR class="b">
+<TD class="left">b3</TD><TD class="left">numerictype(1, 20, 18) 5 x 1 </TD><TD class="right">-0.8311309814453125</TD><TD class="right">1.0924415588378906</TD></TR>
+<TR class="a">
+<TD class="left">b4</TD><TD class="left">numerictype(1, 20, 19) 2 x 1 </TD><TD class="right">-0.5225086212158203</TD><TD class="right">0.7215137481689453</TD></TR>
+<TR class="b">
+<TD class="left">x1</TD><TD class="left">numerictype(1, 20, 18) 3 x 1 </TD><TD class="right">-1</TD><TD class="right">-0.187164306640625</TD></TR>
+<TR class="a">
+<TD class="left">x1_step1</TD><TD class="left">struct</TD><TD class="right"></TD><TD class="right"></TD></TR>
+<TR class="a">
+<TD class="left">x1_step1.xoffset</TD><TD class="left">numerictype(1, 2, 0) 3 x 1 </TD><TD class="right">-1</TD><TD class="right">-1</TD></TR>
+<TR class="a">
+<TD class="left">x1_step1.gain</TD><TD class="left">numerictype(0, 1, 0) 3 x 1 </TD><TD class="right">1</TD><TD class="right">1</TD></TR>
+<TR class="a">
+<TD class="left">x1_step1.ymin</TD><TD class="left">numerictype(1, 2, 0)</TD><TD class="right">-1</TD><TD class="right">-1</TD></TR>
+<TR class="b">
+<TD class="left">xp1</TD><TD class="left">numerictype(1, 20, 18) 3 x 1 </TD><TD class="right">-1</TD><TD class="right">-0.187164306640625</TD></TR>
+<TR class="a">
+<TD class="left">y1</TD><TD class="left">numerictype(1, 20, 20) 2 x 1 </TD><TD class="right">-0.09406661987304688</TD><TD class="right">0.38431549072265625</TD></TR>
+<TR class="b">
+<TD class="left">y1_step1</TD><TD class="left">struct</TD><TD class="right"></TD><TD class="right"></TD></TR>
+<TR class="b">
+<TD class="left">y1_step1.ymin</TD><TD class="left">numerictype(1, 2, 0)</TD><TD class="right">-1</TD><TD class="right">-1</TD></TR>
+<TR class="b">
+<TD class="left">y1_step1.gain</TD><TD class="left">numerictype(0, 1, 0) 2 x 1 </TD><TD class="right">1</TD><TD class="right">1</TD></TR>
+<TR class="b">
+<TD class="left">y1_step1.xoffset</TD><TD class="left">numerictype(1, 2, 0) 2 x 1 </TD><TD class="right">-1</TD><TD class="right">-1</TD></TR>
+</TABLE>
+
+<h2>Fixed-Point Report <span>plasma_nn_wrapper_fixpt<span></h2>
+<pre>function [y1_1,y1_2] = plasma_nn_wrapper_fixpt(x1_1, x1_2, x1_3)
+fm = get_fimath();
+
+x1 = fi([fi(x1_1, 1, 20, 18, fm); x1_2; x1_3], 1, 20, 18, fm);
+y1 = fi(plasma_nn(x1), 1, 20, 20, fm);
+y1_1 = fi(y1(1), 1, 20, 18, fm);
+y1_2 = fi(y1(2), 1, 20, 18, fm);
+end</pre><TABLE><TR class="h"><th>Variable Name</th><th>Type</th><th>Sim Min</th><th>Sim Max</th></TR><TR class="a">
+<TD class="left">x1</TD><TD class="left">numerictype(1, 20, 18) 3 x 1 </TD><TD class="right">-1</TD><TD class="right">-0.187164306640625</TD></TR>
+<TR class="b">
+<TD class="left">x1_1</TD><TD class="left">numerictype(1, 20, 18)</TD><TD class="right">-0.187164306640625</TD><TD class="right">-0.187164306640625</TD></TR>
+<TR class="a">
+<TD class="left">x1_2</TD><TD class="left">numerictype(1, 20, 18)</TD><TD class="right">-0.5332489013671875</TD><TD class="right">-0.5332489013671875</TD></TR>
+<TR class="b">
+<TD class="left">x1_3</TD><TD class="left">numerictype(1, 3, 0)</TD><TD class="right">-1</TD><TD class="right">-1</TD></TR>
+<TR class="a">
+<TD class="left">y1</TD><TD class="left">numerictype(1, 20, 20) 2 x 1 </TD><TD class="right">-0.09406661987304688</TD><TD class="right">0.38431549072265625</TD></TR>
+<TR class="b">
+<TD class="left">y1_1</TD><TD class="left">numerictype(1, 20, 18)</TD><TD class="right">0.38431549072265625</TD><TD class="right">0.38431549072265625</TD></TR>
+<TR class="a">
+<TD class="left">y1_2</TD><TD class="left">numerictype(1, 20, 18)</TD><TD class="right">-0.09406661987304688</TD><TD class="right">-0.09406661987304688</TD></TR>
+</TABLE>
+
+Safety margin for simulation min/max : 10%</body>
+</html>

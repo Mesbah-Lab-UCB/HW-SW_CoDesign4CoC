@@ -1,0 +1,867 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:35 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Fri Jul 22 13:21:24 2022
+# Process ID: 1924277
+# Current directory: /home/kimberlychan/Desktop/DNN_Generality/matlab/codegen0_H5_L3_wL20_LoopNone/codegen/plasma_nn_wrapper/fil/plasma_nn_wrapper_fixpt_fil/fpgaproj/plasma_nn_wrapper_fixpt_fil.runs/synth_1
+# Command line: vivado -log plasma_nn_wrapper_fixpt_fil.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source plasma_nn_wrapper_fixpt_fil.tcl
+# Log file: /home/kimberlychan/Desktop/DNN_Generality/matlab/codegen0_H5_L3_wL20_LoopNone/codegen/plasma_nn_wrapper/fil/plasma_nn_wrapper_fixpt_fil/fpgaproj/plasma_nn_wrapper_fixpt_fil.runs/synth_1/plasma_nn_wrapper_fixpt_fil.vds
+# Journal file: /home/kimberlychan/Desktop/DNN_Generality/matlab/codegen0_H5_L3_wL20_LoopNone/codegen/plasma_nn_wrapper/fil/plasma_nn_wrapper_fixpt_fil/fpgaproj/plasma_nn_wrapper_fixpt_fil.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source plasma_nn_wrapper_fixpt_fil.tcl -notrace
+Command: synth_design -top plasma_nn_wrapper_fixpt_fil -part xc7z020clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 1924293
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 2088.691 ; gain = 0.000 ; free physical = 326 ; free virtual = 14447
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'plasma_nn_wrapper_fixpt_fil' [/home/kimberlychan/Desktop/DNN_Generality/matlab/codegen0_H5_L3_wL20_LoopNone/codegen/plasma_nn_wrapper/fil/plasma_nn_wrapper_fixpt_fil/filsrc/plasma_nn_wrapper_fixpt_fil.vhd:26]
+INFO: [Synth 8-3491] module 'clk_wiz_0' declared at '/home/kimberlychan/Desktop/DNN_Generality/matlab/codegen0_H5_L3_wL20_LoopNone/codegen/plasma_nn_wrapper/fil/plasma_nn_wrapper_fixpt_fil/fpgaproj/plasma_nn_wrapper_fixpt_fil.runs/synth_1/.Xil/Vivado-1924277-kimberlychan-hpomen/realtime/clk_wiz_0_stub.vhdl:5' bound to instance 'u_clk_wiz_0' of component 'clk_wiz_0' [/home/kimberlychan/Desktop/DNN_Generality/matlab/codegen0_H5_L3_wL20_LoopNone/codegen/plasma_nn_wrapper/fil/plasma_nn_wrapper_fixpt_fil/filsrc/plasma_nn_wrapper_fixpt_fil.vhd:115]
+INFO: [Synth 8-638] synthesizing module 'clk_wiz_0' [/home/kimberlychan/Desktop/DNN_Generality/matlab/codegen0_H5_L3_wL20_LoopNone/codegen/plasma_nn_wrapper/fil/plasma_nn_wrapper_fixpt_fil/fpgaproj/plasma_nn_wrapper_fixpt_fil.runs/synth_1/.Xil/Vivado-1924277-kimberlychan-hpomen/realtime/clk_wiz_0_stub.vhdl:15]
+INFO: [Synth 8-3491] module 'BSCANE2' declared at '/home/Xilinx/Vivado/2020.1/scripts/rt/data/unisim_comp.v:884' bound to instance 'u_BSCANE2' of component 'BSCANE2' [/home/kimberlychan/Desktop/DNN_Generality/matlab/codegen0_H5_L3_wL20_LoopNone/codegen/plasma_nn_wrapper/fil/plasma_nn_wrapper_fixpt_fil/filsrc/plasma_nn_wrapper_fixpt_fil.vhd:123]
+INFO: [Synth 8-6157] synthesizing module 'BSCANE2' [/home/Xilinx/Vivado/2020.1/scripts/rt/data/unisim_comp.v:884]
+	Parameter DISABLE_JTAG bound to: FALSE - type: string 
+	Parameter JTAG_CHAIN bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'BSCANE2' (1#1) [/home/Xilinx/Vivado/2020.1/scripts/rt/data/unisim_comp.v:884]
+INFO: [Synth 8-3491] module 'jtag_mac' declared at '/home/kimberlychan/Desktop/DNN_Generality/matlab/codegen0_H5_L3_wL20_LoopNone/codegen/plasma_nn_wrapper/fil/plasma_nn_wrapper_fixpt_fil/filsrc/jtag_mac.v:13' bound to instance 'u_jtag_mac' of component 'jtag_mac' [/home/kimberlychan/Desktop/DNN_Generality/matlab/codegen0_H5_L3_wL20_LoopNone/codegen/plasma_nn_wrapper/fil/plasma_nn_wrapper_fixpt_fil/filsrc/plasma_nn_wrapper_fixpt_fil.vhd:138]
+INFO: [Synth 8-6157] synthesizing module 'jtag_mac' [/home/kimberlychan/Desktop/DNN_Generality/matlab/codegen0_H5_L3_wL20_LoopNone/codegen/plasma_nn_wrapper/fil/plasma_nn_wrapper_fixpt_fil/filsrc/jtag_mac.v:13]
+	Parameter VERSION bound to: 191724 - type: integer 
+	Parameter idle bound to: 15'b000000000000000 
+	Parameter user_rst bound to: 15'b000000000000001 
+	Parameter get_cmd bound to: 15'b000000000000010 
+	Parameter get_wr_len bound to: 15'b000000000000100 
+	Parameter get_sim bound to: 15'b000000000001000 
+	Parameter wr bound to: 15'b000000000010000 
+	Parameter get_rd_len bound to: 15'b000000001000000 
+	Parameter get_skip bound to: 15'b000000010000000 
+	Parameter exe_skip bound to: 15'b000000100000000 
+	Parameter rdbk_len bound to: 15'b000001000000000 
+	Parameter rdbk_dat bound to: 15'b000010000000000 
+	Parameter ver_get_skip bound to: 15'b000100000000000 
+	Parameter ver_exe_skip bound to: 15'b001000000000000 
+	Parameter ver_rdbk_len bound to: 15'b010000000000000 
+	Parameter ver_rdbk_dat bound to: 15'b100000000000000 
+INFO: [Synth 8-638] synthesizing module 'simcycle_fifo_wrapper' [/home/kimberlychan/Desktop/DNN_Generality/matlab/codegen0_H5_L3_wL20_LoopNone/codegen/plasma_nn_wrapper/fil/plasma_nn_wrapper_fixpt_fil/filsrc/simcycle_fifo_wrapper.vhd:28]
+WARNING: [Synth 8-5640] Port 'wr_rst_busy' is missing in component declaration [/home/kimberlychan/Desktop/DNN_Generality/matlab/codegen0_H5_L3_wL20_LoopNone/codegen/plasma_nn_wrapper/fil/plasma_nn_wrapper_fixpt_fil/filsrc/simcycle_fifo_wrapper.vhd:30]
+WARNING: [Synth 8-5640] Port 'rd_rst_busy' is missing in component declaration [/home/kimberlychan/Desktop/DNN_Generality/matlab/codegen0_H5_L3_wL20_LoopNone/codegen/plasma_nn_wrapper/fil/plasma_nn_wrapper_fixpt_fil/filsrc/simcycle_fifo_wrapper.vhd:30]
+INFO: [Synth 8-3491] module 'simcycle_fifo' declared at '/home/kimberlychan/Desktop/DNN_Generality/matlab/codegen0_H5_L3_wL20_LoopNone/codegen/plasma_nn_wrapper/fil/plasma_nn_wrapper_fixpt_fil/fpgaproj/plasma_nn_wrapper_fixpt_fil.runs/synth_1/.Xil/Vivado-1924277-kimberlychan-hpomen/realtime/simcycle_fifo_stub.vhdl:5' bound to instance 'u_simcycle_fifo' of component 'simcycle_fifo' [/home/kimberlychan/Desktop/DNN_Generality/matlab/codegen0_H5_L3_wL20_LoopNone/codegen/plasma_nn_wrapper/fil/plasma_nn_wrapper_fixpt_fil/filsrc/simcycle_fifo_wrapper.vhd:46]
+INFO: [Synth 8-638] synthesizing module 'simcycle_fifo' [/home/kimberlychan/Desktop/DNN_Generality/matlab/codegen0_H5_L3_wL20_LoopNone/codegen/plasma_nn_wrapper/fil/plasma_nn_wrapper_fixpt_fil/fpgaproj/plasma_nn_wrapper_fixpt_fil.runs/synth_1/.Xil/Vivado-1924277-kimberlychan-hpomen/realtime/simcycle_fifo_stub.vhdl:22]
+INFO: [Synth 8-256] done synthesizing module 'simcycle_fifo_wrapper' (2#1) [/home/kimberlychan/Desktop/DNN_Generality/matlab/codegen0_H5_L3_wL20_LoopNone/codegen/plasma_nn_wrapper/fil/plasma_nn_wrapper_fixpt_fil/filsrc/simcycle_fifo_wrapper.vhd:28]
+INFO: [Synth 8-638] synthesizing module 'jtag_mac_fifo_wrapper' [/home/kimberlychan/Desktop/DNN_Generality/matlab/codegen0_H5_L3_wL20_LoopNone/codegen/plasma_nn_wrapper/fil/plasma_nn_wrapper_fixpt_fil/filsrc/jtag_mac_fifo_wrapper.vhd:30]
+WARNING: [Synth 8-5640] Port 'wr_rst_busy' is missing in component declaration [/home/kimberlychan/Desktop/DNN_Generality/matlab/codegen0_H5_L3_wL20_LoopNone/codegen/plasma_nn_wrapper/fil/plasma_nn_wrapper_fixpt_fil/filsrc/jtag_mac_fifo_wrapper.vhd:32]
+WARNING: [Synth 8-5640] Port 'rd_rst_busy' is missing in component declaration [/home/kimberlychan/Desktop/DNN_Generality/matlab/codegen0_H5_L3_wL20_LoopNone/codegen/plasma_nn_wrapper/fil/plasma_nn_wrapper_fixpt_fil/filsrc/jtag_mac_fifo_wrapper.vhd:32]
+INFO: [Synth 8-3491] module 'jtag_mac_fifo' declared at '/home/kimberlychan/Desktop/DNN_Generality/matlab/codegen0_H5_L3_wL20_LoopNone/codegen/plasma_nn_wrapper/fil/plasma_nn_wrapper_fixpt_fil/fpgaproj/plasma_nn_wrapper_fixpt_fil.runs/synth_1/.Xil/Vivado-1924277-kimberlychan-hpomen/realtime/jtag_mac_fifo_stub.vhdl:5' bound to instance 'u_jtag_mac_fifo' of component 'jtag_mac_fifo' [/home/kimberlychan/Desktop/DNN_Generality/matlab/codegen0_H5_L3_wL20_LoopNone/codegen/plasma_nn_wrapper/fil/plasma_nn_wrapper_fixpt_fil/filsrc/jtag_mac_fifo_wrapper.vhd:50]
+INFO: [Synth 8-638] synthesizing module 'jtag_mac_fifo' [/home/kimberlychan/Desktop/DNN_Generality/matlab/codegen0_H5_L3_wL20_LoopNone/codegen/plasma_nn_wrapper/fil/plasma_nn_wrapper_fixpt_fil/fpgaproj/plasma_nn_wrapper_fixpt_fil.runs/synth_1/.Xil/Vivado-1924277-kimberlychan-hpomen/realtime/jtag_mac_fifo_stub.vhdl:24]
+INFO: [Synth 8-256] done synthesizing module 'jtag_mac_fifo_wrapper' (3#1) [/home/kimberlychan/Desktop/DNN_Generality/matlab/codegen0_H5_L3_wL20_LoopNone/codegen/plasma_nn_wrapper/fil/plasma_nn_wrapper_fixpt_fil/filsrc/jtag_mac_fifo_wrapper.vhd:30]
+WARNING: [Synth 8-7071] port 'almost_full' of module 'jtag_mac_fifo_wrapper' is unconnected for instance 'u_pre_chif_fifo' [/home/kimberlychan/Desktop/DNN_Generality/matlab/codegen0_H5_L3_wL20_LoopNone/codegen/plasma_nn_wrapper/fil/plasma_nn_wrapper_fixpt_fil/filsrc/jtag_mac.v:68]
+WARNING: [Synth 8-7023] instance 'u_pre_chif_fifo' of module 'jtag_mac_fifo_wrapper' has 11 connections declared, but only 10 given [/home/kimberlychan/Desktop/DNN_Generality/matlab/codegen0_H5_L3_wL20_LoopNone/codegen/plasma_nn_wrapper/fil/plasma_nn_wrapper_fixpt_fil/filsrc/jtag_mac.v:68]
+WARNING: [Synth 8-567] referenced signal 'wr_len' should be on the sensitivity list [/home/kimberlychan/Desktop/DNN_Generality/matlab/codegen0_H5_L3_wL20_LoopNone/codegen/plasma_nn_wrapper/fil/plasma_nn_wrapper_fixpt_fil/filsrc/jtag_mac.v:187]
+WARNING: [Synth 8-567] referenced signal 'skip_len' should be on the sensitivity list [/home/kimberlychan/Desktop/DNN_Generality/matlab/codegen0_H5_L3_wL20_LoopNone/codegen/plasma_nn_wrapper/fil/plasma_nn_wrapper_fixpt_fil/filsrc/jtag_mac.v:187]
+WARNING: [Synth 8-567] referenced signal 'act_rd_len' should be on the sensitivity list [/home/kimberlychan/Desktop/DNN_Generality/matlab/codegen0_H5_L3_wL20_LoopNone/codegen/plasma_nn_wrapper/fil/plasma_nn_wrapper_fixpt_fil/filsrc/jtag_mac.v:187]
+INFO: [Synth 8-6155] done synthesizing module 'jtag_mac' (4#1) [/home/kimberlychan/Desktop/DNN_Generality/matlab/codegen0_H5_L3_wL20_LoopNone/codegen/plasma_nn_wrapper/fil/plasma_nn_wrapper_fixpt_fil/filsrc/jtag_mac.v:13]
+INFO: [Synth 8-3491] module 'mwfil_chiftop' declared at '/home/kimberlychan/Desktop/DNN_Generality/matlab/codegen0_H5_L3_wL20_LoopNone/codegen/plasma_nn_wrapper/fil/plasma_nn_wrapper_fixpt_fil/filsrc/mwfil_chiftop.vhd:13' bound to instance 'u_mwfil_chiftop' of component 'mwfil_chiftop' [/home/kimberlychan/Desktop/DNN_Generality/matlab/codegen0_H5_L3_wL20_LoopNone/codegen/plasma_nn_wrapper/fil/plasma_nn_wrapper_fixpt_fil/filsrc/plasma_nn_wrapper_fixpt_fil.vhd:155]
+INFO: [Synth 8-638] synthesizing module 'mwfil_chiftop' [/home/kimberlychan/Desktop/DNN_Generality/matlab/codegen0_H5_L3_wL20_LoopNone/codegen/plasma_nn_wrapper/fil/plasma_nn_wrapper_fixpt_fil/filsrc/mwfil_chiftop.vhd:27]
+	Parameter INWORD bound to: 7 - type: integer 
+	Parameter OUTWORD bound to: 6 - type: integer 
+	Parameter WORDSIZE bound to: 8 - type: integer 
+	Parameter HASENABLE bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'mwfil_chifcore' declared at '/home/kimberlychan/Desktop/DNN_Generality/matlab/codegen0_H5_L3_wL20_LoopNone/codegen/plasma_nn_wrapper/fil/plasma_nn_wrapper_fixpt_fil/filsrc/mwfil_chifcore.vhd:15' bound to instance 'u_mwfil_chifcore' of component 'mwfil_chifcore' [/home/kimberlychan/Desktop/DNN_Generality/matlab/codegen0_H5_L3_wL20_LoopNone/codegen/plasma_nn_wrapper/fil/plasma_nn_wrapper_fixpt_fil/filsrc/mwfil_chiftop.vhd:80]
+INFO: [Synth 8-638] synthesizing module 'mwfil_chifcore' [/home/kimberlychan/Desktop/DNN_Generality/matlab/codegen0_H5_L3_wL20_LoopNone/codegen/plasma_nn_wrapper/fil/plasma_nn_wrapper_fixpt_fil/filsrc/mwfil_chifcore.vhd:42]
+	Parameter INWORD bound to: 7 - type: integer 
+	Parameter OUTWORD bound to: 6 - type: integer 
+	Parameter WORDSIZE bound to: 8 - type: integer 
+	Parameter HASENABLE bound to: 0 - type: integer 
+	Parameter WORDSIZE bound to: 8 - type: integer 
+	Parameter OUTWORD bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'mwfil_bus2dut' declared at '/home/kimberlychan/Desktop/DNN_Generality/matlab/codegen0_H5_L3_wL20_LoopNone/codegen/plasma_nn_wrapper/fil/plasma_nn_wrapper_fixpt_fil/filsrc/mwfil_bus2dut.vhd:13' bound to instance 'u_bus2dut' of component 'mwfil_bus2dut' [/home/kimberlychan/Desktop/DNN_Generality/matlab/codegen0_H5_L3_wL20_LoopNone/codegen/plasma_nn_wrapper/fil/plasma_nn_wrapper_fixpt_fil/filsrc/mwfil_chifcore.vhd:153]
+INFO: [Synth 8-638] synthesizing module 'mwfil_bus2dut' [/home/kimberlychan/Desktop/DNN_Generality/matlab/codegen0_H5_L3_wL20_LoopNone/codegen/plasma_nn_wrapper/fil/plasma_nn_wrapper_fixpt_fil/filsrc/mwfil_bus2dut.vhd:34]
+	Parameter WORDSIZE bound to: 8 - type: integer 
+	Parameter OUTWORD bound to: 7 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'mwfil_bus2dut' (5#1) [/home/kimberlychan/Desktop/DNN_Generality/matlab/codegen0_H5_L3_wL20_LoopNone/codegen/plasma_nn_wrapper/fil/plasma_nn_wrapper_fixpt_fil/filsrc/mwfil_bus2dut.vhd:34]
+	Parameter fifo_depth bound to: 16 - type: integer 
+	Parameter fifo_uword bound to: 4 - type: integer 
+	Parameter fifo_width bound to: 56 - type: integer 
+INFO: [Synth 8-3491] module 'mwfil_udfifo' declared at '/home/kimberlychan/Desktop/DNN_Generality/matlab/codegen0_H5_L3_wL20_LoopNone/codegen/plasma_nn_wrapper/fil/plasma_nn_wrapper_fixpt_fil/filsrc/mwfil_udfifo.vhd:14' bound to instance 'u_b2dfifo' of component 'mwfil_udfifo' [/home/kimberlychan/Desktop/DNN_Generality/matlab/codegen0_H5_L3_wL20_LoopNone/codegen/plasma_nn_wrapper/fil/plasma_nn_wrapper_fixpt_fil/filsrc/mwfil_chifcore.vhd:168]
+INFO: [Synth 8-638] synthesizing module 'mwfil_udfifo' [/home/kimberlychan/Desktop/DNN_Generality/matlab/codegen0_H5_L3_wL20_LoopNone/codegen/plasma_nn_wrapper/fil/plasma_nn_wrapper_fixpt_fil/filsrc/mwfil_udfifo.vhd:33]
+	Parameter fifo_depth bound to: 16 - type: integer 
+	Parameter fifo_uword bound to: 4 - type: integer 
+	Parameter fifo_width bound to: 56 - type: integer 
+	Parameter DATA bound to: 56 - type: integer 
+	Parameter ADDR bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'mwfil_dpscram' declared at '/home/kimberlychan/Desktop/DNN_Generality/matlab/codegen0_H5_L3_wL20_LoopNone/codegen/plasma_nn_wrapper/fil/plasma_nn_wrapper_fixpt_fil/filsrc/mwfil_dpscram.vhd:12' bound to instance 'u_dpscram' of component 'mwfil_dpscram' [/home/kimberlychan/Desktop/DNN_Generality/matlab/codegen0_H5_L3_wL20_LoopNone/codegen/plasma_nn_wrapper/fil/plasma_nn_wrapper_fixpt_fil/filsrc/mwfil_udfifo.vhd:130]
+INFO: [Synth 8-638] synthesizing module 'mwfil_dpscram' [/home/kimberlychan/Desktop/DNN_Generality/matlab/codegen0_H5_L3_wL20_LoopNone/codegen/plasma_nn_wrapper/fil/plasma_nn_wrapper_fixpt_fil/filsrc/mwfil_dpscram.vhd:31]
+	Parameter DATA bound to: 56 - type: integer 
+	Parameter ADDR bound to: 4 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'mwfil_dpscram' (6#1) [/home/kimberlychan/Desktop/DNN_Generality/matlab/codegen0_H5_L3_wL20_LoopNone/codegen/plasma_nn_wrapper/fil/plasma_nn_wrapper_fixpt_fil/filsrc/mwfil_dpscram.vhd:31]
+INFO: [Synth 8-256] done synthesizing module 'mwfil_udfifo' (7#1) [/home/kimberlychan/Desktop/DNN_Generality/matlab/codegen0_H5_L3_wL20_LoopNone/codegen/plasma_nn_wrapper/fil/plasma_nn_wrapper_fixpt_fil/filsrc/mwfil_udfifo.vhd:33]
+	Parameter HASENABLE bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'mwfil_controller' declared at '/home/kimberlychan/Desktop/DNN_Generality/matlab/codegen0_H5_L3_wL20_LoopNone/codegen/plasma_nn_wrapper/fil/plasma_nn_wrapper_fixpt_fil/filsrc/mwfil_controller.vhd:15' bound to instance 'u_controller' of component 'mwfil_controller' [/home/kimberlychan/Desktop/DNN_Generality/matlab/codegen0_H5_L3_wL20_LoopNone/codegen/plasma_nn_wrapper/fil/plasma_nn_wrapper_fixpt_fil/filsrc/mwfil_chifcore.vhd:195]
+INFO: [Synth 8-638] synthesizing module 'mwfil_controller' [/home/kimberlychan/Desktop/DNN_Generality/matlab/codegen0_H5_L3_wL20_LoopNone/codegen/plasma_nn_wrapper/fil/plasma_nn_wrapper_fixpt_fil/filsrc/mwfil_controller.vhd:38]
+	Parameter HASENABLE bound to: 0 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'mwfil_controller' (8#1) [/home/kimberlychan/Desktop/DNN_Generality/matlab/codegen0_H5_L3_wL20_LoopNone/codegen/plasma_nn_wrapper/fil/plasma_nn_wrapper_fixpt_fil/filsrc/mwfil_controller.vhd:38]
+	Parameter fifo_depth bound to: 16 - type: integer 
+	Parameter fifo_uword bound to: 4 - type: integer 
+	Parameter fifo_width bound to: 48 - type: integer 
+INFO: [Synth 8-3491] module 'mwfil_udfifo' declared at '/home/kimberlychan/Desktop/DNN_Generality/matlab/codegen0_H5_L3_wL20_LoopNone/codegen/plasma_nn_wrapper/fil/plasma_nn_wrapper_fixpt_fil/filsrc/mwfil_udfifo.vhd:14' bound to instance 'u_d2bfifo' of component 'mwfil_udfifo' [/home/kimberlychan/Desktop/DNN_Generality/matlab/codegen0_H5_L3_wL20_LoopNone/codegen/plasma_nn_wrapper/fil/plasma_nn_wrapper_fixpt_fil/filsrc/mwfil_chifcore.vhd:219]
+INFO: [Synth 8-638] synthesizing module 'mwfil_udfifo__parameterized1' [/home/kimberlychan/Desktop/DNN_Generality/matlab/codegen0_H5_L3_wL20_LoopNone/codegen/plasma_nn_wrapper/fil/plasma_nn_wrapper_fixpt_fil/filsrc/mwfil_udfifo.vhd:33]
+	Parameter fifo_depth bound to: 16 - type: integer 
+	Parameter fifo_uword bound to: 4 - type: integer 
+	Parameter fifo_width bound to: 48 - type: integer 
+	Parameter DATA bound to: 48 - type: integer 
+	Parameter ADDR bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'mwfil_dpscram' declared at '/home/kimberlychan/Desktop/DNN_Generality/matlab/codegen0_H5_L3_wL20_LoopNone/codegen/plasma_nn_wrapper/fil/plasma_nn_wrapper_fixpt_fil/filsrc/mwfil_dpscram.vhd:12' bound to instance 'u_dpscram' of component 'mwfil_dpscram' [/home/kimberlychan/Desktop/DNN_Generality/matlab/codegen0_H5_L3_wL20_LoopNone/codegen/plasma_nn_wrapper/fil/plasma_nn_wrapper_fixpt_fil/filsrc/mwfil_udfifo.vhd:130]
+INFO: [Synth 8-638] synthesizing module 'mwfil_dpscram__parameterized1' [/home/kimberlychan/Desktop/DNN_Generality/matlab/codegen0_H5_L3_wL20_LoopNone/codegen/plasma_nn_wrapper/fil/plasma_nn_wrapper_fixpt_fil/filsrc/mwfil_dpscram.vhd:31]
+	Parameter DATA bound to: 48 - type: integer 
+	Parameter ADDR bound to: 4 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'mwfil_dpscram__parameterized1' (8#1) [/home/kimberlychan/Desktop/DNN_Generality/matlab/codegen0_H5_L3_wL20_LoopNone/codegen/plasma_nn_wrapper/fil/plasma_nn_wrapper_fixpt_fil/filsrc/mwfil_dpscram.vhd:31]
+INFO: [Synth 8-256] done synthesizing module 'mwfil_udfifo__parameterized1' (8#1) [/home/kimberlychan/Desktop/DNN_Generality/matlab/codegen0_H5_L3_wL20_LoopNone/codegen/plasma_nn_wrapper/fil/plasma_nn_wrapper_fixpt_fil/filsrc/mwfil_udfifo.vhd:33]
+	Parameter WORDSIZE bound to: 8 - type: integer 
+	Parameter OUTWORD bound to: 6 - type: integer 
+INFO: [Synth 8-3491] module 'mwfil_dut2bus' declared at '/home/kimberlychan/Desktop/DNN_Generality/matlab/codegen0_H5_L3_wL20_LoopNone/codegen/plasma_nn_wrapper/fil/plasma_nn_wrapper_fixpt_fil/filsrc/mwfil_dut2bus.vhd:13' bound to instance 'u_dut2bus' of component 'mwfil_dut2bus' [/home/kimberlychan/Desktop/DNN_Generality/matlab/codegen0_H5_L3_wL20_LoopNone/codegen/plasma_nn_wrapper/fil/plasma_nn_wrapper_fixpt_fil/filsrc/mwfil_chifcore.vhd:236]
+INFO: [Synth 8-638] synthesizing module 'mwfil_dut2bus' [/home/kimberlychan/Desktop/DNN_Generality/matlab/codegen0_H5_L3_wL20_LoopNone/codegen/plasma_nn_wrapper/fil/plasma_nn_wrapper_fixpt_fil/filsrc/mwfil_dut2bus.vhd:34]
+	Parameter WORDSIZE bound to: 8 - type: integer 
+	Parameter OUTWORD bound to: 6 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'mwfil_dut2bus' (9#1) [/home/kimberlychan/Desktop/DNN_Generality/matlab/codegen0_H5_L3_wL20_LoopNone/codegen/plasma_nn_wrapper/fil/plasma_nn_wrapper_fixpt_fil/filsrc/mwfil_dut2bus.vhd:34]
+INFO: [Synth 8-256] done synthesizing module 'mwfil_chifcore' (10#1) [/home/kimberlychan/Desktop/DNN_Generality/matlab/codegen0_H5_L3_wL20_LoopNone/codegen/plasma_nn_wrapper/fil/plasma_nn_wrapper_fixpt_fil/filsrc/mwfil_chifcore.vhd:42]
+INFO: [Synth 8-3491] module 'plasma_nn_wrapper_fixpt_wrapper' declared at '/home/kimberlychan/Desktop/DNN_Generality/matlab/codegen0_H5_L3_wL20_LoopNone/codegen/plasma_nn_wrapper/fil/plasma_nn_wrapper_fixpt_fil/filsrc/plasma_nn_wrapper_fixpt_wrapper.v:8' bound to instance 'u_dut' of component 'plasma_nn_wrapper_fixpt_wrapper' [/home/kimberlychan/Desktop/DNN_Generality/matlab/codegen0_H5_L3_wL20_LoopNone/codegen/plasma_nn_wrapper/fil/plasma_nn_wrapper_fixpt_fil/filsrc/mwfil_chiftop.vhd:101]
+INFO: [Synth 8-6157] synthesizing module 'plasma_nn_wrapper_fixpt_wrapper' [/home/kimberlychan/Desktop/DNN_Generality/matlab/codegen0_H5_L3_wL20_LoopNone/codegen/plasma_nn_wrapper/fil/plasma_nn_wrapper_fixpt_fil/filsrc/plasma_nn_wrapper_fixpt_wrapper.v:8]
+INFO: [Synth 8-6157] synthesizing module 'plasma_nn_wrapper_fixpt' [/home/kimberlychan/Desktop/DNN_Generality/matlab/codegen0_H5_L3_wL20_LoopNone/codegen/plasma_nn_wrapper/hdlsrc/plasma_nn_wrapper_fixpt.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'plasma_nn_wrapper_fixpt' (11#1) [/home/kimberlychan/Desktop/DNN_Generality/matlab/codegen0_H5_L3_wL20_LoopNone/codegen/plasma_nn_wrapper/hdlsrc/plasma_nn_wrapper_fixpt.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'plasma_nn_wrapper_fixpt_wrapper' (12#1) [/home/kimberlychan/Desktop/DNN_Generality/matlab/codegen0_H5_L3_wL20_LoopNone/codegen/plasma_nn_wrapper/fil/plasma_nn_wrapper_fixpt_fil/filsrc/plasma_nn_wrapper_fixpt_wrapper.v:8]
+INFO: [Synth 8-256] done synthesizing module 'mwfil_chiftop' (13#1) [/home/kimberlychan/Desktop/DNN_Generality/matlab/codegen0_H5_L3_wL20_LoopNone/codegen/plasma_nn_wrapper/fil/plasma_nn_wrapper_fixpt_fil/filsrc/mwfil_chiftop.vhd:27]
+INFO: [Synth 8-256] done synthesizing module 'plasma_nn_wrapper_fixpt_fil' (14#1) [/home/kimberlychan/Desktop/DNN_Generality/matlab/codegen0_H5_L3_wL20_LoopNone/codegen/plasma_nn_wrapper/fil/plasma_nn_wrapper_fixpt_fil/filsrc/plasma_nn_wrapper_fixpt_fil.vhd:26]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2088.691 ; gain = 0.000 ; free physical = 991 ; free virtual = 15116
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2088.691 ; gain = 0.000 ; free physical = 986 ; free virtual = 15113
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2088.691 ; gain = 0.000 ; free physical = 986 ; free virtual = 15113
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2088.691 ; gain = 0.000 ; free physical = 978 ; free virtual = 15105
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/kimberlychan/Desktop/DNN_Generality/matlab/codegen0_H5_L3_wL20_LoopNone/codegen/plasma_nn_wrapper/fil/plasma_nn_wrapper_fixpt_fil/fpgaproj/plasma_nn_wrapper_fixpt_fil.srcs/sources_1/ip/simcycle_fifo/simcycle_fifo/simcycle_fifo_in_context.xdc] for cell 'u_jtag_mac/u_simcycle_fifo/u_simcycle_fifo'
+Finished Parsing XDC File [/home/kimberlychan/Desktop/DNN_Generality/matlab/codegen0_H5_L3_wL20_LoopNone/codegen/plasma_nn_wrapper/fil/plasma_nn_wrapper_fixpt_fil/fpgaproj/plasma_nn_wrapper_fixpt_fil.srcs/sources_1/ip/simcycle_fifo/simcycle_fifo/simcycle_fifo_in_context.xdc] for cell 'u_jtag_mac/u_simcycle_fifo/u_simcycle_fifo'
+Parsing XDC File [/home/kimberlychan/Desktop/DNN_Generality/matlab/codegen0_H5_L3_wL20_LoopNone/codegen/plasma_nn_wrapper/fil/plasma_nn_wrapper_fixpt_fil/fpgaproj/plasma_nn_wrapper_fixpt_fil.srcs/sources_1/ip/jtag_mac_fifo/jtag_mac_fifo/jtag_mac_fifo_in_context.xdc] for cell 'u_jtag_mac/u_pre_chif_fifo/u_jtag_mac_fifo'
+Finished Parsing XDC File [/home/kimberlychan/Desktop/DNN_Generality/matlab/codegen0_H5_L3_wL20_LoopNone/codegen/plasma_nn_wrapper/fil/plasma_nn_wrapper_fixpt_fil/fpgaproj/plasma_nn_wrapper_fixpt_fil.srcs/sources_1/ip/jtag_mac_fifo/jtag_mac_fifo/jtag_mac_fifo_in_context.xdc] for cell 'u_jtag_mac/u_pre_chif_fifo/u_jtag_mac_fifo'
+Parsing XDC File [/home/kimberlychan/Desktop/DNN_Generality/matlab/codegen0_H5_L3_wL20_LoopNone/codegen/plasma_nn_wrapper/fil/plasma_nn_wrapper_fixpt_fil/fpgaproj/plasma_nn_wrapper_fixpt_fil.srcs/sources_1/ip/jtag_mac_fifo/jtag_mac_fifo/jtag_mac_fifo_in_context.xdc] for cell 'u_jtag_mac/u_post_chif_fifo/u_jtag_mac_fifo'
+Finished Parsing XDC File [/home/kimberlychan/Desktop/DNN_Generality/matlab/codegen0_H5_L3_wL20_LoopNone/codegen/plasma_nn_wrapper/fil/plasma_nn_wrapper_fixpt_fil/fpgaproj/plasma_nn_wrapper_fixpt_fil.srcs/sources_1/ip/jtag_mac_fifo/jtag_mac_fifo/jtag_mac_fifo_in_context.xdc] for cell 'u_jtag_mac/u_post_chif_fifo/u_jtag_mac_fifo'
+Parsing XDC File [/home/kimberlychan/Desktop/DNN_Generality/matlab/codegen0_H5_L3_wL20_LoopNone/codegen/plasma_nn_wrapper/fil/plasma_nn_wrapper_fixpt_fil/fpgaproj/plasma_nn_wrapper_fixpt_fil.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'u_clk_wiz_0'
+WARNING: [Vivado 12-584] No ports matched ''. [/home/kimberlychan/Desktop/DNN_Generality/matlab/codegen0_H5_L3_wL20_LoopNone/codegen/plasma_nn_wrapper/fil/plasma_nn_wrapper_fixpt_fil/fpgaproj/plasma_nn_wrapper_fixpt_fil.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc:1]
+WARNING: [Vivado 12-584] No ports matched ''. [/home/kimberlychan/Desktop/DNN_Generality/matlab/codegen0_H5_L3_wL20_LoopNone/codegen/plasma_nn_wrapper/fil/plasma_nn_wrapper_fixpt_fil/fpgaproj/plasma_nn_wrapper_fixpt_fil.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc:4]
+Finished Parsing XDC File [/home/kimberlychan/Desktop/DNN_Generality/matlab/codegen0_H5_L3_wL20_LoopNone/codegen/plasma_nn_wrapper/fil/plasma_nn_wrapper_fixpt_fil/fpgaproj/plasma_nn_wrapper_fixpt_fil.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'u_clk_wiz_0'
+Parsing XDC File [/home/kimberlychan/Desktop/DNN_Generality/matlab/codegen0_H5_L3_wL20_LoopNone/codegen/plasma_nn_wrapper/fil/plasma_nn_wrapper_fixpt_fil/filsrc/plasma_nn_wrapper_fixpt_fil.xdc]
+WARNING: [Constraints 18-619] A clock with name 'sysclk' already exists, overwriting the previous clock with the same name. [/home/kimberlychan/Desktop/DNN_Generality/matlab/codegen0_H5_L3_wL20_LoopNone/codegen/plasma_nn_wrapper/fil/plasma_nn_wrapper_fixpt_fil/filsrc/plasma_nn_wrapper_fixpt_fil.xdc:1]
+WARNING: [Vivado 12-2489] -period contains time 15.151515 which will be rounded to 15.152 to ensure it is an integer multiple of 1 picosecond [/home/kimberlychan/Desktop/DNN_Generality/matlab/codegen0_H5_L3_wL20_LoopNone/codegen/plasma_nn_wrapper/fil/plasma_nn_wrapper_fixpt_fil/filsrc/plasma_nn_wrapper_fixpt_fil.xdc:4]
+WARNING: [Vivado 12-2489] -waveform contains time 7.575758 which will be rounded to 7.576 to ensure it is an integer multiple of 1 picosecond [/home/kimberlychan/Desktop/DNN_Generality/matlab/codegen0_H5_L3_wL20_LoopNone/codegen/plasma_nn_wrapper/fil/plasma_nn_wrapper_fixpt_fil/filsrc/plasma_nn_wrapper_fixpt_fil.xdc:4]
+WARNING: [Vivado 12-627] No clocks matched 'clk_out1_clk_wiz_0'. [/home/kimberlychan/Desktop/DNN_Generality/matlab/codegen0_H5_L3_wL20_LoopNone/codegen/plasma_nn_wrapper/fil/plasma_nn_wrapper_fixpt_fil/filsrc/plasma_nn_wrapper_fixpt_fil.xdc:5]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/kimberlychan/Desktop/DNN_Generality/matlab/codegen0_H5_L3_wL20_LoopNone/codegen/plasma_nn_wrapper/fil/plasma_nn_wrapper_fixpt_fil/filsrc/plasma_nn_wrapper_fixpt_fil.xdc:5]
+WARNING: [Vivado 12-627] No clocks matched 'clk_out1_clk_wiz_0'. [/home/kimberlychan/Desktop/DNN_Generality/matlab/codegen0_H5_L3_wL20_LoopNone/codegen/plasma_nn_wrapper/fil/plasma_nn_wrapper_fixpt_fil/filsrc/plasma_nn_wrapper_fixpt_fil.xdc:6]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/kimberlychan/Desktop/DNN_Generality/matlab/codegen0_H5_L3_wL20_LoopNone/codegen/plasma_nn_wrapper/fil/plasma_nn_wrapper_fixpt_fil/filsrc/plasma_nn_wrapper_fixpt_fil.xdc:6]
+Finished Parsing XDC File [/home/kimberlychan/Desktop/DNN_Generality/matlab/codegen0_H5_L3_wL20_LoopNone/codegen/plasma_nn_wrapper/fil/plasma_nn_wrapper_fixpt_fil/filsrc/plasma_nn_wrapper_fixpt_fil.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [/home/kimberlychan/Desktop/DNN_Generality/matlab/codegen0_H5_L3_wL20_LoopNone/codegen/plasma_nn_wrapper/fil/plasma_nn_wrapper_fixpt_fil/filsrc/plasma_nn_wrapper_fixpt_fil.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/plasma_nn_wrapper_fixpt_fil_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/kimberlychan/Desktop/DNN_Generality/matlab/codegen0_H5_L3_wL20_LoopNone/codegen/plasma_nn_wrapper/fil/plasma_nn_wrapper_fixpt_fil/filsrc/plasma_nn_wrapper_fixpt_fil.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/plasma_nn_wrapper_fixpt_fil_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/plasma_nn_wrapper_fixpt_fil_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2251.383 ; gain = 0.000 ; free physical = 890 ; free virtual = 15015
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2251.383 ; gain = 0.000 ; free physical = 890 ; free virtual = 15015
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2251.383 ; gain = 162.691 ; free physical = 970 ; free virtual = 15092
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2251.383 ; gain = 162.691 ; free physical = 970 ; free virtual = 15092
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for sysclk. (constraint file  /home/kimberlychan/Desktop/DNN_Generality/matlab/codegen0_H5_L3_wL20_LoopNone/codegen/plasma_nn_wrapper/fil/plasma_nn_wrapper_fixpt_fil/fpgaproj/plasma_nn_wrapper_fixpt_fil.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 5).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for sysclk. (constraint file  /home/kimberlychan/Desktop/DNN_Generality/matlab/codegen0_H5_L3_wL20_LoopNone/codegen/plasma_nn_wrapper/fil/plasma_nn_wrapper_fixpt_fil/fpgaproj/plasma_nn_wrapper_fixpt_fil.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 6).
+Applied set_property DONT_TOUCH = true for u_jtag_mac/u_simcycle_fifo/u_simcycle_fifo. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_jtag_mac/u_pre_chif_fifo/u_jtag_mac_fifo. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_jtag_mac/u_post_chif_fifo/u_jtag_mac_fifo. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_clk_wiz_0. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2251.383 ; gain = 162.691 ; free physical = 970 ; free virtual = 15092
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'cs_reg' in module 'jtag_mac'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                  000000000000001 |                  000000000000000
+                 get_cmd |                  000000000000010 |                  000000000000010
+              get_wr_len |                  000001000000000 |                  000000000000100
+                 get_sim |                  000000000010000 |                  000000000001000
+                      wr |                  000000000100000 |                  000000000010000
+              get_rd_len |                  001000000000000 |                  000000001000000
+                get_skip |                  000010000000000 |                  000000010000000
+                exe_skip |                  000000001000000 |                  000000100000000
+                rdbk_len |                  000000010000000 |                  000001000000000
+                rdbk_dat |                  100000000000000 |                  000010000000000
+                user_rst |                  010000000000000 |                  000000000000001
+            ver_get_skip |                  000100000000000 |                  000100000000000
+            ver_exe_skip |                  000000100000000 |                  001000000000000
+            ver_rdbk_len |                  000000000000100 |                  010000000000000
+            ver_rdbk_dat |                  000000000001000 |                  100000000000000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'cs_reg' using encoding 'one-hot' in module 'jtag_mac'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 2251.383 ; gain = 162.691 ; free physical = 954 ; free virtual = 15078
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   44 Bit       Adders := 10    
+	   2 Input   43 Bit       Adders := 5     
+	   5 Input   43 Bit       Adders := 5     
+	   3 Input   42 Bit       Adders := 1     
+	   6 Input   39 Bit       Adders := 1     
+	   2 Input   22 Bit       Adders := 2     
+	   2 Input   20 Bit       Adders := 2     
+	   2 Input   16 Bit       Adders := 4     
+	   2 Input   10 Bit       Adders := 2     
+	   2 Input    8 Bit       Adders := 1     
+	   2 Input    5 Bit       Adders := 1     
+	   2 Input    4 Bit       Adders := 4     
+	   3 Input    4 Bit       Adders := 2     
+	   2 Input    3 Bit       Adders := 1     
++---Registers : 
+	               56 Bit    Registers := 3     
+	               48 Bit    Registers := 3     
+	               32 Bit    Registers := 1     
+	               16 Bit    Registers := 5     
+	               15 Bit    Registers := 3     
+	               13 Bit    Registers := 5     
+	               10 Bit    Registers := 1     
+	                8 Bit    Registers := 3     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 4     
+	                3 Bit    Registers := 2     
+	                1 Bit    Registers := 19    
++---RAMs : 
+	              896 Bit	(16 X 56 bit)          RAMs := 1     
+	              768 Bit	(16 X 48 bit)          RAMs := 1     
++---Muxes : 
+	   2 Input   56 Bit        Muxes := 3     
+	   2 Input   48 Bit        Muxes := 8     
+	   2 Input   39 Bit        Muxes := 10    
+	   2 Input   37 Bit        Muxes := 5     
+	   3 Input   32 Bit        Muxes := 1     
+	   3 Input   16 Bit        Muxes := 3     
+	   2 Input   15 Bit        Muxes := 2     
+	  15 Input   15 Bit        Muxes := 6     
+	  38 Input   15 Bit        Muxes := 1     
+	   2 Input   14 Bit        Muxes := 12    
+	   2 Input   13 Bit        Muxes := 3     
+	   3 Input   13 Bit        Muxes := 1     
+	   5 Input   12 Bit        Muxes := 6     
+	   2 Input   11 Bit        Muxes := 13    
+	   2 Input   10 Bit        Muxes := 12    
+	   2 Input    9 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 4     
+	   3 Input    5 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 7     
+	   2 Input    4 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 2     
+	   2 Input    2 Bit        Muxes := 2     
+	   3 Input    1 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 15    
+	   4 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+DSP Debug: swapped A/B pins for adder 0x294b0f30
+DSP Debug: swapped A/B pins for adder 0x27013360
+DSP Debug: swapped A/B pins for adder 0x275c57f0
+DSP Debug: swapped A/B pins for adder 0x1cef5360
+DSP Report: Generating DSP plasma_nn_wrapper_fixpt_tmp4, operation Mode is: A*(B:0x19051).
+DSP Report: operator plasma_nn_wrapper_fixpt_tmp4 is absorbed into DSP plasma_nn_wrapper_fixpt_tmp4.
+DSP Report: Generating DSP plasma_nn_wrapper_fixpt_tmp5, operation Mode is: A*(B:0x18e91).
+DSP Report: operator plasma_nn_wrapper_fixpt_tmp5 is absorbed into DSP plasma_nn_wrapper_fixpt_tmp5.
+DSP Report: Generating DSP plasma_nn_wrapper_fixpt_tmp5, operation Mode is: C+A*(B:0x18e91).
+DSP Report: operator plasma_nn_wrapper_fixpt_tmp5 is absorbed into DSP plasma_nn_wrapper_fixpt_tmp5.
+DSP Report: operator plasma_nn_wrapper_fixpt_tmp5 is absorbed into DSP plasma_nn_wrapper_fixpt_tmp5.
+DSP Report: Generating DSP plasma_nn_wrapper_fixpt_tmp5, operation Mode is: A*(B:0x7824).
+DSP Report: operator plasma_nn_wrapper_fixpt_tmp5 is absorbed into DSP plasma_nn_wrapper_fixpt_tmp5.
+DSP Report: operator plasma_nn_wrapper_fixpt_tmp5 is absorbed into DSP plasma_nn_wrapper_fixpt_tmp5.
+DSP Report: Generating DSP plasma_nn_wrapper_fixpt_tmp3, operation Mode is: PCIN+A:B+C.
+DSP Report: operator plasma_nn_wrapper_fixpt_tmp3 is absorbed into DSP plasma_nn_wrapper_fixpt_tmp3.
+DSP Report: Generating DSP plasma_nn_wrapper_fixpt_tmp_07, operation Mode is: A*(B:0x1db51).
+DSP Report: operator plasma_nn_wrapper_fixpt_tmp_07 is absorbed into DSP plasma_nn_wrapper_fixpt_tmp_07.
+DSP Report: Generating DSP plasma_nn_wrapper_fixpt_tmp4, operation Mode is: A*(B:0xc33).
+DSP Report: operator plasma_nn_wrapper_fixpt_tmp4 is absorbed into DSP plasma_nn_wrapper_fixpt_tmp4.
+DSP Report: Generating DSP plasma_nn_wrapper_fixpt_tmp3, operation Mode is: PCIN+A*(B:0x13da4).
+DSP Report: operator plasma_nn_wrapper_fixpt_tmp3 is absorbed into DSP plasma_nn_wrapper_fixpt_tmp3.
+DSP Report: operator plasma_nn_wrapper_fixpt_tmp5 is absorbed into DSP plasma_nn_wrapper_fixpt_tmp3.
+DSP Report: Generating DSP plasma_nn_wrapper_fixpt_tmp3, operation Mode is: PCIN+A*(B:0x2b91c).
+DSP Report: operator plasma_nn_wrapper_fixpt_tmp3 is absorbed into DSP plasma_nn_wrapper_fixpt_tmp3.
+DSP Report: operator plasma_nn_wrapper_fixpt_tmp5 is absorbed into DSP plasma_nn_wrapper_fixpt_tmp3.
+DSP Report: Generating DSP plasma_nn_wrapper_fixpt_tmp_06, operation Mode is: A*(B:0xcbaa).
+DSP Report: operator plasma_nn_wrapper_fixpt_tmp_06 is absorbed into DSP plasma_nn_wrapper_fixpt_tmp_06.
+DSP Report: Generating DSP plasma_nn_wrapper_fixpt_tmp5, operation Mode is: A*(B:0xaea0).
+DSP Report: operator plasma_nn_wrapper_fixpt_tmp5 is absorbed into DSP plasma_nn_wrapper_fixpt_tmp5.
+DSP Report: Generating DSP plasma_nn_wrapper_fixpt_tmp3, operation Mode is: PCIN+A*(B:0x197b5).
+DSP Report: operator plasma_nn_wrapper_fixpt_tmp3 is absorbed into DSP plasma_nn_wrapper_fixpt_tmp3.
+DSP Report: operator plasma_nn_wrapper_fixpt_tmp4 is absorbed into DSP plasma_nn_wrapper_fixpt_tmp3.
+DSP Report: Generating DSP plasma_nn_wrapper_fixpt_tmp5, operation Mode is: A*(B:0x2a683).
+DSP Report: operator plasma_nn_wrapper_fixpt_tmp5 is absorbed into DSP plasma_nn_wrapper_fixpt_tmp5.
+DSP Report: Generating DSP plasma_nn_wrapper_fixpt_tmp5, operation Mode is: C+A*(B:0x2a683).
+DSP Report: operator plasma_nn_wrapper_fixpt_tmp5 is absorbed into DSP plasma_nn_wrapper_fixpt_tmp5.
+DSP Report: operator plasma_nn_wrapper_fixpt_tmp5 is absorbed into DSP plasma_nn_wrapper_fixpt_tmp5.
+DSP Report: Generating DSP plasma_nn_wrapper_fixpt_tmp_05, operation Mode is: A*(B:0x2164e).
+DSP Report: operator plasma_nn_wrapper_fixpt_tmp_05 is absorbed into DSP plasma_nn_wrapper_fixpt_tmp_05.
+DSP Report: Generating DSP plasma_nn_wrapper_fixpt_tmp5, operation Mode is: A*(B:0x2e52e).
+DSP Report: operator plasma_nn_wrapper_fixpt_tmp5 is absorbed into DSP plasma_nn_wrapper_fixpt_tmp5.
+DSP Report: Generating DSP plasma_nn_wrapper_fixpt_tmp5, operation Mode is: C+A*(B:0x2e52e).
+DSP Report: operator plasma_nn_wrapper_fixpt_tmp5 is absorbed into DSP plasma_nn_wrapper_fixpt_tmp5.
+DSP Report: operator plasma_nn_wrapper_fixpt_tmp5 is absorbed into DSP plasma_nn_wrapper_fixpt_tmp5.
+DSP Report: Generating DSP plasma_nn_wrapper_fixpt_tmp4, operation Mode is: A*(B:0x19048).
+DSP Report: operator plasma_nn_wrapper_fixpt_tmp4 is absorbed into DSP plasma_nn_wrapper_fixpt_tmp4.
+DSP Report: Generating DSP plasma_nn_wrapper_fixpt_tmp4, operation Mode is: C+A*(B:0x19048).
+DSP Report: operator plasma_nn_wrapper_fixpt_tmp4 is absorbed into DSP plasma_nn_wrapper_fixpt_tmp4.
+DSP Report: operator plasma_nn_wrapper_fixpt_tmp4 is absorbed into DSP plasma_nn_wrapper_fixpt_tmp4.
+DSP Report: Generating DSP plasma_nn_wrapper_fixpt_tmp5, operation Mode is: A*(B:0x279da).
+DSP Report: operator plasma_nn_wrapper_fixpt_tmp5 is absorbed into DSP plasma_nn_wrapper_fixpt_tmp5.
+DSP Report: Generating DSP plasma_nn_wrapper_fixpt_tmp5, operation Mode is: C+A*(B:0x279da).
+DSP Report: operator plasma_nn_wrapper_fixpt_tmp5 is absorbed into DSP plasma_nn_wrapper_fixpt_tmp5.
+DSP Report: operator plasma_nn_wrapper_fixpt_tmp5 is absorbed into DSP plasma_nn_wrapper_fixpt_tmp5.
+DSP Report: Generating DSP plasma_nn_wrapper_fixpt_tmp_04, operation Mode is: A*(B:0x7778).
+DSP Report: operator plasma_nn_wrapper_fixpt_tmp_04 is absorbed into DSP plasma_nn_wrapper_fixpt_tmp_04.
+DSP Report: operator plasma_nn_wrapper_fixpt_tmp_04 is absorbed into DSP plasma_nn_wrapper_fixpt_tmp_04.
+DSP Report: Generating DSP plasma_nn_wrapper_fixpt_tmp5, operation Mode is: A*(B:0xd190).
+DSP Report: operator plasma_nn_wrapper_fixpt_tmp5 is absorbed into DSP plasma_nn_wrapper_fixpt_tmp5.
+DSP Report: Generating DSP plasma_nn_wrapper_fixpt_tmp3, operation Mode is: PCIN+A*(B:0x398af).
+DSP Report: operator plasma_nn_wrapper_fixpt_tmp3 is absorbed into DSP plasma_nn_wrapper_fixpt_tmp3.
+DSP Report: operator plasma_nn_wrapper_fixpt_tmp5 is absorbed into DSP plasma_nn_wrapper_fixpt_tmp3.
+DSP Report: Generating DSP plasma_nn_wrapper_fixpt_tmp4, operation Mode is: A*(B:0xac25).
+DSP Report: operator plasma_nn_wrapper_fixpt_tmp4 is absorbed into DSP plasma_nn_wrapper_fixpt_tmp4.
+DSP Report: operator plasma_nn_wrapper_fixpt_tmp4 is absorbed into DSP plasma_nn_wrapper_fixpt_tmp4.
+DSP Report: Generating DSP plasma_nn_wrapper_fixpt_tmp_07, operation Mode is: A*(B:0x1e57a).
+DSP Report: operator plasma_nn_wrapper_fixpt_tmp_07 is absorbed into DSP plasma_nn_wrapper_fixpt_tmp_07.
+DSP Report: operator plasma_nn_wrapper_fixpt_tmp_07 is absorbed into DSP plasma_nn_wrapper_fixpt_tmp_07.
+DSP Report: Generating DSP plasma_nn_wrapper_fixpt_tmp_07, operation Mode is: A*(B:0x12541).
+DSP Report: operator plasma_nn_wrapper_fixpt_tmp_07 is absorbed into DSP plasma_nn_wrapper_fixpt_tmp_07.
+DSP Report: operator plasma_nn_wrapper_fixpt_tmp_07 is absorbed into DSP plasma_nn_wrapper_fixpt_tmp_07.
+DSP Report: Generating DSP plasma_nn_wrapper_fixpt_tmp_06, operation Mode is: A*(B:0x14b12).
+DSP Report: operator plasma_nn_wrapper_fixpt_tmp_06 is absorbed into DSP plasma_nn_wrapper_fixpt_tmp_06.
+DSP Report: operator plasma_nn_wrapper_fixpt_tmp_06 is absorbed into DSP plasma_nn_wrapper_fixpt_tmp_06.
+DSP Report: Generating DSP plasma_nn_wrapper_fixpt_tmp_05, operation Mode is: A*(B:0x1d7d).
+DSP Report: operator plasma_nn_wrapper_fixpt_tmp_05 is absorbed into DSP plasma_nn_wrapper_fixpt_tmp_05.
+DSP Report: operator plasma_nn_wrapper_fixpt_tmp_05 is absorbed into DSP plasma_nn_wrapper_fixpt_tmp_05.
+DSP Report: Generating DSP plasma_nn_wrapper_fixpt_tmp_04, operation Mode is: A*(B:0xdcfa).
+DSP Report: operator plasma_nn_wrapper_fixpt_tmp_04 is absorbed into DSP plasma_nn_wrapper_fixpt_tmp_04.
+DSP Report: operator plasma_nn_wrapper_fixpt_tmp_04 is absorbed into DSP plasma_nn_wrapper_fixpt_tmp_04.
+DSP Report: Generating DSP plasma_nn_wrapper_fixpt_tmp_07, operation Mode is: A*(B:0x208c5).
+DSP Report: operator plasma_nn_wrapper_fixpt_tmp_07 is absorbed into DSP plasma_nn_wrapper_fixpt_tmp_07.
+DSP Report: Generating DSP plasma_nn_wrapper_fixpt_tmp_07, operation Mode is: C+A*(B:0x208c5).
+DSP Report: operator plasma_nn_wrapper_fixpt_tmp_07 is absorbed into DSP plasma_nn_wrapper_fixpt_tmp_07.
+DSP Report: operator plasma_nn_wrapper_fixpt_tmp_07 is absorbed into DSP plasma_nn_wrapper_fixpt_tmp_07.
+DSP Report: Generating DSP plasma_nn_wrapper_fixpt_tmp_17, operation Mode is: A*(B:0x21a90).
+DSP Report: operator plasma_nn_wrapper_fixpt_tmp_17 is absorbed into DSP plasma_nn_wrapper_fixpt_tmp_17.
+DSP Report: Generating DSP plasma_nn_wrapper_fixpt_tmp_13, operation Mode is: PCIN+A*(B:0x4e86).
+DSP Report: operator plasma_nn_wrapper_fixpt_tmp_13 is absorbed into DSP plasma_nn_wrapper_fixpt_tmp_13.
+DSP Report: operator plasma_nn_wrapper_fixpt_tmp_15 is absorbed into DSP plasma_nn_wrapper_fixpt_tmp_13.
+DSP Report: Generating DSP plasma_nn_wrapper_fixpt_tmp_07, operation Mode is: A*(B:0x3c2b9).
+DSP Report: operator plasma_nn_wrapper_fixpt_tmp_07 is absorbed into DSP plasma_nn_wrapper_fixpt_tmp_07.
+DSP Report: Generating DSP plasma_nn_wrapper_fixpt_tmp_06, operation Mode is: A*(B:0x2d032).
+DSP Report: operator plasma_nn_wrapper_fixpt_tmp_06 is absorbed into DSP plasma_nn_wrapper_fixpt_tmp_06.
+DSP Report: Generating DSP plasma_nn_wrapper_fixpt_tmp_06, operation Mode is: C+A*(B:0x2d032).
+DSP Report: operator plasma_nn_wrapper_fixpt_tmp_06 is absorbed into DSP plasma_nn_wrapper_fixpt_tmp_06.
+DSP Report: operator plasma_nn_wrapper_fixpt_tmp_06 is absorbed into DSP plasma_nn_wrapper_fixpt_tmp_06.
+DSP Report: Generating DSP plasma_nn_wrapper_fixpt_tmp_05, operation Mode is: A*(B:0x24965).
+DSP Report: operator plasma_nn_wrapper_fixpt_tmp_05 is absorbed into DSP plasma_nn_wrapper_fixpt_tmp_05.
+DSP Report: Generating DSP plasma_nn_wrapper_fixpt_tmp_05, operation Mode is: C+A*(B:0x24965).
+DSP Report: operator plasma_nn_wrapper_fixpt_tmp_05 is absorbed into DSP plasma_nn_wrapper_fixpt_tmp_05.
+DSP Report: operator plasma_nn_wrapper_fixpt_tmp_05 is absorbed into DSP plasma_nn_wrapper_fixpt_tmp_05.
+DSP Report: Generating DSP plasma_nn_wrapper_fixpt_tmp_04, operation Mode is: A*(B:0x136b2).
+DSP Report: operator plasma_nn_wrapper_fixpt_tmp_04 is absorbed into DSP plasma_nn_wrapper_fixpt_tmp_04.
+DSP Report: operator plasma_nn_wrapper_fixpt_tmp_04 is absorbed into DSP plasma_nn_wrapper_fixpt_tmp_04.
+DSP Report: Generating DSP plasma_nn_wrapper_fixpt_tmp_07, operation Mode is: A*(B:0x1b196).
+DSP Report: operator plasma_nn_wrapper_fixpt_tmp_07 is absorbed into DSP plasma_nn_wrapper_fixpt_tmp_07.
+DSP Report: Generating DSP plasma_nn_wrapper_fixpt_tmp_07, operation Mode is: C+A*(B:0x1b196).
+DSP Report: operator plasma_nn_wrapper_fixpt_tmp_07 is absorbed into DSP plasma_nn_wrapper_fixpt_tmp_07.
+DSP Report: operator plasma_nn_wrapper_fixpt_tmp_07 is absorbed into DSP plasma_nn_wrapper_fixpt_tmp_07.
+DSP Report: Generating DSP plasma_nn_wrapper_fixpt_tmp_17, operation Mode is: A*(B:0x12d58).
+DSP Report: operator plasma_nn_wrapper_fixpt_tmp_17 is absorbed into DSP plasma_nn_wrapper_fixpt_tmp_17.
+DSP Report: Generating DSP plasma_nn_wrapper_fixpt_tmp_17, operation Mode is: C+A*(B:0x12d58).
+DSP Report: operator plasma_nn_wrapper_fixpt_tmp_17 is absorbed into DSP plasma_nn_wrapper_fixpt_tmp_17.
+DSP Report: operator plasma_nn_wrapper_fixpt_tmp_17 is absorbed into DSP plasma_nn_wrapper_fixpt_tmp_17.
+DSP Report: Generating DSP plasma_nn_wrapper_fixpt_tmp_07, operation Mode is: A*(B:0x3cc5).
+DSP Report: operator plasma_nn_wrapper_fixpt_tmp_07 is absorbed into DSP plasma_nn_wrapper_fixpt_tmp_07.
+DSP Report: Generating DSP plasma_nn_wrapper_fixpt_tmp_06, operation Mode is: A*(B:0xacd3).
+DSP Report: operator plasma_nn_wrapper_fixpt_tmp_06 is absorbed into DSP plasma_nn_wrapper_fixpt_tmp_06.
+DSP Report: operator plasma_nn_wrapper_fixpt_tmp_06 is absorbed into DSP plasma_nn_wrapper_fixpt_tmp_06.
+DSP Report: Generating DSP plasma_nn_wrapper_fixpt_tmp_05, operation Mode is: A*(B:0x115cc).
+DSP Report: operator plasma_nn_wrapper_fixpt_tmp_05 is absorbed into DSP plasma_nn_wrapper_fixpt_tmp_05.
+DSP Report: Generating DSP plasma_nn_wrapper_fixpt_tmp_04, operation Mode is: A*(B:0xf1b5).
+DSP Report: operator plasma_nn_wrapper_fixpt_tmp_04 is absorbed into DSP plasma_nn_wrapper_fixpt_tmp_04.
+DSP Report: operator plasma_nn_wrapper_fixpt_tmp_04 is absorbed into DSP plasma_nn_wrapper_fixpt_tmp_04.
+DSP Report: Generating DSP plasma_nn_wrapper_fixpt_tmp_07, operation Mode is: A*(B:0x1abb9).
+DSP Report: operator plasma_nn_wrapper_fixpt_tmp_07 is absorbed into DSP plasma_nn_wrapper_fixpt_tmp_07.
+DSP Report: Generating DSP plasma_nn_wrapper_fixpt_tmp_14, operation Mode is: A*(B:0x1d8fb).
+DSP Report: operator plasma_nn_wrapper_fixpt_tmp_14 is absorbed into DSP plasma_nn_wrapper_fixpt_tmp_14.
+DSP Report: Generating DSP plasma_nn_wrapper_fixpt_tmp_14, operation Mode is: C+A*(B:0x1d8fb).
+DSP Report: operator plasma_nn_wrapper_fixpt_tmp_14 is absorbed into DSP plasma_nn_wrapper_fixpt_tmp_14.
+DSP Report: operator plasma_nn_wrapper_fixpt_tmp_14 is absorbed into DSP plasma_nn_wrapper_fixpt_tmp_14.
+DSP Report: Generating DSP plasma_nn_wrapper_fixpt_tmp_13, operation Mode is: PCIN+A:B+C.
+DSP Report: operator plasma_nn_wrapper_fixpt_tmp_13 is absorbed into DSP plasma_nn_wrapper_fixpt_tmp_13.
+DSP Report: Generating DSP plasma_nn_wrapper_fixpt_tmp_07, operation Mode is: A*(B:0xae2a).
+DSP Report: operator plasma_nn_wrapper_fixpt_tmp_07 is absorbed into DSP plasma_nn_wrapper_fixpt_tmp_07.
+DSP Report: operator plasma_nn_wrapper_fixpt_tmp_07 is absorbed into DSP plasma_nn_wrapper_fixpt_tmp_07.
+DSP Report: Generating DSP plasma_nn_wrapper_fixpt_tmp_06, operation Mode is: A*(B:0x15d3d).
+DSP Report: operator plasma_nn_wrapper_fixpt_tmp_06 is absorbed into DSP plasma_nn_wrapper_fixpt_tmp_06.
+DSP Report: Generating DSP plasma_nn_wrapper_fixpt_tmp_05, operation Mode is: A*(B:0xf46).
+DSP Report: operator plasma_nn_wrapper_fixpt_tmp_05 is absorbed into DSP plasma_nn_wrapper_fixpt_tmp_05.
+DSP Report: operator plasma_nn_wrapper_fixpt_tmp_05 is absorbed into DSP plasma_nn_wrapper_fixpt_tmp_05.
+DSP Report: Generating DSP plasma_nn_wrapper_fixpt_tmp_04, operation Mode is: A*(B:0x7e25).
+DSP Report: operator plasma_nn_wrapper_fixpt_tmp_04 is absorbed into DSP plasma_nn_wrapper_fixpt_tmp_04.
+DSP Report: Generating DSP plasma_nn_wrapper_fixpt_tmp_07, operation Mode is: A*(B:0xba10).
+DSP Report: operator plasma_nn_wrapper_fixpt_tmp_07 is absorbed into DSP plasma_nn_wrapper_fixpt_tmp_07.
+DSP Report: operator plasma_nn_wrapper_fixpt_tmp_07 is absorbed into DSP plasma_nn_wrapper_fixpt_tmp_07.
+DSP Report: Generating DSP plasma_nn_wrapper_fixpt_tmp_16, operation Mode is: A*(B:0x255d5).
+DSP Report: operator plasma_nn_wrapper_fixpt_tmp_16 is absorbed into DSP plasma_nn_wrapper_fixpt_tmp_16.
+DSP Report: Generating DSP plasma_nn_wrapper_fixpt_tmp_16, operation Mode is: C+A*(B:0x255d5).
+DSP Report: operator plasma_nn_wrapper_fixpt_tmp_16 is absorbed into DSP plasma_nn_wrapper_fixpt_tmp_16.
+DSP Report: operator plasma_nn_wrapper_fixpt_tmp_16 is absorbed into DSP plasma_nn_wrapper_fixpt_tmp_16.
+DSP Report: Generating DSP y1_17, operation Mode is: A*(B:0x2ba36).
+DSP Report: operator y1_17 is absorbed into DSP y1_17.
+DSP Report: Generating DSP y1_17, operation Mode is: C+A*(B:0x2ba36).
+DSP Report: operator y1_17 is absorbed into DSP y1_17.
+DSP Report: operator y1_17 is absorbed into DSP y1_17.
+DSP Report: Generating DSP plasma_nn_wrapper_fixpt_tmp_17, operation Mode is: A*(B:0x13b8d).
+DSP Report: operator plasma_nn_wrapper_fixpt_tmp_17 is absorbed into DSP plasma_nn_wrapper_fixpt_tmp_17.
+DSP Report: Generating DSP plasma_nn_wrapper_fixpt_tmp_13, operation Mode is: PCIN+A*(B:0x27d5e).
+DSP Report: operator plasma_nn_wrapper_fixpt_tmp_13 is absorbed into DSP plasma_nn_wrapper_fixpt_tmp_13.
+DSP Report: operator plasma_nn_wrapper_fixpt_tmp_17 is absorbed into DSP plasma_nn_wrapper_fixpt_tmp_13.
+DSP Report: Generating DSP plasma_nn_wrapper_fixpt_tmp_14, operation Mode is: A*(B:0x204be).
+DSP Report: operator plasma_nn_wrapper_fixpt_tmp_14 is absorbed into DSP plasma_nn_wrapper_fixpt_tmp_14.
+DSP Report: Generating DSP plasma_nn_wrapper_fixpt_tmp_14, operation Mode is: C+A*(B:0x204be).
+DSP Report: operator plasma_nn_wrapper_fixpt_tmp_14 is absorbed into DSP plasma_nn_wrapper_fixpt_tmp_14.
+DSP Report: operator plasma_nn_wrapper_fixpt_tmp_14 is absorbed into DSP plasma_nn_wrapper_fixpt_tmp_14.
+DSP Report: Generating DSP plasma_nn_wrapper_fixpt_tmp_15, operation Mode is: A*(B:0x1fc0a).
+DSP Report: operator plasma_nn_wrapper_fixpt_tmp_15 is absorbed into DSP plasma_nn_wrapper_fixpt_tmp_15.
+DSP Report: Generating DSP plasma_nn_wrapper_fixpt_tmp_15, operation Mode is: C+A*(B:0x1fc0a).
+DSP Report: operator plasma_nn_wrapper_fixpt_tmp_15 is absorbed into DSP plasma_nn_wrapper_fixpt_tmp_15.
+DSP Report: operator plasma_nn_wrapper_fixpt_tmp_15 is absorbed into DSP plasma_nn_wrapper_fixpt_tmp_15.
+DSP Report: Generating DSP plasma_nn_wrapper_fixpt_tmp_13, operation Mode is: PCIN+A:B+C.
+DSP Report: operator plasma_nn_wrapper_fixpt_tmp_13 is absorbed into DSP plasma_nn_wrapper_fixpt_tmp_13.
+DSP Report: Generating DSP plasma_nn_wrapper_fixpt_tmp_16, operation Mode is: A*(B:0x2ea78).
+DSP Report: operator plasma_nn_wrapper_fixpt_tmp_16 is absorbed into DSP plasma_nn_wrapper_fixpt_tmp_16.
+DSP Report: Generating DSP plasma_nn_wrapper_fixpt_tmp_16, operation Mode is: C+A*(B:0x2ea78).
+DSP Report: operator plasma_nn_wrapper_fixpt_tmp_16 is absorbed into DSP plasma_nn_wrapper_fixpt_tmp_16.
+DSP Report: operator plasma_nn_wrapper_fixpt_tmp_16 is absorbed into DSP plasma_nn_wrapper_fixpt_tmp_16.
+DSP Report: Generating DSP y1_16, operation Mode is: A*(B:0x29508).
+DSP Report: operator y1_16 is absorbed into DSP y1_16.
+DSP Report: Generating DSP y1_16, operation Mode is: C+A*(B:0x29508).
+DSP Report: operator y1_16 is absorbed into DSP y1_16.
+DSP Report: operator y1_16 is absorbed into DSP y1_16.
+DSP Report: Generating DSP plasma_nn_wrapper_fixpt_tmp_14, operation Mode is: A*(B:0x19480).
+DSP Report: operator plasma_nn_wrapper_fixpt_tmp_14 is absorbed into DSP plasma_nn_wrapper_fixpt_tmp_14.
+DSP Report: Generating DSP plasma_nn_wrapper_fixpt_tmp_13, operation Mode is: PCIN+A*(B:0x3f1d9).
+DSP Report: operator plasma_nn_wrapper_fixpt_tmp_13 is absorbed into DSP plasma_nn_wrapper_fixpt_tmp_13.
+DSP Report: operator plasma_nn_wrapper_fixpt_tmp_17 is absorbed into DSP plasma_nn_wrapper_fixpt_tmp_13.
+DSP Report: Generating DSP plasma_nn_wrapper_fixpt_tmp_13, operation Mode is: PCIN+A*(B:0x18382).
+DSP Report: operator plasma_nn_wrapper_fixpt_tmp_13 is absorbed into DSP plasma_nn_wrapper_fixpt_tmp_13.
+DSP Report: operator plasma_nn_wrapper_fixpt_tmp_17 is absorbed into DSP plasma_nn_wrapper_fixpt_tmp_13.
+DSP Report: Generating DSP plasma_nn_wrapper_fixpt_tmp_15, operation Mode is: A*(B:0x2500d).
+DSP Report: operator plasma_nn_wrapper_fixpt_tmp_15 is absorbed into DSP plasma_nn_wrapper_fixpt_tmp_15.
+DSP Report: Generating DSP plasma_nn_wrapper_fixpt_tmp_15, operation Mode is: C+A*(B:0x2500d).
+DSP Report: operator plasma_nn_wrapper_fixpt_tmp_15 is absorbed into DSP plasma_nn_wrapper_fixpt_tmp_15.
+DSP Report: operator plasma_nn_wrapper_fixpt_tmp_15 is absorbed into DSP plasma_nn_wrapper_fixpt_tmp_15.
+DSP Report: Generating DSP plasma_nn_wrapper_fixpt_tmp_16, operation Mode is: A*(B:0x13abb).
+DSP Report: operator plasma_nn_wrapper_fixpt_tmp_16 is absorbed into DSP plasma_nn_wrapper_fixpt_tmp_16.
+DSP Report: Generating DSP plasma_nn_wrapper_fixpt_tmp_16, operation Mode is: C+A*(B:0x13abb).
+DSP Report: operator plasma_nn_wrapper_fixpt_tmp_16 is absorbed into DSP plasma_nn_wrapper_fixpt_tmp_16.
+DSP Report: operator plasma_nn_wrapper_fixpt_tmp_16 is absorbed into DSP plasma_nn_wrapper_fixpt_tmp_16.
+DSP Report: Generating DSP plasma_nn_wrapper_fixpt_tmp_13, operation Mode is: PCIN+A:B+C.
+DSP Report: operator plasma_nn_wrapper_fixpt_tmp_13 is absorbed into DSP plasma_nn_wrapper_fixpt_tmp_13.
+DSP Report: Generating DSP y1_15, operation Mode is: A*(B:0x12122).
+DSP Report: operator y1_15 is absorbed into DSP y1_15.
+DSP Report: Generating DSP y1_15, operation Mode is: C+A*(B:0x12122).
+DSP Report: operator y1_15 is absorbed into DSP y1_15.
+DSP Report: operator y1_15 is absorbed into DSP y1_15.
+DSP Report: Generating DSP plasma_nn_wrapper_fixpt_tmp_15, operation Mode is: A*(B:0x38a9a).
+DSP Report: operator plasma_nn_wrapper_fixpt_tmp_15 is absorbed into DSP plasma_nn_wrapper_fixpt_tmp_15.
+DSP Report: Generating DSP plasma_nn_wrapper_fixpt_tmp_13, operation Mode is: PCIN+A*(B:0x37ce2).
+DSP Report: operator plasma_nn_wrapper_fixpt_tmp_13 is absorbed into DSP plasma_nn_wrapper_fixpt_tmp_13.
+DSP Report: operator plasma_nn_wrapper_fixpt_tmp_14 is absorbed into DSP plasma_nn_wrapper_fixpt_tmp_13.
+DSP Report: Generating DSP plasma_nn_wrapper_fixpt_tmp_13, operation Mode is: PCIN+A*(B:0x1fc36).
+DSP Report: operator plasma_nn_wrapper_fixpt_tmp_13 is absorbed into DSP plasma_nn_wrapper_fixpt_tmp_13.
+DSP Report: operator plasma_nn_wrapper_fixpt_tmp_17 is absorbed into DSP plasma_nn_wrapper_fixpt_tmp_13.
+DSP Report: Generating DSP plasma_nn_wrapper_fixpt_tmp_17, operation Mode is: A*(B:0x2d263).
+DSP Report: operator plasma_nn_wrapper_fixpt_tmp_17 is absorbed into DSP plasma_nn_wrapper_fixpt_tmp_17.
+DSP Report: Generating DSP plasma_nn_wrapper_fixpt_tmp_17, operation Mode is: C+A*(B:0x2d263).
+DSP Report: operator plasma_nn_wrapper_fixpt_tmp_17 is absorbed into DSP plasma_nn_wrapper_fixpt_tmp_17.
+DSP Report: operator plasma_nn_wrapper_fixpt_tmp_17 is absorbed into DSP plasma_nn_wrapper_fixpt_tmp_17.
+DSP Report: Generating DSP plasma_nn_wrapper_fixpt_tmp_16, operation Mode is: A*(B:0x28ebf).
+DSP Report: operator plasma_nn_wrapper_fixpt_tmp_16 is absorbed into DSP plasma_nn_wrapper_fixpt_tmp_16.
+DSP Report: Generating DSP plasma_nn_wrapper_fixpt_tmp_16, operation Mode is: C+A*(B:0x28ebf).
+DSP Report: operator plasma_nn_wrapper_fixpt_tmp_16 is absorbed into DSP plasma_nn_wrapper_fixpt_tmp_16.
+DSP Report: operator plasma_nn_wrapper_fixpt_tmp_16 is absorbed into DSP plasma_nn_wrapper_fixpt_tmp_16.
+DSP Report: Generating DSP plasma_nn_wrapper_fixpt_tmp_13, operation Mode is: PCIN+A:B+C.
+DSP Report: operator plasma_nn_wrapper_fixpt_tmp_13 is absorbed into DSP plasma_nn_wrapper_fixpt_tmp_13.
+DSP Report: Generating DSP y1_14, operation Mode is: A*(B:0x1898e).
+DSP Report: operator y1_14 is absorbed into DSP y1_14.
+DSP Report: operator y1_14 is absorbed into DSP y1_14.
+DSP Report: Generating DSP plasma_nn_wrapper_fixpt_tmp_17, operation Mode is: A*(B:0xd0db).
+DSP Report: operator plasma_nn_wrapper_fixpt_tmp_17 is absorbed into DSP plasma_nn_wrapper_fixpt_tmp_17.
+DSP Report: Generating DSP plasma_nn_wrapper_fixpt_tmp_17, operation Mode is: A*(B:0x2f3e0).
+DSP Report: operator plasma_nn_wrapper_fixpt_tmp_17 is absorbed into DSP plasma_nn_wrapper_fixpt_tmp_17.
+DSP Report: Generating DSP plasma_nn_wrapper_fixpt_tmp_17, operation Mode is: C+A*(B:0x2f3e0).
+DSP Report: operator plasma_nn_wrapper_fixpt_tmp_17 is absorbed into DSP plasma_nn_wrapper_fixpt_tmp_17.
+DSP Report: operator plasma_nn_wrapper_fixpt_tmp_17 is absorbed into DSP plasma_nn_wrapper_fixpt_tmp_17.
+DSP Report: Generating DSP plasma_nn_wrapper_fixpt_tmp_14, operation Mode is: A*(B:0x218ec).
+DSP Report: operator plasma_nn_wrapper_fixpt_tmp_14 is absorbed into DSP plasma_nn_wrapper_fixpt_tmp_14.
+DSP Report: Generating DSP plasma_nn_wrapper_fixpt_tmp_14, operation Mode is: C+A*(B:0x218ec).
+DSP Report: operator plasma_nn_wrapper_fixpt_tmp_14 is absorbed into DSP plasma_nn_wrapper_fixpt_tmp_14.
+DSP Report: operator plasma_nn_wrapper_fixpt_tmp_14 is absorbed into DSP plasma_nn_wrapper_fixpt_tmp_14.
+DSP Report: Generating DSP plasma_nn_wrapper_fixpt_tmp_13, operation Mode is: PCIN+A:B+C.
+DSP Report: operator plasma_nn_wrapper_fixpt_tmp_13 is absorbed into DSP plasma_nn_wrapper_fixpt_tmp_13.
+DSP Report: Generating DSP plasma_nn_wrapper_fixpt_tmp_15, operation Mode is: A*(B:0x14da2).
+DSP Report: operator plasma_nn_wrapper_fixpt_tmp_15 is absorbed into DSP plasma_nn_wrapper_fixpt_tmp_15.
+DSP Report: Generating DSP plasma_nn_wrapper_fixpt_tmp_15, operation Mode is: C+A*(B:0x14da2).
+DSP Report: operator plasma_nn_wrapper_fixpt_tmp_15 is absorbed into DSP plasma_nn_wrapper_fixpt_tmp_15.
+DSP Report: operator plasma_nn_wrapper_fixpt_tmp_15 is absorbed into DSP plasma_nn_wrapper_fixpt_tmp_15.
+DSP Report: Generating DSP plasma_nn_wrapper_fixpt_tmp_16, operation Mode is: A*(B:0xca69).
+DSP Report: operator plasma_nn_wrapper_fixpt_tmp_16 is absorbed into DSP plasma_nn_wrapper_fixpt_tmp_16.
+DSP Report: operator plasma_nn_wrapper_fixpt_tmp_16 is absorbed into DSP plasma_nn_wrapper_fixpt_tmp_16.
+DSP Report: Generating DSP plasma_nn_wrapper_fixpt_tmp_13, operation Mode is: PCIN+A:B+C.
+DSP Report: operator plasma_nn_wrapper_fixpt_tmp_13 is absorbed into DSP plasma_nn_wrapper_fixpt_tmp_13.
+DSP Report: Generating DSP y1_17, operation Mode is: A*(B:0x1fd26).
+DSP Report: operator y1_17 is absorbed into DSP y1_17.
+DSP Report: operator y1_17 is absorbed into DSP y1_17.
+DSP Report: Generating DSP y1_27, operation Mode is: A*(B:0x21c44).
+DSP Report: operator y1_27 is absorbed into DSP y1_27.
+DSP Report: Generating DSP y1_22, operation Mode is: PCIN+A*(B:0x203a).
+DSP Report: operator y1_22 is absorbed into DSP y1_22.
+DSP Report: operator y1_25 is absorbed into DSP y1_22.
+DSP Report: Generating DSP y1_27, operation Mode is: A*(B:0x118bb).
+DSP Report: operator y1_27 is absorbed into DSP y1_27.
+DSP Report: operator y1_27 is absorbed into DSP y1_27.
+DSP Report: Generating DSP y1_22, operation Mode is: PCIN+A:B+(C:0x3d1e700000).
+DSP Report: operator y1_22 is absorbed into DSP y1_22.
+DSP Report: Generating DSP y1_24, operation Mode is: A*(B:0x20c04).
+DSP Report: operator y1_24 is absorbed into DSP y1_24.
+DSP Report: Generating DSP y1_24, operation Mode is: C+A*(B:0x20c04).
+DSP Report: operator y1_24 is absorbed into DSP y1_24.
+DSP Report: operator y1_24 is absorbed into DSP y1_24.
+DSP Report: Generating DSP y1_26, operation Mode is: A*(B:0x28b55).
+DSP Report: operator y1_26 is absorbed into DSP y1_26.
+DSP Report: Generating DSP y1_26, operation Mode is: C+A*(B:0x28b55).
+DSP Report: operator y1_26 is absorbed into DSP y1_26.
+DSP Report: operator y1_26 is absorbed into DSP y1_26.
+DSP Report: Generating DSP y1_22, operation Mode is: PCIN+A:B+C.
+DSP Report: operator y1_22 is absorbed into DSP y1_22.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 2251.383 ; gain = 162.691 ; free physical = 909 ; free virtual = 15043
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping	Report (see note below)
++----------------------------+--------------------------------------------------------------------------+-----------+----------------------+--------------+
+|Module Name                 | RTL Object                                                               | Inference | Size (Depth x Width) | Primitives   | 
++----------------------------+--------------------------------------------------------------------------+-----------+----------------------+--------------+
+|plasma_nn_wrapper_fixpt_fil | u_mwfil_chiftop/u_mwfil_chifcore/NormalBlock.u_b2dfifo/u_dpscram/mem_reg | Implied   | 16 x 56              | RAM32M x 10	 | 
+|plasma_nn_wrapper_fixpt_fil | u_mwfil_chiftop/u_mwfil_chifcore/u_d2bfifo/u_dpscram/mem_reg             | Implied   | 16 x 48              | RAM32M x 8	  | 
++----------------------------+--------------------------------------------------------------------------+-----------+----------------------+--------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+
+DSP: Preliminary Mapping	Report (see note below)
++------------------------+---------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name             | DSP Mapping               | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------------------+---------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|plasma_nn_wrapper_fixpt | A*(B:0x19051)             | 20     | 18     | -      | -      | 38     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|plasma_nn_wrapper_fixpt | A*(B:0x18e91)             | 20     | 18     | -      | -      | 38     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|plasma_nn_wrapper_fixpt | C+A*(B:0x18e91)           | 20     | 18     | 19     | -      | 38     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|plasma_nn_wrapper_fixpt | A*(B:0x7824)              | 20     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|plasma_nn_wrapper_fixpt | PCIN+A:B+C                | 24     | 18     | 39     | -      | -1     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|plasma_nn_wrapper_fixpt | A*(B:0x1db51)             | 21     | 18     | -      | -      | 39     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|plasma_nn_wrapper_fixpt | A*(B:0xc33)               | 20     | 13     | -      | -      | 33     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|plasma_nn_wrapper_fixpt | PCIN+A*(B:0x13da4)        | 20     | 18     | -      | -      | 42     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|plasma_nn_wrapper_fixpt | PCIN+A*(B:0x2b91c)        | 20     | 18     | -      | -      | 42     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|plasma_nn_wrapper_fixpt | A*(B:0xcbaa)              | 21     | 17     | -      | -      | 38     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|plasma_nn_wrapper_fixpt | A*(B:0xaea0)              | 20     | 17     | -      | -      | 37     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|plasma_nn_wrapper_fixpt | PCIN+A*(B:0x197b5)        | 20     | 18     | -      | -      | 42     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|plasma_nn_wrapper_fixpt | A*(B:0x2a683)             | 20     | 18     | -      | -      | 38     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|plasma_nn_wrapper_fixpt | C+A*(B:0x2a683)           | 20     | 18     | 19     | -      | 38     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|plasma_nn_wrapper_fixpt | A*(B:0x2164e)             | 21     | 18     | -      | -      | 39     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|plasma_nn_wrapper_fixpt | A*(B:0x2e52e)             | 20     | 18     | -      | -      | 38     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|plasma_nn_wrapper_fixpt | C+A*(B:0x2e52e)           | 20     | 18     | 19     | -      | 38     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|plasma_nn_wrapper_fixpt | A*(B:0x19048)             | 20     | 18     | -      | -      | 38     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|plasma_nn_wrapper_fixpt | C+A*(B:0x19048)           | 20     | 18     | 19     | -      | 38     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|plasma_nn_wrapper_fixpt | A*(B:0x279da)             | 20     | 18     | -      | -      | 38     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|plasma_nn_wrapper_fixpt | C+A*(B:0x279da)           | 20     | 18     | 19     | -      | 38     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|plasma_nn_wrapper_fixpt | A*(B:0x7778)              | 21     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|plasma_nn_wrapper_fixpt | A*(B:0xd190)              | 20     | 17     | -      | -      | 37     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|plasma_nn_wrapper_fixpt | PCIN+A*(B:0x398af)        | 20     | 16     | -      | -      | 42     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|plasma_nn_wrapper_fixpt | A*(B:0xac25)              | 20     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|plasma_nn_wrapper_fixpt | A*(B:0x1e57a)             | 21     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|plasma_nn_wrapper_fixpt | A*(B:0x12541)             | 21     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|plasma_nn_wrapper_fixpt | A*(B:0x14b12)             | 21     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|plasma_nn_wrapper_fixpt | A*(B:0x1d7d)              | 21     | 14     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|plasma_nn_wrapper_fixpt | A*(B:0xdcfa)              | 21     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|plasma_nn_wrapper_fixpt | A*(B:0x208c5)             | 21     | 18     | -      | -      | 39     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|plasma_nn_wrapper_fixpt | C+A*(B:0x208c5)           | 21     | 18     | 20     | -      | 39     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|plasma_nn_wrapper_fixpt | A*(B:0x21a90)             | 21     | 18     | -      | -      | 39     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|plasma_nn_wrapper_fixpt | PCIN+A*(B:0x4e86)         | 21     | 16     | -      | -      | 43     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|plasma_nn_wrapper_fixpt | A*(B:0x3c2b9)             | 21     | 15     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|plasma_nn_wrapper_fixpt | A*(B:0x2d032)             | 21     | 18     | -      | -      | 39     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|plasma_nn_wrapper_fixpt | C+A*(B:0x2d032)           | 21     | 18     | 20     | -      | 39     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|plasma_nn_wrapper_fixpt | A*(B:0x24965)             | 21     | 18     | -      | -      | 39     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|plasma_nn_wrapper_fixpt | C+A*(B:0x24965)           | 21     | 18     | 20     | -      | 39     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|plasma_nn_wrapper_fixpt | A*(B:0x136b2)             | 21     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|plasma_nn_wrapper_fixpt | A*(B:0x1b196)             | 21     | 18     | -      | -      | 39     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|plasma_nn_wrapper_fixpt | C+A*(B:0x1b196)           | 21     | 18     | 20     | -      | 39     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|plasma_nn_wrapper_fixpt | A*(B:0x12d58)             | 21     | 18     | -      | -      | 39     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|plasma_nn_wrapper_fixpt | C+A*(B:0x12d58)           | 21     | 18     | 20     | -      | 39     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|plasma_nn_wrapper_fixpt | A*(B:0x3cc5)              | 21     | 15     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|plasma_nn_wrapper_fixpt | A*(B:0xacd3)              | 21     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|plasma_nn_wrapper_fixpt | A*(B:0x115cc)             | 21     | 18     | -      | -      | 39     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|plasma_nn_wrapper_fixpt | A*(B:0xf1b5)              | 21     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|plasma_nn_wrapper_fixpt | A*(B:0x1abb9)             | 21     | 18     | -      | -      | 39     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|plasma_nn_wrapper_fixpt | A*(B:0x1d8fb)             | 21     | 18     | -      | -      | 39     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|plasma_nn_wrapper_fixpt | C+A*(B:0x1d8fb)           | 21     | 18     | 20     | -      | 39     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|plasma_nn_wrapper_fixpt | PCIN+A:B+C                | 22     | 18     | 40     | -      | -1     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|plasma_nn_wrapper_fixpt | A*(B:0xae2a)              | 21     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|plasma_nn_wrapper_fixpt | A*(B:0x15d3d)             | 21     | 18     | -      | -      | 39     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|plasma_nn_wrapper_fixpt | A*(B:0xf46)               | 21     | 13     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|plasma_nn_wrapper_fixpt | A*(B:0x7e25)              | 21     | 16     | -      | -      | 37     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|plasma_nn_wrapper_fixpt | A*(B:0xba10)              | 21     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|plasma_nn_wrapper_fixpt | A*(B:0x255d5)             | 21     | 18     | -      | -      | 39     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|plasma_nn_wrapper_fixpt | C+A*(B:0x255d5)           | 21     | 18     | 20     | -      | 39     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|plasma_nn_wrapper_fixpt | A*(B:0x2ba36)             | 21     | 18     | -      | -      | 39     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|plasma_nn_wrapper_fixpt | C+A*(B:0x2ba36)           | 21     | 18     | 20     | -      | 38     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|plasma_nn_wrapper_fixpt | A*(B:0x13b8d)             | 21     | 18     | -      | -      | 39     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|plasma_nn_wrapper_fixpt | PCIN+A*(B:0x27d5e)        | 21     | 18     | -      | -      | 43     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|plasma_nn_wrapper_fixpt | A*(B:0x204be)             | 21     | 18     | -      | -      | 39     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|plasma_nn_wrapper_fixpt | C+A*(B:0x204be)           | 21     | 18     | 20     | -      | 39     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|plasma_nn_wrapper_fixpt | A*(B:0x1fc0a)             | 21     | 18     | -      | -      | 39     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|plasma_nn_wrapper_fixpt | C+A*(B:0x1fc0a)           | 21     | 18     | 20     | -      | 39     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|plasma_nn_wrapper_fixpt | PCIN+A:B+C                | 25     | 18     | 40     | -      | -1     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|plasma_nn_wrapper_fixpt | A*(B:0x2ea78)             | 21     | 18     | -      | -      | 39     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|plasma_nn_wrapper_fixpt | C+A*(B:0x2ea78)           | 21     | 18     | 20     | -      | 39     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|plasma_nn_wrapper_fixpt | A*(B:0x29508)             | 21     | 18     | -      | -      | 39     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|plasma_nn_wrapper_fixpt | C+A*(B:0x29508)           | 21     | 18     | 20     | -      | 38     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|plasma_nn_wrapper_fixpt | A*(B:0x19480)             | 21     | 18     | -      | -      | 39     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|plasma_nn_wrapper_fixpt | PCIN+A*(B:0x3f1d9)        | 21     | 13     | -      | -      | 43     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|plasma_nn_wrapper_fixpt | PCIN+A*(B:0x18382)        | 21     | 18     | -      | -      | 43     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|plasma_nn_wrapper_fixpt | A*(B:0x2500d)             | 21     | 18     | -      | -      | 39     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|plasma_nn_wrapper_fixpt | C+A*(B:0x2500d)           | 21     | 18     | 20     | -      | 39     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|plasma_nn_wrapper_fixpt | A*(B:0x13abb)             | 21     | 18     | -      | -      | 39     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|plasma_nn_wrapper_fixpt | C+A*(B:0x13abb)           | 21     | 18     | 20     | -      | 39     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|plasma_nn_wrapper_fixpt | PCIN+A:B+C                | 25     | 18     | 40     | -      | -1     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|plasma_nn_wrapper_fixpt | A*(B:0x12122)             | 21     | 18     | -      | -      | 39     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|plasma_nn_wrapper_fixpt | C+A*(B:0x12122)           | 21     | 18     | 20     | -      | 38     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|plasma_nn_wrapper_fixpt | A*(B:0x38a9a)             | 21     | 16     | -      | -      | 37     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|plasma_nn_wrapper_fixpt | PCIN+A*(B:0x37ce2)        | 21     | 17     | -      | -      | 43     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|plasma_nn_wrapper_fixpt | PCIN+A*(B:0x1fc36)        | 21     | 18     | -      | -      | 43     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|plasma_nn_wrapper_fixpt | A*(B:0x2d263)             | 21     | 18     | -      | -      | 39     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|plasma_nn_wrapper_fixpt | C+A*(B:0x2d263)           | 21     | 18     | 20     | -      | 39     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|plasma_nn_wrapper_fixpt | A*(B:0x28ebf)             | 21     | 18     | -      | -      | 39     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|plasma_nn_wrapper_fixpt | C+A*(B:0x28ebf)           | 21     | 18     | 20     | -      | 39     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|plasma_nn_wrapper_fixpt | PCIN+A:B+C                | 25     | 18     | 40     | -      | -1     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|plasma_nn_wrapper_fixpt | A*(B:0x1898e)             | 21     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|plasma_nn_wrapper_fixpt | A*(B:0xd0db)              | 21     | 17     | -      | -      | 38     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|plasma_nn_wrapper_fixpt | A*(B:0x2f3e0)             | 21     | 18     | -      | -      | 39     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|plasma_nn_wrapper_fixpt | C+A*(B:0x2f3e0)           | 21     | 18     | 20     | -      | 39     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|plasma_nn_wrapper_fixpt | A*(B:0x218ec)             | 21     | 18     | -      | -      | 39     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|plasma_nn_wrapper_fixpt | C+A*(B:0x218ec)           | 21     | 18     | 20     | -      | 39     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|plasma_nn_wrapper_fixpt | PCIN+A:B+C                | 22     | 18     | 40     | -      | -1     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|plasma_nn_wrapper_fixpt | A*(B:0x14da2)             | 21     | 18     | -      | -      | 39     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|plasma_nn_wrapper_fixpt | C+A*(B:0x14da2)           | 21     | 18     | 20     | -      | 39     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|plasma_nn_wrapper_fixpt | A*(B:0xca69)              | 21     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|plasma_nn_wrapper_fixpt | PCIN+A:B+C                | 25     | 18     | 40     | -      | -1     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|plasma_nn_wrapper_fixpt | A*(B:0x1fd26)             | 21     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|plasma_nn_wrapper_fixpt | A*(B:0x21c44)             | 21     | 18     | -      | -      | 39     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|plasma_nn_wrapper_fixpt | PCIN+A*(B:0x203a)         | 21     | 15     | -      | -      | 39     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|plasma_nn_wrapper_fixpt | A*(B:0x118bb)             | 21     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|plasma_nn_wrapper_fixpt | PCIN+A:B+(C:0x3d1e700000) | 21     | 18     | 39     | -      | -1     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|plasma_nn_wrapper_fixpt | A*(B:0x20c04)             | 21     | 18     | -      | -      | 39     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|plasma_nn_wrapper_fixpt | C+A*(B:0x20c04)           | 21     | 18     | 20     | -      | 38     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|plasma_nn_wrapper_fixpt | A*(B:0x28b55)             | 21     | 18     | -      | -      | 39     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|plasma_nn_wrapper_fixpt | C+A*(B:0x28b55)           | 21     | 18     | 20     | -      | 38     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|plasma_nn_wrapper_fixpt | PCIN+A:B+C                | 21     | 18     | 39     | -      | -1     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
++------------------------+---------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-565] redefining clock 'sysclk'
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 2251.383 ; gain = 162.691 ; free physical = 769 ; free virtual = 14882
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 2297.977 ; gain = 209.285 ; free physical = 709 ; free virtual = 14828
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping	Report
++----------------------------+--------------------------------------------------------------------------+-----------+----------------------+--------------+
+|Module Name                 | RTL Object                                                               | Inference | Size (Depth x Width) | Primitives   | 
++----------------------------+--------------------------------------------------------------------------+-----------+----------------------+--------------+
+|plasma_nn_wrapper_fixpt_fil | u_mwfil_chiftop/u_mwfil_chifcore/NormalBlock.u_b2dfifo/u_dpscram/mem_reg | Implied   | 16 x 56              | RAM32M x 10	 | 
+|plasma_nn_wrapper_fixpt_fil | u_mwfil_chiftop/u_mwfil_chifcore/u_d2bfifo/u_dpscram/mem_reg             | Implied   | 16 x 48              | RAM32M x 8	  | 
++----------------------------+--------------------------------------------------------------------------+-----------+----------------------+--------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 2313.992 ; gain = 225.301 ; free physical = 697 ; free virtual = 14829
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 2316.961 ; gain = 228.270 ; free physical = 696 ; free virtual = 14829
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 2316.961 ; gain = 228.270 ; free physical = 696 ; free virtual = 14830
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 2316.961 ; gain = 228.270 ; free physical = 691 ; free virtual = 14823
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 2316.961 ; gain = 228.270 ; free physical = 691 ; free virtual = 14823
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 2316.961 ; gain = 228.270 ; free physical = 691 ; free virtual = 14823
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 2316.961 ; gain = 228.270 ; free physical = 691 ; free virtual = 14823
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |clk_wiz_0     |         1|
+|2     |jtag_mac_fifo |         2|
+|3     |simcycle_fifo |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+----------------------+------+
+|      |Cell                  |Count |
++------+----------------------+------+
+|1     |clk_wiz_0_bbox        |     1|
+|2     |jtag_mac_fifo_bbox    |     1|
+|3     |jtag_mac_fifo_bbox_2_ |     1|
+|4     |simcycle_fifo_bbox    |     1|
+|5     |BSCANE2               |     1|
+|6     |BUFG                  |     1|
+|7     |CARRY4                |   556|
+|8     |DSP48E1               |    84|
+|11    |LUT1                  |   207|
+|12    |LUT2                  |  1475|
+|13    |LUT3                  |   800|
+|14    |LUT4                  |   467|
+|15    |LUT5                  |   318|
+|16    |LUT6                  |   287|
+|17    |RAM32M                |    17|
+|18    |FDRE                  |   554|
+|19    |FDSE                  |     6|
++------+----------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 2316.961 ; gain = 228.270 ; free physical = 691 ; free virtual = 14823
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 2316.961 ; gain = 65.578 ; free physical = 751 ; free virtual = 14882
+Synthesis Optimization Complete : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 2316.969 ; gain = 228.270 ; free physical = 751 ; free virtual = 14882
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.05 . Memory (MB): peak = 2316.969 ; gain = 0.000 ; free physical = 829 ; free virtual = 14961
+INFO: [Netlist 29-17] Analyzing 657 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2348.977 ; gain = 0.000 ; free physical = 768 ; free virtual = 14901
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 17 instances were transformed.
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 17 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+69 Infos, 18 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 2348.977 ; gain = 260.375 ; free physical = 958 ; free virtual = 15090
+INFO: [Common 17-1381] The checkpoint '/home/kimberlychan/Desktop/DNN_Generality/matlab/codegen0_H5_L3_wL20_LoopNone/codegen/plasma_nn_wrapper/fil/plasma_nn_wrapper_fixpt_fil/fpgaproj/plasma_nn_wrapper_fixpt_fil.runs/synth_1/plasma_nn_wrapper_fixpt_fil.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file plasma_nn_wrapper_fixpt_fil_utilization_synth.rpt -pb plasma_nn_wrapper_fixpt_fil_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Jul 22 13:22:06 2022...
