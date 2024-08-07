@@ -1,19 +1,21 @@
 # HW-SW_CoDesign4CoC
-**NOTE: This article is under review**
+
 Contribution to IEEE Transactions on Control Systems Technology Issue xx, Volume xx:
 
-*A Practical Multi-Objective Learning Framework for Optimal Hardware-Software Co-Design of Control-on-a-Chip Systems*
+*A Practical Multiobjective Learning Framework for Optimal Hardware-Software Co-Design of Control-on-a-Chip Systems*
 
-[DOI - to be added upon publication](https://www.mesbahlab.com/publications)
+[DOI - 10.1109/TCST.2024.3407582](https://doi.org/10.1109/TCST.2024.3407582)
 
 Authors: [Kimberly J. Chan](https://kchan45.github.io), [Joel A. Paulson](https://cbe.osu.edu/people/paulson.82), and [Ali Mesbah](https://chemistry.berkeley.edu/faculty/cbe/mesbah)
 
-*NOTE: to be updated upon publication...*
 If you use our work, please cite:
 ```tex
 @article{chan2024practical,
-  title={A Practical Multi-Objective Learning Framework for Optimal Hardware-Software Co-Design of Control-on-a-Chip Systems},
+  title={A Practical Multiobjective Learning Framework for Optimal Hardware--Software Co-Design of Control-on-a-Chip Systems},
   author={Chan, Kimberly J and Paulson, Joel A and Mesbah, Ali},
+  journal={IEEE Transactions on Control Systems Technology},
+  year={2024},
+  publisher={IEEE}
 }
 ```
 
